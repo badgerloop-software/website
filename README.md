@@ -6,7 +6,7 @@ Contributing Members:
 
 ## Local Development
 
-Install [git](https://git-scm.com/). Make a new folder for the project, open `git bash` and navigate to this folder. Install [node.js v6](https://nodejs.org/en/).
+Install [Git](https://git-scm.com/). Make a new folder for the project, open `git bash` and navigate to this folder. Install [node.js LTS](https://nodejs.org/en/).
 
 Run `git init` followed by `git remote add origin https://github.com/vkottler/badgerloopSoftware.git` followed by `git pull origin master`.
 
