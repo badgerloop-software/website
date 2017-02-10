@@ -2,7 +2,7 @@
   "name": "badgerloop-localdev",
   "version": "0.0.1",
   "description": "Use node.js to handle web traffic locally",
-  "author": "Vaughn Kottler <vkottler@wisc.edu>",
+  "author": "Badgerloop Software Team <vkottler@wisc.edu>",
   "license": "MIT",
   "main": "server.js",
   "contributors": [],
