@@ -7,21 +7,22 @@ http = require('http');
 port = 8080;
 app = express();
 server = http.createServer(app).listen(port, function() {});
-var folder = __dirname + '/../';
+var folder = __dirname + '/../web';
+var file;
 
 if (process.argv.length != 3) startupError('have the right number of arguments');
 switch (process.argv[2].toLowerCase()) {
   case 'd':
   case 'dash':
   case 'dashboard': 
-    folder += 'dashboard';
+    file = 'dashboard.html';
     console.log("starting dashboard locally on port " + port);
     break;
 
   case 'w':
   case 'web':
   case 'website':
-    folder += 'website';
+    file = 'index.html';
     console.log("starting website locally on port " + port);
     break;
 
@@ -34,7 +35,7 @@ function startupError(problem) {
   process.exit();
 }
 
-app.use('/', express.static(folder));
+app.use('/', express.static(folder, {"index": file}));
 /************************************************************************************/
 /************************************************************************************/
 
