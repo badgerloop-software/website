@@ -7,7 +7,7 @@ http = require('http');
 port = 8080;
 app = express();
 server = http.createServer(app).listen(port, function() {});
-var folder = __dirname + '/../web';
+var folder = __dirname + '/web';
 var file;
 
 if (process.argv.length != 3) startupError('have the right number of arguments');
