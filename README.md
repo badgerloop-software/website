@@ -1,8 +1,6 @@
 # Badgerloop Software
 
-Team Lead: Vaughn Kottler
-
-Contributing Members:
+*Contributors: Vaughn Kottler*
 
 ## Local Development
 
