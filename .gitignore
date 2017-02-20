@@ -1,3 +1,4 @@
 **/node_modules/**
 web/*.txt
+web/webhook.php
 
