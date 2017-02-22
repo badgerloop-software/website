@@ -31,7 +31,7 @@ switch (process.argv[2].toLowerCase()) {
 }
 
 function startupError(problem) {
-  console.log('[ERROR] usage: node start [client | server] you didn\'t ' + problem);
+  console.log('[ERROR] usage: node server [web | dash] you didn\'t ' + problem);
   process.exit();
 }
 
