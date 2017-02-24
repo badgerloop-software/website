@@ -11,6 +11,10 @@
     "url": "https://github.com/vkottler/badgerloopSoftware.git"
   },
   "dependencies": {
-
+    "angular": "1.5.x",
+    "angular-animate": "1.5.x",
+    "angular-aria": "1.5.x",
+    "angular-route": "1.5.x",
+    "angular-material": "^1.1.3"
   }
 }
