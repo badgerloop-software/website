@@ -6,17 +6,23 @@
 
 Install [Git](https://git-scm.com/). Make a new folder for the project, open `git bash` and navigate to this folder. Install [node.js LTS](https://nodejs.org/en/).
 
-Run `git init` followed by `git remote add origin https://github.com/vkottler/badgerloopSoftware.git` followed by `git pull origin master`.
+Run `git init` followed by `git remote add origin https://github.com/badgerloop-software/website.git` followed by `git pull origin master`.
 
-Run `npm install` while in the same folder. Now, you can run `node server website` or `node server dashboard` to serve local web traffic for either of these pages with a simple [express.js](http://expressjs.com/) server.
+Run `git checkout dev` followed by `git pull origin dev`. *You do not want to be doing development on the master branch.* Pushing to the master branch triggers an automatic update.
+
+Run `npm install` from the root folder of the repository.
+
+Change directories to the `web` folder and run `npm install` again.
+
+From the root folder, you can run `node server website` or `node server dashboard` to serve traffic through port 8080 locally. This means you would visit `http://localhost:8080` to view your work.
 
 ## Website Technologies
 
-1. **Angular? Bootstrap?**
+1. **Angular-Material 1.1.3**
 
 ## Dashboard Technologies
 
-1. **Angular? Bootstrap?**
+1. N/A
 
 ## Server and Hosting
 
