@@ -8,7 +8,7 @@ Install [Git](https://git-scm.com/). Make a new folder for the project, open `gi
 
 Run `git init` followed by `git remote add origin https://github.com/badgerloop-software/website.git` followed by `git pull origin master`.
 
-Run `git checkout dev` followed by `git pull origin dev`. **You do not want to be doing development on the master branch.** Pushing to the master branch triggers an automatic update.
+Run `git pull origin dev` and then `git checkout dev`. **You do not want to be doing development on the master branch.** Pushing to the master branch triggers an automatic update.
 
 Run `npm install` from the root folder of the repository.
 
