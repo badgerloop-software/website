@@ -6,10 +6,12 @@ express = require('express');
 http = require('http');
 port = 8080;
 app = express();
-server = http.createServer(app).listen(port, function() {});
+server = http.createServer(app).listen(port, function() {
+	console.log('Server started on port ' + port);
+});
 var folder = __dirname + '/web';
-var file;
 
+/*
 if (process.argv.length != 3) startupError('have the right number of arguments');
 switch (process.argv[2].toLowerCase()) {
   case 'd':
@@ -34,8 +36,9 @@ function startupError(problem) {
   console.log('[ERROR] usage: node server [web | dash] you didn\'t ' + problem);
   process.exit();
 }
+*/
 
-app.use('/', express.static(folder, {"index": file}));
+app.use('/', express.static(folder, {"index": "index.html"}));
 /************************************************************************************/
 /************************************************************************************/
 
