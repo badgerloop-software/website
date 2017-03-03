@@ -1,12 +1,12 @@
 [submodule "web/secure/purchasing"]
 	path = web/secure/purchasing
-	url = https://github.com/badgerloop-software/purchasing
+	url = https://github.com/badgerloop-software/purchasing.git
 [submodule "web/secure/wiki"]
 	path = web/secure/wiki
-	url = https://github.com/badgerloop-software/wiki
+	url = https://github.com/badgerloop-software/wiki.git
 [submodule "web/secure/admin"]
 	path = web/secure/admin
-	url = https://github.com/badgerloop-software/admin
+	url = https://github.com/badgerloop-software/admin.git
 [submodule "web/secure/file-server"]
 	path = web/secure/file-server
 	url = https://github.com/badgerloop-software/file-server
