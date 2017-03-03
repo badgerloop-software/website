@@ -1,0 +1,3 @@
+[submodule "web/secure/purchasing"]
+	path = web/secure/purchasing
+	url = https://github.com/badgerloop-software/purchasing
