@@ -18,5 +18,11 @@ angular.module('directives')
 	    templateUrl: 'directives/team-leads.html',
 	    controller: 'welcomeController'
     }
+})
+
+.directive('placeholder', function() {
+    return {
+        templateUrl: 'directives/placeholder.html'
+    }
 });
 

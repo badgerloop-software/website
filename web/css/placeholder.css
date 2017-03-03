@@ -1,0 +1,25 @@
+div.placeholder {
+    margin: auto;
+    text-align: center;
+    background: #000;
+}
+
+video.placeholder {
+    max-width: 100vw;
+    max-height: 100vh;
+    z-index: -1;
+}
+
+.coming-soon {
+    font-family: 'Montserrat', 'sans-serif';
+    border: .05em solid black;
+    padding: 0.5em 1em;
+    text-align: left;
+    border-radius: 0.5em;
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    font-size: 2.5em;
+    background: rgba(168, 64, 58, 0.75); /* #d61c24 */
+    z-index: 1;
+}
