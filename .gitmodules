@@ -4,3 +4,9 @@
 [submodule "web/secure/wiki"]
 	path = web/secure/wiki
 	url = https://github.com/badgerloop-software/wiki
+[submodule "web/secure/admin"]
+	path = web/secure/admin
+	url = https://github.com/badgerloop-software/admin
+[submodule "web/secure/file-server"]
+	path = web/secure/file-server
+	url = https://github.com/badgerloop-software/file-server
