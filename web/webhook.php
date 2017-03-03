@@ -1,20 +1,49 @@
+<?php
+
+function log_to_file($logfile, $message) {
+    $log_cmd = "printf \"".$message."\n\" >> php_log/".$logfile;
+    shell_exec($log_cmd);
+}
+
+function parse_commits($commits) {
+    $retStr = "";
+    foreach ($commits as $commit) {
+        $push_log .= "  ".$commit['message']." -".$commit['committer']['name']." [".$commit['committer']['email']."]\n";
+        
+	if (!empty($commit['modified'])) {
+	    $push_log .= "    Modified: ";
+            foreach($commit['modified'] as $file) $push_log .= $file.", ";
+            $push_log .= "\n";
+	}
+
+	if (!empty($commit['added'])) {
+	    $push_log .= "    Added: ";
+            foreach($commit['added'] as $file) $push_log .= $file.", ";
+	    $push_log .= "\n";
+	}
+
+	if (!empty($commit['removed'])) {
+	    $push_log .= "    Removed: ";
+            foreach($commit['removed'] as $file) $push_log .= $file.", ";
+
+            $push_log .= "\n";
+	}
+    }
+    return $retStr;
+}
+
+?>
 <DOCTYPE html>
 <html lang="en">
 <head><title>Badgerloop</title></head>
 <body>
+<h1>Badgerloop Webhooks</h1>
 <!--
   author: Vaughn Kottler
   
   if you're seeing this you're not seeing the PHP code that executes when a request is made to this page.
 -->
 <?php
-
-echo "<h1>Badgerloop Webhooks</h1>";
-
-function log_to_file($logfile, $message) {
-    $log_cmd = "printf \"".$message."\n\" >> php_log/".$logfile;
-    shell_exec($log_cmd);
-}
 
 // Log who makes a request to webhook.php
 log_to_file("visits.log", "visited by ".$_SERVER['REMOTE_ADDR']." on $(date) [".$_SERVER['REQUEST_METHOD']."]");
@@ -36,12 +65,7 @@ if (isset($response['ref'])) {
 
     // keep a log of this information
     $push_log = $branch." pushed by ".$user." on $(date) [".$num_commits." commit(s)]\n";
-    foreach($response['commits'] as $commit) {
-        $push_log .= "  ".$commit['message']." -".$commit['committer']['name']." [".$commit['committer']['email']."]\n";
-        $push_log .= "    Modified: ";
-        foreach($commit['modified'] as $file) $push_log .= $file.", ";
-        $push_log .= "\n";
-    }
+    $push_log .= parse_commits($response['commits']); 
     $push_log .= "------------------------------------------------------------------------------------------------";
     log_to_file("pushes.log", $push_log);
 
@@ -52,7 +76,7 @@ if (isset($response['ref'])) {
     echo "<p>Logged to pushes.log: ".$push_log."<br></p>";
 }
 
-echo "<p>Everything executed properly.</p>";
+echo "<p><i>Everything executed properly.</i></p>";
 
 ?>
 </body>
