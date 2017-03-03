@@ -9,4 +9,4 @@
 	url = https://github.com/badgerloop-software/admin.git
 [submodule "web/secure/file-server"]
 	path = web/secure/file-server
-	url = https://github.com/badgerloop-software/file-server
+	url = https://github.com/badgerloop-software/file-server.git
