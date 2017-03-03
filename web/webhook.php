@@ -7,26 +7,16 @@ function log_to_file($logfile, $message) {
 
 function parse_commits($commits) {
     $retStr = "";
+    $properties = array('modified', 'added', 'removed');
     foreach ($commits as $commit) {
-        $push_log .= "  ".$commit['message']." -".$commit['committer']['name']." [".$commit['committer']['email']."]\n";
+        $retStr .= "  ".$commit['message']." -".$commit['committer']['name']." [".$commit['committer']['email']."]\n";
         
-	if (!empty($commit['modified'])) {
-	    $push_log .= "    Modified: ";
-            foreach($commit['modified'] as $file) $push_log .= $file.", ";
-            $push_log .= "\n";
-	}
-
-	if (!empty($commit['added'])) {
-	    $push_log .= "    Added: ";
-            foreach($commit['added'] as $file) $push_log .= $file.", ";
-	    $push_log .= "\n";
-	}
-
-	if (!empty($commit['removed'])) {
-	    $push_log .= "    Removed: ";
-            foreach($commit['removed'] as $file) $push_log .= $file.", ";
-
-            $push_log .= "\n";
+	foreach ($properties as $property) {
+	    if (!empty($commit[$property])) {
+		$retStr .= "    ".$property.": ";
+		foreach ($commit[$property] as $file) $retStr .= $file.", ";
+		$retStr .= "\n";
+	    }
 	}
     }
     return $retStr;
@@ -73,7 +63,6 @@ if (isset($response['ref'])) {
     if (strpos($response['ref'], 'master') !== false) {
 	echo "<p>Pulling . . .<br>".shell_exec("git pull origin master")."<br></p>";
     }
-    echo "<p>Logged to pushes.log: ".$push_log."<br></p>";
 }
 
 echo "<p><i>Everything executed properly.</i></p>";
