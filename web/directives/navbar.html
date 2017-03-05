@@ -1,13 +1,29 @@
 <md-toolbar>
-      <div class="md-toolbar-tools">
-          <img class="headerImg" src="../im/background/BadgerLoop Logo V5.png">
-          <md-button md-click="page1" name="page1">Docs</md-nav-item></md-button>
-		  <md-button md-sref="app.page2" name="page2">Sponsorship</md-nav-item></md-button>
-		  <md-button md-href="#page3" name="page3">Team</md-nav-item></md-button>
-		  <md-button md-href="#page3" name="page4">Pod</md-nav-item></md-button>
-		  <md-button md-href="#page3" name="page5">Media</md-nav-item></md-button>
-          <span flex></span>
-          <md-button class="md-raised" href="https://www.badgerloop.com/secure/"> Login</md-button>
+    <div class="md-toolbar-tools" layout-align="space-between center">
+      
+        <md-button ng-click="changeViewDirect('home')" aria-label="home">
+          <img class="headerImg" src="../im/background/BadgerLoopLogoV5.png">
+          <md-tooltip md-direction="bottom">HOME</md-tooltip>
         </md-button>
-      </div>
-    </md-toolbar>
+        
+        <md-button hide show-gt-sm ng-repeat="button in buttons" ng-click="changeView(button)" ng-disabled="button.enabled">
+            {{button.text}}
+        </md-button>
+        
+        <span hide show-sm>SOME TEXT</span>
+        
+        <md-menu hide-gt-sm>
+          <md-button ng-click="$mdOpenMenu()" aria-label="menu"><i class="material-icons">menu</i></md-button>
+          <md-menu-content width="4">
+            <md-menu-item ng-repeat="button in buttons">
+              <md-button ng-click="changeView(button)" ng-disabled="button.enabled">
+                <span style="text-transform: uppercase">{{button.text}}</span>
+              </md-button>
+            </md-menu-item>
+          </md-menu-content>
+        </md-menu>
+        
+        <md-button class="md-raised" href="https://www.badgerloop.com/secure/"><b>Login</b></md-button>
+    </div>
+</md-toolbar>
+    

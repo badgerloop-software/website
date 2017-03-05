@@ -1,0 +1,13 @@
+<div>{{test}}</div>
+ <form ng-submit="submit()" ng-controller="homeController" ng-cloak>
+    <p>Selected Value: <span class="radioValue">{{ data.group1 }}</span> </p>
+
+    <md-radio-group ng-model="data.group1">
+
+      <md-radio-button src="../im/background/UW Logo.png" ng-show=false class="md-primary"></md-radio-button>
+      <md-radio-button value="Banana"> Banana </md-radio-button>
+      <md-radio-button value="Mango">Mango</md-radio-button>
+
+    </md-radio-group>
+
+    <hr />
