@@ -3,7 +3,7 @@ hr {
     margin: 0 0 0 0;
 }
 
-body {
+html {
     font-family: 'Montserrat';
 }
 
@@ -22,7 +22,10 @@ body {
 
 .social img {
     height: 2em;
-    width: 2em;
     margin: 1em;
     vertical-align: middle;
+}
+
+.social a {
+    text-decoration: none;
 }
