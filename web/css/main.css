@@ -19,3 +19,10 @@ body {
 	width: 6em;
 	padding: 0.5em 0.75em;
 }
+
+.social img {
+    height: 2em;
+    width: 2em;
+    margin: 1em;
+    vertical-align: middle;
+}

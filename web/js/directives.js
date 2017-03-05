@@ -9,7 +9,8 @@ angular.module('directives')
 
 .directive('badgerloopFooter', function() {
     return {
-	    templateUrl: 'directives/footer.html'
+	    templateUrl: 'directives/footer.html',
+	    controller: 'navbarController'
     };
 })
 
