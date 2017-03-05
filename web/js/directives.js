@@ -25,4 +25,3 @@ angular.module('directives')
         templateUrl: 'directives/placeholder.html'
     }
 });
-

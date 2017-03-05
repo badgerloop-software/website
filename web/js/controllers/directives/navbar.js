@@ -9,7 +9,7 @@ angular.module('controllers')
         { text: "media",        enabled: false },
         { text: "team",         enabled: false }
     ];
-    
+    $scope.homeButton = { text: "home", enabled: false };
     $scope.curr_button = $scope.buttons[0];
     
     $scope.changeView = function(button) {
@@ -19,8 +19,18 @@ angular.module('controllers')
         $location.path(button.text);
     };
     
-    $scope.changeViewDirect = function(view) {
-        $location.path(view);
-    };
+    if ($location.path() === "/home") {
+        $scope.homeButton.enabled = true;
+        $scope.curr_button = $scope.homeButton;
+    }
+    else {
+        for (var i = 0; i < $scope.buttons.length; i++) {
+            if ($scope.buttons[i].text === $location.path().substring(1)) {
+                $scope.buttons[i].enabled = true;
+                $scope.curr_button = $scope.buttons[i];
+                break;
+            }
+        }
+    }
     
 });

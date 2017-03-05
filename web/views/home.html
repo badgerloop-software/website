@@ -1,13 +1,54 @@
+<div class="view_container">
+  
+  {{test}}
+
+</div>
+
+<!--
+<style type="text/css">
+    .img.ng-enter {
+  /* standard transition code */
+  transition: 4s linear all;
+}
+.box-one {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+.box-one.ng-hide {
+  opacity:0;
+}
+</style>
+<div class="box-one">
+  Hello! I am <b>box one</b>.
+</div>
+
 <div>{{test}}</div>
- <form ng-submit="submit()" ng-controller="homeController" ng-cloak>
-    <p>Selected Value: <span class="radioValue">{{ data.group1 }}</span> </p>
+<div ng-controller="homeController">
+<body onload="autoRun()">
+    <img src="../im/background/UW Logo.png" id="slideshow" />
+    <br />
+    
+    <button ng-click=slideshow()>Previous Slide</button>
+    <button ng-click=slideshow()>Previous Slide</button>
+</body>
 
-    <md-radio-group ng-model="data.group1">
+</div>
+<div class="ngClass">
+    <img class="ng-enter" src="../im/background/hyperBanner.jpg" />
+</div>
 
-      <md-radio-button src="../im/background/UW Logo.png" ng-show=false class="md-primary"></md-radio-button>
-      <md-radio-button value="Banana"> Banana </md-radio-button>
-      <md-radio-button value="Mango">Mango</md-radio-button>
-
-    </md-radio-group>
-
-    <hr />
+<div class="slider">
+  <div class="slide" ng-repeat="image in images" ng-show="image.visible">
+    <img ng-src="../im/background/{{image.src}}" />
+  </div>
+  <div class="arrows">
+    <a href="#" ng-click="prev()">
+      <i class="material-icons">keyboard_arrow_left</i>
+    </a>
+    <a href="#" ng-click="next()">
+      <i class="material-icons">keyboard_arrow_right</i>
+    </a>
+  </div>
+</div>
+    
+-->
