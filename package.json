@@ -13,5 +13,8 @@
   "dependencies": {
     "express": "^4.x",
     "body-parser": "^1.x"
+  },
+  "devDependencies": {
+    "ng-parallax": "^1.1.3"
   }
 }

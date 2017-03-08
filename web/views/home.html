@@ -1,5 +1,5 @@
 <style type="text/css">
-  
+
 .tech-slideshow {
   height: 200px;
   max-width: 100%;
@@ -10,9 +10,9 @@
 }
 
 .tech-slideshow > div {
-  height: 200px;
-  width: 2526px;
-  background: url("../im/background/Badgerlooop.png");
+  height: 100%;
+  width: 8000px;
+  background: url("../im/action/Comp-2-Logos-LONG transparent.png");
   position: absolute;
   top: 0;
   left: 0;
@@ -20,27 +20,19 @@
   transform: translate3d(0, 0, 0);
 }
 .tech-slideshow .mover-1 {
-  animation: moveSlideshow 12s linear infinite;
+  animation: moveSlideshow 35s linear infinite;
 }
-.tech-slideshow .mover-2 {
-  opacity: 0;
-  transition: opacity 0.5s ease-out;
-  background-position: 0 -200px;
-  animation: moveSlideshow 15s linear infinite;
-}
-.tech-slideshow:hover .mover-2 {
-  opacity: 1;
-}
+
 
 @keyframes moveSlideshow {
   100% { 
     transform: translateX(-66.6666%);  
   }
 }
+
 </style>
 
 <div class="view_container">
-  
   
   <div id="slideshow_behind">
     
@@ -53,62 +45,11 @@
     
   </div>
   
-
-<div class="tech-slideshow">
-  <div class="mover-1"></div>
-  <div class="mover-2"></div>
-</div>
-
     <!-- SPONSOR LOGOS -->
 
 
+<div class="tech-slideshow">
+  <div class="mover-1"></div>
 </div>
 
-<!--
-<style type="text/css">
-    .img.ng-enter {
-  /* standard transition code */
-  transition: 4s linear all;
-}
-.box-one {
-  -webkit-transition:all linear 0.5s;
-  transition:all linear 0.5s;
-}
-.box-one.ng-hide {
-  opacity:0;
-}
-</style>
-<div class="box-one">
-  Hello! I am <b>box one</b>.
 </div>
-
-<div>{{test}}</div>
-<div ng-controller="homeController">
-<body onload="autoRun()">
-    <img src="../im/background/UW Logo.png" id="slideshow" />
-    <br />
-    
-    <button ng-click=slideshow()>Previous Slide</button>
-    <button ng-click=slideshow()>Previous Slide</button>
-</body>
-
-</div>
-<div class="ngClass">
-    <img class="ng-enter" src="../im/background/hyperBanner.jpg" />
-</div>
-
-<div class="slider">
-  <div class="slide" ng-repeat="image in images" ng-show="image.visible">
-    <img ng-src="../im/background/{{image.src}}" />
-  </div>
-  <div class="arrows">
-    <a href="#" ng-click="prev()">
-      <i class="material-icons">keyboard_arrow_left</i>
-    </a>
-    <a href="#" ng-click="next()">
-      <i class="material-icons">keyboard_arrow_right</i>
-    </a>
-  </div>
-</div>
-    
--->
