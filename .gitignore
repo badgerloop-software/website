@@ -2,4 +2,4 @@
 web/*.txt
 web/php_log
 web/pod1
-
+**.DS_Store**
