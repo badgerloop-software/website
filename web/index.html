@@ -1,43 +1,39 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title>Badgerloop</title>
         <meta charset="UTF-8">
-		<meta name="description" content="Hyperloop Pod Competition Team Website">
-		<meta name="author" content="Badgerloop Software Team">
-		<meta name="keywords" content="BadgerLoop, Wisconsin, Madison, Badgers, Hyperloop, SpaceX, Tesla, Elon Musk, Train"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Hyperloop Pod Competition Team Website">
+	<meta name="author" content="Badgerloop Software Team">
+	<meta name="keywords" content="BadgerLoop, Wisconsin, Madison, Badgers, Hyperloop, SpaceX, Tesla, Elon Musk, Train"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- favicons -->
-		<link rel="favicon" href="im/favicons/32x32.png">
-		<link rel="shortcut icon" href="im/favicons/32x32.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="im/favicons/72x72.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="im/favicons/114x114.png">
+	<!-- favicons -->
+	<link rel="favicon" href="im/favicons/32x32.png">
+	<link rel="shortcut icon" href="im/favicons/32x32.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="im/favicons/72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="im/favicons/114x114.png">
 
-		<!-- fonts -->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet" />
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet" />
 
-		<!-- CSS Dependencies -->
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css" rel="stylesheet" />
+	<!-- CSS Dependencies -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css" rel="stylesheet" />
 		
-		<!-- Custom CSS -->
-		<link rel="stylesheet" href="css/main.css" />
-
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css" />
     </head>
 
     <body ng-app="badgerloop-site">
         <div layout="column" class="main_container" ng-cloak>
-            
     		<badgerloop-navbar></badgerloop-navbar>
-    		
     		<md-content flex>
     		    <hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}"><br>
-    			<div ng-view></div>
-    			<br><hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
+    		    <div ng-view></div>
+    		    <br><hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
     		</md-content>
-    		
     		<badgerloop-footer></badgerloop-footer>
-    		
-		</div>
+	</div>
     </body>
 
     <!-- Javascript Dependencies -->
