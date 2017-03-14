@@ -1,3 +1,4 @@
+/* Globals */
 hr {
     height: 1em;
     margin: 0em;
@@ -10,10 +11,6 @@ html {
 
 .main_container {
     height: 100vh;
-}
-
-.view_container {
-    min-height: 100vh;
 }
 
 #navbar-img {
@@ -35,4 +32,17 @@ html {
 
 .social a {
     text-decoration: none;
+
 }
+/***********/
+
+
+/*   Home  */
+
+
+/***********/
+
+/* Contact */
+
+/***********/
+

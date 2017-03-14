@@ -18,7 +18,9 @@
         <span flex></span>
         
         <md-menu hide-gt-sm>
-          <md-button ng-click="$mdOpenMenu()" aria-label="menu" class="md-icon-button"><i class="material-icons">menu</i></md-button>
+          <md-button ng-click="$mdOpenMenu()" aria-label="menu" class="md-icon-button">
+	    <i class="material-icons">menu</i>
+	  </md-button>
           <md-menu-content width="4">
             <md-menu-item ng-repeat="button in buttons">
               <md-button ng-click="changeView(button)" ng-disabled="button.enabled">
@@ -28,8 +30,10 @@
           </md-menu-content>
         </md-menu>
         
-        <md-button class="md-raised" href="https://www.badgerloop.com/secure/"><b>Login</b></md-button>
-        
+        <md-button class="md-raised" href="https://www.badgerloop.com/secure/">
+	  <b>Login</b>
+	</md-button>
+
     </div>
 </md-toolbar>
     

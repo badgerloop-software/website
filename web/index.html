@@ -9,10 +9,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- favicons -->
-	<link rel="favicon" href="im/favicons/32x32.png">
-	<link rel="shortcut icon" href="im/favicons/32x32.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="im/favicons/72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="im/favicons/114x114.png">
+	<link rel="favicon" href="im/favicon.png">
+	<link rel="shortcut icon" href="im/favicon.png">
+	<link rel="apple-touch-icon" sizes="any" href="im/favicon.png">
 
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet" />
@@ -27,10 +26,10 @@
     <body ng-app="badgerloop-site">
         <div layout="column" class="main_container" ng-cloak>
     		<badgerloop-navbar></badgerloop-navbar>
-    		<md-content flex>
-    		    <hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}"><br>
-    		    <div ng-view></div>
-    		    <br><hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
+    		<md-content flex="grow" layout="column"> 
+    		    <hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
+		    <div flex="grow" ng-view></div>
+		    <hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
     		</md-content>
     		<badgerloop-footer></badgerloop-footer>
 	</div>
