@@ -1,20 +1,44 @@
 <style>
-#main-parent {
-	height: 100%;
+#main-logo {
 	width: 100%;
+	margin-bottom: 1em;
 }
 
-#main-parent .background {
-	height: 30em;
-	width: 100%;
-	overflow: hidden;
-	background: #000000 url('../im/background/award1.jpg') center center no-repeat;
+@keyframes slideshow {
+	0%		{ left: 0; }
+	100%	{ left: calc(-8032px + 100%); }
+}
+
+#sponsor-slideshow {
+	position: relative;
+	margin-top: 0.5em;
+	animation: slideshow 45s linear infinite;
+	transform: translate3d(0, 0, 0);
 }
 
 </style>
-<div id="main-parent">
-	<div class="background"></div>
-	<hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
-	{{test}}
+<div class="page-content inner1" md-whiteframe="9">
+	<img src="../im/logos/full-width.png" id="main-logo">
+	<h3>
+		Welcome to UW-Madison's 
+		<a href="http://www.spacex.com/hyperloop" target="_newtab">
+			Hyperloop Pod Competition
+		</a>
+		Team Website!
+	</h3>
+	<div style="background-color: blue">
+		Video 1
+	 	<iframe md-whiteframe="3" 
+			 	src="https://www.youtube.com/embed/PMd_QGmmkgY">
+	 	</iframe>
+		Video 2
+	 	<iframe md-whiteframe="3"
+	 			src="https://www.youtube.com/embed/8_SJmbxhp2Y">
+	 	</iframe>
+	</div>
+</div>
+<div class="page-content innter2" md-whiteframe="9">
+	<img src="../im/sponsor/logos.png" id="sponsor-slideshow">
+	<h2>Thanks to our sponsors!</h2>
 </div>
 

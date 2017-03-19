@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Badgerloop</title>
-        <meta charset="UTF-8">
+	<head>
+	<title>Badgerloop</title>
+	<meta charset="UTF-8">
 	<meta name="description" content="Hyperloop Pod Competition Team Website">
 	<meta name="author" content="Badgerloop Software Team">
 	<meta name="keywords" content="BadgerLoop, Wisconsin, Madison, Badgers, Hyperloop, SpaceX, Tesla, Elon Musk, Train"/>
@@ -21,42 +21,44 @@
 		
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="css/main.css" />
-    </head>
+	</head>
 
-    <body ng-app="badgerloop-site">
-        <div layout="column" class="main_container" ng-cloak>
-    		<badgerloop-navbar></badgerloop-navbar>
-    		<md-content flex="grow" layout="column"> 
-    		    <hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
-		    <div flex="grow" ng-view></div>
-		    <hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
-    		</md-content>
-    		<badgerloop-footer></badgerloop-footer>
-	</div>
-    </body>
+	<body ng-app="badgerloop-site">
+		<div layout="column" id="main_container" ng-cloak>
+			<badgerloop-navbar></badgerloop-navbar>
+			<div flex="grow" layout="column" style="overflow-x: hidden; overflow-y: auto"> 
+				<hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
+				<div flex="grow" id="ng-view-container" ng-view>
+					<!-- Current View Renders Here -->
+				</div>
+				<hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
+			</div>
+			<badgerloop-footer></badgerloop-footer>
+		</div>
+	</body>
 
-    <!-- Javascript Dependencies -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+	<!-- Javascript Dependencies -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
 
-    <!-- Application Setup -->
-    <script src="js/config.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/directives.js"></script>
+	<!-- Application Setup -->
+	<script src="js/config.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/directives.js"></script>
 
-    <!-- View Controllers -->
-    <script src="js/controllers/home.js"></script>
-    <script src="js/controllers/media.js"></script>
-    <script src="js/controllers/sponsorship.js"></script>
-    <script src="js/controllers/pod.js"></script>
-    <script src="js/controllers/team.js"></script>
-    <script src="js/controllers/contact.js"></script>
-    <script src="js/controllers/docs.js"></script>
-    
-    <!-- Directive Controllers -->
-    <script src="js/controllers/directives/navbar.js"></script>
+	<!-- View Controllers -->
+	<script src="js/controllers/home.js"></script>
+	<script src="js/controllers/media.js"></script>
+	<script src="js/controllers/sponsorship.js"></script>
+	<script src="js/controllers/pod.js"></script>
+	<script src="js/controllers/team.js"></script>
+	<script src="js/controllers/contact.js"></script>
+	<script src="js/controllers/docs.js"></script>
+	
+	<!-- Directive Controllers -->
+	<script src="js/controllers/directives/navbar.js"></script>
 
 </html>
