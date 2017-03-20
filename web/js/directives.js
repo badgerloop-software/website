@@ -18,5 +18,12 @@ angular.module('directives')
 	    templateUrl: 'directives/team-leads.html',
 	    controller: 'welcomeController'
     }
+})
+
+.directive('imageSlideshow', function() {
+	return {
+		templateUrl: 'directives/slideshow.html',
+		controller: 'sponsorshipController'
+	}
 });
 

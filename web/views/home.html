@@ -1,19 +1,22 @@
 <style>
+
 #main-logo {
 	width: 100%;
 	margin-bottom: 1em;
 }
 
-@keyframes slideshow {
-	0%		{ left: 0; }
-	100%	{ left: calc(-8032px + 100%); }
+#youtube-videos {
+	width: 100%;
 }
 
-#sponsor-slideshow {
-	position: relative;
-	margin-top: 0.5em;
-	animation: slideshow 45s linear infinite;
-	transform: translate3d(0, 0, 0);
+#youtube-videos div {
+	padding: 1em;
+	display: inline-block;
+	margin: auto;
+	color: white;
+	border-radius: 1em;
+	background-color: rgba(50, 50, 50, 0.9);
+	vertical-align: middle;
 }
 
 </style>
@@ -26,19 +29,28 @@
 		</a>
 		Team Website!
 	</h3>
-	<div style="background-color: blue">
-		Video 1
-	 	<iframe md-whiteframe="3" 
-			 	src="https://www.youtube.com/embed/PMd_QGmmkgY">
-	 	</iframe>
-		Video 2
-	 	<iframe md-whiteframe="3"
-	 			src="https://www.youtube.com/embed/8_SJmbxhp2Y">
-	 	</iframe>
+	<div id="youtube-videos" style="background-color: blue">
+
+		<div md-whiteframe="6">
+			SpaceX's footage of MIT, Delft, and WARR<br>
+	 		<iframe md-whiteframe="3" allowfullscreen 
+				 	src="https://www.youtube.com/embed/PMd_QGmmkgY">
+	 		</iframe>
+		</div>
+
+		<div md-whiteframe="6">
+			Our experience at Competition Weekend I<br>
+	 		<iframe md-whiteframe="3" allowfullscreen
+	 				src="https://www.youtube.com/embed/8_SJmbxhp2Y">
+	 	 	</iframe>
+		</div>
+
+		<div md-whiteframe="6">
+			Our Mission: <i>lorem ipsum</i>
+		</div>
+
 	</div>
 </div>
-<div class="page-content innter2" md-whiteframe="9">
-	<img src="../im/sponsor/logos.png" id="sponsor-slideshow">
-	<h2>Thanks to our sponsors!</h2>
-</div>
+
+<image-slideshow></image-slideshow>
 

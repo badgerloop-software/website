@@ -1,3 +1,5 @@
+var globalUpdateButtons;
+
 angular.module('controllers')
 .controller('navbarController', function($scope, $location) {
     
@@ -18,19 +20,26 @@ angular.module('controllers')
         $scope.curr_button.enabled = true;
         $location.path(button.text);
     };
-    
-    if ($location.path() === "/home") {
-        $scope.homeButton.enabled = true;
-        $scope.curr_button = $scope.homeButton;
-    }
-    else {
-        for (var i = 0; i < $scope.buttons.length; i++) {
-            if ($scope.buttons[i].text === $location.path().substring(1)) {
-                $scope.buttons[i].enabled = true;
-                $scope.curr_button = $scope.buttons[i];
-                break;
-            }
-        }
-    }
+
+	$scope.updateButtons = function() {
+    	if ($location.path() === "/home") {
+        	$scope.homeButton.enabled = true;
+        	$scope.curr_button = $scope.homeButton;
+    	}
+    	else {
+			$scope.homeButton.enabled = false;
+       		for (var i = 0; i < $scope.buttons.length; i++) {
+            	if ($scope.buttons[i].text === $location.path().substring(1)) {
+                	$scope.buttons[i].enabled = true;
+                	$scope.curr_button = $scope.buttons[i];
+                	break;
+            	}
+        	}
+    	}
+	};
+
+	globalUpdateButtons = $scope.updateButtons;
+
+	$scope.updateButtons();
     
 });
