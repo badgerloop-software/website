@@ -1,62 +1,82 @@
 var logos = [
 	{
-		name: 'Sponsor 1',
-		url: 'color1.jpg',
+		name: '1403',
+		url: '1403.png',
+		site: '#/home'
+	},
+	//{
+	//	name: 'Altium',
+	//	url: 'Altium.png',
+	//	site: '#/home'
+	//},
+	{
+		name: 'ANSYS',
+		url: 'ANSYS.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 2',
-		url: 'color2.jpg',
+		name: 'ATA',
+		url: 'ATA.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 3',
-		url: 'color3.jpg',
+		name: 'Bimba',
+		url: 'Bimba.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 4',
-		url: 'color4.jpg',
+		name: 'Bulletproof',
+		url: 'Bulletproof.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 5',
-		url: 'color5.jpg',
+		name: 'Derksen',
+		url: 'Derksen.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 6',
-		url: 'color6.jpg',
+		name: 'Design-Concepts',
+		url: 'Design-Concepts.png',
+		site: '#/home'
+	},
+	//{
+	//	name: 'ESwitch',
+	//	url: 'ESwitch.png',
+	//	site: '#/home'
+	//},
+	{
+		name: 'HomeRevolution',
+		url: 'HomeRevolution.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 7',
-		url: 'color7.jpg',
+		name: 'HP',
+		url: 'HP.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 8',
-		url: 'color8.jpg',
+		name: 'OnFloor',
+		url: 'OnFloor.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 9',
-		url: 'color9.jpg',
+		name: 'Plexus',
+		url: 'Plexus.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 10',
-		url: 'color10.jpg',
+		name: 'Qualcomm',
+		url: 'Qualcomm.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 11',
-		url: 'color11.jpg',
+		name: 'Siemens',
+		url: 'Siemens.png',
 		site: '#/home'
 	},
 	{
-		name: 'Sponsor 12',
-		url: 'color12.jpg',
+		name: 'Snap-on',
+		url: 'Snap-on.png',
 		site: '#/home'
 	}
 ];
