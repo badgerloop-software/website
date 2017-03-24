@@ -83,8 +83,8 @@ var logos = [
 
 angular.module('controllers')
 .controller('sponsorshipController', function($scope) {
-    $scope.test = "SPONSOR_PAGE";
 	$scope.header = "Thanks to our sponsors!";
 	$scope.logos = logos;
 	globalUpdateButtons();
+
 });

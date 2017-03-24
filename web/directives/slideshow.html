@@ -15,10 +15,6 @@
 	white-space: nowrap;
 }
 
-#sponsor-slideshow:hover {
-	animation-play-state: paused;
-}
-
 #sponsor-slideshow img {
 	height: 200px;
 }
@@ -33,17 +29,16 @@
 <div class="page-content inner2" md-whiteframe="9">
 	<div id="sponsor-slideshow">
 		<span ng-repeat="im in logos">
-			<a ng-href="{{im.site}}"><img ng-src="../im/sponsor/{{im.url}}"></a>
+			<a ng-href="{{im.site}}" target="_newtab"><img ng-src="../im/sponsor/{{im.name}}.png"></a>
 		</span>
 
 		<!-- To make sure infinite scroll doesn't have a gap -->
 		<span ng-repeat="im in logos">
-			<a ng-href="{{im.site}}"><img ng-src="../im/sponsor/{{im.url}}"></a>
+			<a ng-href="{{im.site}}" target="_newtab"><img ng-src="../im/sponsor/{{im.url}}"></a>
 		</span>
 	</div>
-	<br>
-	<h2>{{header}} Click
+	<h2 style="margin: 1em">{{header}} Click
 		<a href="#/sponsorship">here</a>
-		to learn more about Badgerloop sponsors.
+		to learn more about sponsorship
 	</h2>
 </div>
