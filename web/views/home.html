@@ -19,22 +19,66 @@
 	vertical-align: middle;
 }
 
+#home-body {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	padding: 0.5em 1em;
+	display: inline-block;
+	max-width: 80%;
+}
+
+#home-body a:link {
+	color: #F44336;
+}
+
+#home-body a:visited {
+	color: #9B1C1F;
+}
+
+#home-body p {
+	font-size: 1.25em;
+	text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+	#home-body {
+		max-width: 95%;
+	}
+
+	#home-body p {
+		font-size: 1em;
+	}
+}
 
 </style>
 <div class="page-content inner1" md-whiteframe="9">
 	<img src="../im/logos/full-width.png" id="main-logo">
-	<body>
-		<b>Founded in 2015, Badgerloop is a student organization at the University of Wisconsin at Madison striving to make the fifth mode of transportation a reality. We provide members with the unique opportunity to work on real world engineering and business challenges during their college years. Our members come from a variety of majors who range from freshmen to PhD students. We compete with teams from around the world in the SpaceX Hyperloop Pod Competition held in Hawthorne, CA.</b><br>
+	<div id="home-body" md-whiteframe="3">
+		<p>Founded in the Summer of 2015 after <a href="http://www.spacex.com/" target="_newtab">SpaceX</a> announced
+		the Hyperloop Pod Design Competition, Badgerloop is a student organization at the
+		<a href="http://www.wisc.edu/" target="_newtab">University of Wisconsin-Madison</a>
+		helping determine if <a href="https://en.wikipedia.org/wiki/Hyperloop" target="_newtab">
+		hyperloop</a>—a fifth mode of transportation proposed by Elon Musk—
+		could become reality. We provide members with the unique
+		opportunity to work on real world engineering and transportation
+		infrastructure challenges. <a href="#/team" target="_newtab">Our members</a>
+		come from a diverse variety of majors and range in age from
+		freshmen to graduate students.</p>
 		<br>
-		<b>At Design Weekend in 2016, we took third place out of 120 teams. In January, we competed at Competition I and took home one of two Innovation Awards. We are currently creating an light and fast pod to compete in Competition II in hopes to establish Badgerloop as a leader in the development of Hyperloop technology!</b>
-	</body>
-	<!--<h3>
-		Welcome to UW-Madison's
-		<a href="http://www.spacex.com/hyperloop" target="_newtab">
-			Hyperloop Pod Competition
-		</a>
-		Team Website!
-	</h3>-->
+		<p>At the Design Weekend competition in early 2016,
+		our efforts earned us third place out of 120
+		international teams. A year later in January 2017,
+		we competed at <a href="http://www.spacex.com/hyperloop" target="_newtab">Hyperloop Pod Competition</a> I and took
+		home one of two Innovation Awards. We are currently
+		creating a light, fast and safe pod to compete in
+		Competition II with the goal of performing best
+		overall, establishing Badgerloop as a contributor
+		in the development of high-speed transportation
+		related technology!</p>
+	</div>
+
+	<br><br>
+
 	<div id="youtube-videos" style="background-color: blue">
 
 		<div md-whiteframe="6">
