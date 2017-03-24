@@ -1,83 +1,67 @@
 var logos = [
 	{
 		name: '1403',
-		url: '1403.png',
-		site: '#/home'
+		site: 'http://universityresearchpark.org/the-property/1403-2/'
 	},
 	//{
 	//	name: 'Altium',
-	//	url: 'Altium.png',
 	//	site: '#/home'
 	//},
 	{
 		name: 'ANSYS',
-		url: 'ANSYS.png',
-		site: '#/home'
+		site: 'http://www.ansys.com/SimulationSoftware'
 	},
 	{
 		name: 'ATA',
-		url: 'ATA.png',
-		site: '#/home'
+		site: 'http://www.ata-e.com/'
 	},
 	{
 		name: 'Bimba',
-		url: 'Bimba.png',
-		site: '#/home'
+		site: 'http://www.bimba.com/'
 	},
 	{
 		name: 'Bulletproof',
-		url: 'Bulletproof.png',
-		site: '#/home'
+		site: 'http://www.bulletproofautomotive.com/'
 	},
 	{
 		name: 'Derksen',
-		url: 'Derksen.png',
-		site: '#/home'
+		site: 'http://www.derksenprinters.com/'
 	},
 	{
 		name: 'Design-Concepts',
-		url: 'Design-Concepts.png',
-		site: '#/home'
+		site: 'http://www.design-concepts.com/'
 	},
 	//{
 	//	name: 'ESwitch',
-	//	url: 'ESwitch.png',
 	//	site: '#/home'
 	//},
 	{
 		name: 'HomeRevolution',
-		url: 'HomeRevolution.png',
-		site: '#/home'
+		site: 'https://www.homerev.com/'
 	},
 	{
 		name: 'HP',
-		url: 'HP.png',
-		site: '#/home'
+		site: 'http://www.hp.com/country/us/en/welcome.html'
 	},
 	{
 		name: 'OnFloor',
-		url: 'OnFloor.png',
-		site: '#/home'
+		site: 'https://onfloor.com/'
 	},
 	{
 		name: 'Plexus',
-		url: 'Plexus.png',
-		site: '#/home'
+		site: 'http://www.plexus.com/'
 	},
 	{
 		name: 'Qualcomm',
-		url: 'Qualcomm.png',
-		site: '#/home'
+		site: 'https://www.qualcomm.com/'
 	},
 	{
 		name: 'Siemens',
-		url: 'Siemens.png',
-		site: '#/home'
+		site: 'http://www.siemens.com/us/en/home.html'
 	},
 	{
 		name: 'Snap-on',
-		url: 'Snap-on.png',
-		site: '#/home'
+		site: 'https://store.snapon.com/'
 	}
 ];
 
