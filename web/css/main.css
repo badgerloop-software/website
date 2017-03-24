@@ -1,4 +1,75 @@
-hr {
-    height: 1em;
-    margin: 0 0 0 0;
+/*****************************************************************************/
+/*                                Globals                                    */
+/*****************************************************************************/
+hr { 
+    margin: 0em;
+	border-style: solid;
+    border-width: 0.5em;
 }
+
+html {
+    font-family: 'Montserrat';
+}
+
+#main_container {
+    height: 100vh;
+}
+
+iframe {
+	border: none;
+	margin: 1em;
+}
+
+#ng-view-container {
+	position: relative;
+	background: #000000 url('../im/background/award1-fullres.jpg') center center no-repeat;
+}
+
+#navbar-img {
+	width: 5em;
+	margin-top: 1em;
+	margin-left: 1em;
+	margin-right: 1em
+}
+
+.social img {
+    height: 2em;
+    margin: 1em;
+    vertical-align: middle;
+}
+
+.social .md-button {
+    min-width: 2em;
+}
+
+.social a {
+    text-decoration: none;
+
+}
+/*****************************************************************************/
+/*****************************************************************************/
+
+/*****************************************************************************/
+/*                                Defaults                                   */
+/*****************************************************************************/
+.page-content {
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 0.5em;
+	overflow-x: hidden;
+}
+
+.inner1 {
+	border-radius: 2em;
+	width: 95%;
+}
+
+.inner2 {
+	width: 100%;
+}
+/*****************************************************************************/
+/*****************************************************************************/
+

@@ -20,9 +20,10 @@ angular.module('directives')
     }
 })
 
-.directive('placeholder', function() {
-    return {
-        templateUrl: 'directives/placeholder.html'
-    }
+.directive('imageSlideshow', function() {
+	return {
+		templateUrl: 'directives/slideshow.html',
+		controller: 'sponsorshipController'
+	}
 });
 

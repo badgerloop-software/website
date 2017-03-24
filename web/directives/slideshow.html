@@ -1,0 +1,44 @@
+<style>
+
+/* Gotta figure out the equation for the offset */
+@keyframes slideshow {
+	0%		{ left: 0; }
+	100%	{ left: calc(-6278px); }
+}
+
+#sponsor-slideshow {
+	position: relative;
+	margin-top: 0.5em;
+	animation: slideshow 30s linear infinite;
+	transform: translate3d(0, 0, 0);
+	display: inline-block;
+	white-space: nowrap;
+}
+
+#sponsor-slideshow img {
+	height: 200px;
+}
+
+#sponsor-slideshow span {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+
+</style>
+<div class="page-content inner2" md-whiteframe="9">
+	<div id="sponsor-slideshow">
+		<span ng-repeat="im in logos">
+			<a ng-href="{{im.site}}" target="_newtab"><img ng-src="../im/sponsor/{{im.name}}.png"></a>
+		</span>
+
+		<!-- To make sure infinite scroll doesn't have a gap -->
+		<span ng-repeat="im in logos">
+			<a ng-href="{{im.site}}" target="_newtab"><img ng-src="../im/sponsor/{{im.name}}.png"></a>
+		</span>
+	</div>
+	<h2 style="margin: 1em">{{header}} Click
+		<a href="#/sponsorship">here</a>
+		to learn more about sponsorship
+	</h2>
+</div>

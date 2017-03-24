@@ -1,0 +1,19 @@
+<style>
+.sponsor-logos {
+	position: relative;
+	margin-top: 0.5em;
+	display: inline-block;
+}
+
+.sponsor-logos img {
+	height: 125px;
+	margin: 1em;
+}
+</style>
+<div class="page-content inner2" md-whiteframe="9">
+	<h2>Our Sponsors (Descriptions coming soon!)</h2>
+	<div class="sponsor-logos" ng-repeat="sponsor in logos">
+		<a ng-href="{{sponsor.site}}"><img ng-src="../im/sponsor/{{sponsor.name}}.png"></a>
+        <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
+	</div>
+</div>

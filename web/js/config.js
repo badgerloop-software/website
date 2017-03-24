@@ -15,15 +15,39 @@ var dependencyList = ['ngMaterial', 'ngRoute', 'controllers', 'directives'];
 
 var themeColors = {
     primary: 'red',
-    accent: 'grey',
-    warn: 'pink',
-    background: 'orange'
+    accent: 'deep-orange',
+    warn: 'orange',
+    background: 'grey'
 };
 
 var routes = {
-    welcomeRoute: {    
-	    templateUrl: 'views/welcome.html',
-	    controller: 'welcomeController'
+    homeRoute: {    
+	    templateUrl: 'views/home.html',
+	    controller: 'homeController'
+    },
+    podRoute: {
+        templateUrl: 'views/pod.html',
+        controller: 'podController'
+    },
+    contactRoute: {
+        templateUrl: 'views/contact.html',
+        controller: 'contactController'
+    },
+    docsRoute: {
+        templateUrl: 'views/docs.html',
+        controller: 'docsController'
+    },
+    sponsorshipRoute: {
+        templateUrl: 'views/sponsorship.html',
+        controller: 'sponsorshipController'
+    },
+    mediaRoute: {
+        templateUrl: 'views/media.html',
+        controller: 'mediaController' 
+    },
+    teamRoute: {
+        templateUrl: 'views/team.html',
+        controller: 'teamController' 
     }
 };
 /*****************************************************************************/
