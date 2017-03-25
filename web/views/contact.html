@@ -1,137 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <title>Badgerloop</title>
-      <meta charset="UTF-8">
-      <meta name="description" content="Hyperloop Pod Competition Team Website">
-      <meta name="author" content="Badgerloop Software Team">
-      <meta name="keywords" content="BadgerLoop, Wisconsin, Madison, Badgers, Hyperloop, SpaceX, Tesla, Elon Musk, Train"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- favicons -->
-      <link rel="favicon" href="im/favicons/32x32.png">
-      <link rel="shortcut icon" href="im/favicons/32x32.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="im/favicons/72x72.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="im/favicons/114x114.png">
-      <!-- fonts -->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Montserrat" rel="stylesheet" />
-      <!-- CSS Dependencies -->
-      <link href="angular/angular-material.min.css" rel="stylesheet" />
-      <!-- Custom CSS -->
-      <link rel="stylesheet" href="main.css" />
-      <!-- CSS Styles For Input-->
-      <style type="text/css">
-      md-tabs{
-        width: 1000px;
-        height: 1000px;
-      }
-      input[type=text] {
-          width: 50%;
-           padding: 10px 10px;
-           margin: 8px 0;
-           box-sizing: border-box;
-           }
-      input[type=submit] {
-           padding:5px 15px; 
-           background:#ccc; 
-           border:0 none;
-           cursor:pointer;
-           border-radius: 5px; 
-           }
-       form{
-       }
-      </style>
-   </head>
+<style type="text/css">
 
-   <!-- Javascript Dependencies -->
-   <script src="angular/angular.min.js"></script>
-   <script src="angular/angular-aria.min.js"></script>
-   <script src="angular/angular-animate.min.js"></script>
-   <script src="angular/angular-material.min.js"></script>
+#contact-page {
+	font-size: 1.25em;
+}
 
-   <!-- Custom Elements -->
-   <script src="js/main.js"></script>
-   <script src="js/navbar.js"></script>
-   <script src="js/footer.js"></script>
-   <script src="js/hr.js"></script>
+#contact-page input[type=text], #contact-page textarea {
+	padding: 1em;
+	margin: 0.5em 0em;
+	box-sizing: border-box;
+}
 
-   <!-- Page Controller -->
-   <script src="page.js"></script>
-   <body ng-app="badgerloop-site">
-      <div layout="column" class="main_container" ng-cloak>
-         <badgerloop-navbar></badgerloop-navbar>
-         <md-content flex>
-         <badgerloop-hr></badgerloop-hr>
-         <br>
+#contact-page input[type=submit] {
+	padding: 0.5em 1em; 
+	margin: 1em;
+	background: #ccc; 
+	border: 0 none;
+	cursor: pointer;
+	border-radius: 5px; 
+}
 
-         <!-- YOUR CONTENT BEGIN -->
-         <div class="view_container" ng-controller="pageController">
-            <div class="contactTabs view_container">
-               <md-tabs>
-                  <md-tab label="Student">
-                     <md-content class="md-padding">
-                     <h1 class="md-display-2">Student Contact</h1>
-                     <p>Are you a UW student and want to know more about Badgerloop?<br>
-                        Fill out the form below and we'll contact you!
-                      <form>
-                          Full Name:<br>
-                          <input type="text" name="firstname"><br>
-                          Wisc Email:<br>
-                          <input type="text" name="wiscmail"><br>
-                          Major:<br>
-                          <input type="text" name="major"><br>
-                          Year:<br>
-                          <input type="text" name="year"><br>
-                          Additional Comments:<br>
-                          <textarea rows="4" cols="58"></textarea><br>
-                          <input type="submit" value="Submit"/>
-                       </form>
-                     </p>
-                     </md-content>
-                  </md-tab>
-                  <md-tab label="Sponsor">
-                     <md-content class="md-padding">
-                     <h1 class="md-display-2">Sponsor Contact</h1>
-                     <p>Interested in sponsoring Badgerloop?<br> 
-                        We'd love to hear from you, just enter your information below!</p>
-                      <form>
-                          Organization Name:<br>
-                          <input type="text" name="name"/><br>
-                          Contact Name:<br>
-                          <input type="text" name="name"/><br>
-                          Contact Email:<br>
-                          <input type="text" name="name"/><br>
-                          Contact Number:<br>
-                          <input type="text" name="name"/><br>
-                          Additional Comments:<br>
-                          <textarea rows="4" cols="58"></textarea><br>
-                          <input type="submit" value="Submit"/>
-                      </form>
-                    </p>
-                    </md-content>
-                  </md-tab>
-                  <md-tab label="Other">
-                     <md-content class="md-padding">
-                        <h1 class="md-display-2">Other Contact</h1>
-                     <p>Want to know more?<br> 
-                        Fill out the form below and we'll contact you!
-                      <form>
-                          Full Name:<br>
-                          <input type="text" name="name"/><br>
-                          Email:<br>
-                          <input type="text" name="email"/><br>
-                          Additional Comments:<br>
-                          <textarea rows="4" cols="58"></textarea><br>
-                          <input type="submit" value="Submit"/>
-                      </form>
-                    </p>
-                  </md-tab>
-                  </md-content>
-               </md-tabs>
-            </div>
-         </div>
-         <!-- YOUR CONTENT END -->
-         <br><badgerloop-hr></badgerloop-hr></md-content>
-         <badgerloop-footer></badgerloop-footer>
-      </div>
-   </body>
-</html>
+#contact-page .center-la {
+	text-align: left;
+	display: inline-block;
+}
+
+</style>
+<div id="contact-page" class="page-content inner2" md-whiteframe="9">
+	<md-tabs md-dynamic-height>
+
+		<md-tab label="Student" style="text-align: center">
+			<h1>Student Contact</h1>
+			<div class="center-la">
+				Are you a current or future UW-Madison student interested in joining the team?
+				<br>
+				Fill out the form below and we'll contact you!
+			</div>
+			<br><br>
+			<form class="center-la">
+				<b>Full Name:</b><br>
+				<input type="text" name="firstname"><br>
+				<b>Wisc Email:</b><br>
+				<input type="text" name="wiscmail"><br>
+				<b>Major:</b><br>
+				<input type="text" name="major"><br>
+				<b>Year:</b><br>
+				<input type="text" name="year"><br>
+				<b>Additional Comments:</b><br>
+				<textarea rows="4" cols="58"></textarea><br>
+				<input type="submit" value="Submit"/>
+			</form>
+		</md-tab>
+
+		<md-tab label="Sponsor">
+			<h1>Sponsor Contact</h1>
+			<div class="center-la">
+				Interested in sponsoring Badgerloop?
+				<br> 
+				We'd love to hear from you, just enter your information below!
+			</div>
+			<br><br>
+			<form class="center-la">
+				<b>Organization Name:</b><br>
+				<input type="text" name="name"/><br>
+				<b>Contact Name:</b><br>
+				<input type="text" name="name"/><br>
+				<b>Contact Email:</b><br>
+				<input type="text" name="name"/><br>
+				<b>Contact Number:</b><br>
+				<input type="text" name="name"/><br>
+				<b>Additional Comments:</b><br>
+				<textarea rows="4" cols="58"></textarea><br>
+				<input type="submit" value="Submit"/>
+			</form>
+		</md-tab>
+
+		<md-tab label="Other">
+			<h1>Other Contact</h1>
+			<div class="center-la">
+				Want to know more?
+				<br> 
+				Fill out the form below and we'll contact you!
+			</div>
+			<br><br>
+			<form class="center-la">
+				Full Name:<br>
+				<input type="text" name="name"/><br>
+				Email:<br>
+				<input type="text" name="email"/><br>
+				Additional Comments:<br>
+				<textarea rows="4" cols="58"></textarea><br>
+				<input type="submit" value="Submit"/>
+			</form>
+		</md-tab>
+
+	</md-tabs>
+</div>
