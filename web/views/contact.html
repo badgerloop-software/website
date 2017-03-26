@@ -2,12 +2,15 @@
 
 #contact-page {
 	font-size: 1.25em;
+	width: 100%;
 }
 
+/*
 #contact-page input[type=text], #contact-page textarea {
 	padding: 1em;
 	margin: 0.5em 0em;
 	box-sizing: border-box;
+	max-width: 95%;
 }
 
 #contact-page input[type=submit] {
@@ -18,10 +21,12 @@
 	cursor: pointer;
 	border-radius: 5px; 
 }
+*/
 
 #contact-page .center-la {
 	text-align: left;
 	display: inline-block;
+	padding: 0em 1em;
 }
 
 </style>
@@ -29,25 +34,17 @@
 	<md-tabs md-dynamic-height>
 
 		<md-tab label="Student" style="text-align: center">
-			<h1>Student Contact</h1>
-			<div class="center-la">
-				Are you a current or future UW-Madison student interested in joining the team?
-				<br>
-				Fill out the form below and we'll contact you!
+			<h1>{{student.title}}</h1>
+			<div class="center-la" ng-repeat="sentence in student.sentences">
+				{{sentence}}<br>
 			</div>
 			<br><br>
 			<form class="center-la">
-				<b>Full Name:</b><br>
-				<input type="text" name="firstname"><br>
-				<b>Wisc Email:</b><br>
-				<input type="text" name="wiscmail"><br>
-				<b>Major:</b><br>
-				<input type="text" name="major"><br>
-				<b>Year:</b><br>
-				<input type="text" name="year"><br>
-				<b>Additional Comments:</b><br>
-				<textarea rows="4" cols="58"></textarea><br>
-				<input type="submit" value="Submit"/>
+				<md-input-container ng-repeat="input in student.inputs">
+					<label>{{input.label}}</label>
+					<input type="{{input.type}}" ng-model="input.value"></input>
+				</md-input-container>
+				<md-button class="md-raised">Submit</md-button>
 			</form>
 		</md-tab>
 
