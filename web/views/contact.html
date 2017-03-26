@@ -48,45 +48,33 @@
 			</form>
 		</md-tab>
 
-		<md-tab label="Sponsor">
-			<h1>Sponsor Contact</h1>
-			<div class="center-la">
-				Interested in sponsoring Badgerloop?
-				<br> 
-				We'd love to hear from you, just enter your information below!
+		<md-tab label="Sponsor" style="text-align: center">
+			<h1>{{sponsor.title}}</h1>
+			<div class="center-la" ng-repeat="sentence in sponsor.sentences">
+				{{sentence}}<br>
 			</div>
 			<br><br>
 			<form class="center-la">
-				<b>Organization Name:</b><br>
-				<input type="text" name="name"/><br>
-				<b>Contact Name:</b><br>
-				<input type="text" name="name"/><br>
-				<b>Contact Email:</b><br>
-				<input type="text" name="name"/><br>
-				<b>Contact Number:</b><br>
-				<input type="text" name="name"/><br>
-				<b>Additional Comments:</b><br>
-				<textarea rows="4" cols="58"></textarea><br>
-				<input type="submit" value="Submit"/>
+				<md-input-container ng-repeat="input in sponsor.inputs">
+					<label>{{input.label}}</label>
+					<input type="{{input.type}}" ng-model="input.value"></input>
+				</md-input-container>
+				<md-button class="md-raised">Submit</md-button>
 			</form>
 		</md-tab>
 
-		<md-tab label="Other">
-			<h1>Other Contact</h1>
-			<div class="center-la">
-				Want to know more?
-				<br> 
-				Fill out the form below and we'll contact you!
+		<md-tab label="Other" style="text-align: center">
+			<h1>{{other.title}}</h1>
+			<div class="center-la" ng-repeat="sentence in other.sentences">
+				{{sentence}}<br>
 			</div>
 			<br><br>
 			<form class="center-la">
-				Full Name:<br>
-				<input type="text" name="name"/><br>
-				Email:<br>
-				<input type="text" name="email"/><br>
-				Additional Comments:<br>
-				<textarea rows="4" cols="58"></textarea><br>
-				<input type="submit" value="Submit"/>
+				<md-input-container ng-repeat="input in other.inputs">
+					<label>{{input.label}}</label>
+					<input type="{{input.type}}" ng-model="input.value"></input>
+				</md-input-container>
+				<md-button class="md-raised">Submit</md-button>
 			</form>
 		</md-tab>
 
