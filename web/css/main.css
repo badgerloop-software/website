@@ -22,7 +22,7 @@ iframe {
 
 #ng-view-container {
 	position: relative;
-	background: #000000 url('../im/background/award1-fullres.jpg') center center no-repeat;
+	background: url('../im/background/award1-fullres.jpg') center center no-repeat, linear-gradient(black, white);
 }
 
 #navbar-img {
