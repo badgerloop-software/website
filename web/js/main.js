@@ -5,13 +5,16 @@ angular.module('badgerloop-site', dependencyList)
 
 .config(function($routeProvider, $mdThemingProvider) { // $mdIconProvider
 
+    /*************************  Theme Settings  ******************************/
 	$mdThemingProvider
 	.theme('default')
-    /*************************  Theme Settings  ******************************/
 	.primaryPalette(themeColors.primary)
 	.accentPalette(themeColors.accent)
 	.warnPalette(themeColors.warn)
 	.backgroundPalette(themeColors.background);
+	$mdThemingProvider
+	.theme('dark')
+	.primaryPalette(themeColors.primary).dark();
     /*************************************************************************/
 
 	$routeProvider

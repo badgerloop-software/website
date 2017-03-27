@@ -1,31 +1,45 @@
-<style>
-#main-logo {
+<style type="text/css">
+
+#contact-page {
+	font-size: 1.25em;
 	width: 100%;
-	margin-bottom: 1em;
 }
 
-#under-construction{
-  font-size: 70px;
+#contact-page .center-la {
+	text-align: left;
+	display: inline-block;
+	padding: 0em 1em;
 }
 
-#line{
-	font-size: 25px;
-}
-
-#centered {
-	position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#contact-page .form-style {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	border-radius: 1em;
+	padding: 1em;
 }
 
 </style>
+<div id="contact-page" class="page-content inner2" md-whiteframe="9">
+	<md-tabs md-dynamic-height>
 
+		<md-tab ng-repeat="form in forms" label="{{form.label}}">
+			<h1>{{form.title}}</h1>
+			<div class="center-la" ng-repeat="sentence in form.sentences">
+				{{sentence}}<br>
+			</div>
+			<br><br>
+			<form class="center-la form-style" md-whiteframe="3" md-theme="dark">
+				<md-input-container ng-repeat="input in form.inputs" class="md-block">
+					<label>{{input.label}}</label>
+					<input type="{{input.type}}" ng-model="input.value"></input>
+				</md-input-container>
+				<md-input-container class="md-block">
+					<label>Comments</label>
+					<textarea></textarea>
+				</md-input-container>
+				<md-button class="md-raised">Submit</md-button>
+			</form>
+		</md-tab>
 
-<div id="centered" class="page-content inner2" md-whiteframe="9">
-	<div>
-		<h1 id="under-construction">This page is under construction</h1>
-		<b id="line">Please check back soon, as we will finish our brand new website shortly! </b>
-	</div>
-
+	</md-tabs>
 </div>

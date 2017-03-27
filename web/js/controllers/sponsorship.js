@@ -9,7 +9,7 @@ var logos = [
 	//},
 	{
 		name: 'ANSYS',
-		site: 'http://www.ansys.com/SimulationSoftware'
+		site: 'http://www.ansys.com/'
 	},
 	{
 		name: 'ATA',
