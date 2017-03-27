@@ -5,74 +5,37 @@
 	width: 100%;
 }
 
-/*
-#contact-page input[type=text], #contact-page textarea {
-	padding: 1em;
-	margin: 0.5em 0em;
-	box-sizing: border-box;
-	max-width: 95%;
-}
-
-#contact-page input[type=submit] {
-	padding: 0.5em 1em; 
-	margin: 1em;
-	background: #ccc; 
-	border: 0 none;
-	cursor: pointer;
-	border-radius: 5px; 
-}
-*/
-
 #contact-page .center-la {
 	text-align: left;
 	display: inline-block;
 	padding: 0em 1em;
 }
 
+#contact-page .form-style {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	border-radius: 1em;
+	padding: 1em;
+}
+
 </style>
 <div id="contact-page" class="page-content inner2" md-whiteframe="9">
 	<md-tabs md-dynamic-height>
 
-		<md-tab label="Student" style="text-align: center">
-			<h1>{{student.title}}</h1>
-			<div class="center-la" ng-repeat="sentence in student.sentences">
+		<md-tab ng-repeat="form in forms" label="{{form.label}}">
+			<h1>{{form.title}}</h1>
+			<div class="center-la" ng-repeat="sentence in form.sentences">
 				{{sentence}}<br>
 			</div>
 			<br><br>
-			<form class="center-la">
-				<md-input-container ng-repeat="input in student.inputs">
+			<form class="center-la form-style" md-whiteframe="3" md-theme="dark">
+				<md-input-container ng-repeat="input in form.inputs" class="md-block">
 					<label>{{input.label}}</label>
 					<input type="{{input.type}}" ng-model="input.value"></input>
 				</md-input-container>
-				<md-button class="md-raised">Submit</md-button>
-			</form>
-		</md-tab>
-
-		<md-tab label="Sponsor" style="text-align: center">
-			<h1>{{sponsor.title}}</h1>
-			<div class="center-la" ng-repeat="sentence in sponsor.sentences">
-				{{sentence}}<br>
-			</div>
-			<br><br>
-			<form class="center-la">
-				<md-input-container ng-repeat="input in sponsor.inputs">
-					<label>{{input.label}}</label>
-					<input type="{{input.type}}" ng-model="input.value"></input>
-				</md-input-container>
-				<md-button class="md-raised">Submit</md-button>
-			</form>
-		</md-tab>
-
-		<md-tab label="Other" style="text-align: center">
-			<h1>{{other.title}}</h1>
-			<div class="center-la" ng-repeat="sentence in other.sentences">
-				{{sentence}}<br>
-			</div>
-			<br><br>
-			<form class="center-la">
-				<md-input-container ng-repeat="input in other.inputs">
-					<label>{{input.label}}</label>
-					<input type="{{input.type}}" ng-model="input.value"></input>
+				<md-input-container class="md-block">
+					<label>Comments</label>
+					<textarea></textarea>
 				</md-input-container>
 				<md-button class="md-raised">Submit</md-button>
 			</form>
