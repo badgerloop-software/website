@@ -20,20 +20,20 @@ This is necessary because Angular routing requests template pages dynamically an
 
 1. **[Angular-Material 1.1.1](https://material.angularjs.org/1.1.1/)**
 
-  Requires the following additional dependencies:
+	Requires the following additional dependencies:
 
-    * [angular](https://angularjs.org/) *(1.5.8)*
-    * [angular-aria](https://docs.angularjs.org/api/ngAria) *(1.5.8)*
-    * [angular-animate](https://docs.angularjs.org/api/ngAnimate) *(1.5.8)*
+		* [angular](https://angularjs.org/) *(1.5.8)*
+		* [angular-aria](https://docs.angularjs.org/api/ngAria) *(1.5.8)*
+		* [angular-animate](https://docs.angularjs.org/api/ngAnimate) *(1.5.8)*
 
-    We have also opted to use Angular routing:
+	We have also opted to use Angular routing:
 
-      * [angular-route](https://docs.angularjs.org/api/ngRoute) *(1.5.8)*
+		* [angular-route](https://docs.angularjs.org/api/ngRoute) *(1.5.8)*
 
 2. **[Google Fonts](https://fonts.google.com/)**
 
-  * [Montserrat](https://fonts.google.com/specimen/Montserrat)
-  * [Material Icons](https://material.io/icons/)
+	* [Montserrat](https://fonts.google.com/specimen/Montserrat)
+	* [Material Icons](https://material.io/icons/)
 
 ## Server and Hosting
 
