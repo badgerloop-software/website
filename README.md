@@ -20,15 +20,15 @@ This is necessary because Angular routing requests template pages dynamically an
 
 1. **[Angular-Material 1.1.1](https://material.angularjs.org/1.1.1/)**
 
-Requires the following additional dependencies:
+  Requires the following additional dependencies:
 
-  * [angular](https://angularjs.org/) *(1.5.8)*
-  * [angular-aria](https://docs.angularjs.org/api/ngAria) *(1.5.8)*
-  * [angular-animate](https://docs.angularjs.org/api/ngAnimate) *(1.5.8)*
+    * [angular](https://angularjs.org/) *(1.5.8)*
+    * [angular-aria](https://docs.angularjs.org/api/ngAria) *(1.5.8)*
+    * [angular-animate](https://docs.angularjs.org/api/ngAnimate) *(1.5.8)*
 
-We have also opted to use Angular routing:
+    We have also opted to use Angular routing:
 
-  * [angular-route](https://docs.angularjs.org/api/ngRoute) *(1.5.8)*
+      * [angular-route](https://docs.angularjs.org/api/ngRoute) *(1.5.8)*
 
 2. **[Google Fonts](https://fonts.google.com/)**
 
@@ -37,7 +37,7 @@ We have also opted to use Angular routing:
 
 ## Server and Hosting
 
-1. **Ubuntu Server 16.04 LTS**
+1. **[Ubuntu Server 16.04 LTS](https://www.ubuntu.com/download/server)**
 
 2. **[PHP 7](http://php.net/manual/en/intro-whatis.php)**
 
