@@ -67,8 +67,9 @@ var logos = [
 
 angular.module('controllers')
 .controller('sponsorshipController', function($scope) {
+	if (globalUpdateButtons()) globalUpdateButtons();
+	
 	$scope.header = "Thanks to our sponsors!";
 	$scope.logos = logos;
-	globalUpdateButtons();
 
 });

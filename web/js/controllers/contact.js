@@ -1,8 +1,8 @@
 angular.module('controllers')
 .controller('contactController', function($scope) {
-	globalUpdateButtons();
+	if (globalUpdateButtons()) globalUpdateButtons();
 
-	// Student Defaults	
+	// Student Defaults
 	$scope.student = {};
 	$scope.student.label = "Student";
 	$scope.student.title = "Student Contact";
@@ -16,7 +16,7 @@ angular.module('controllers')
 		{ label: "Year", type: "text", value: "" }
 	];
 
-	// Sponsor Defaults	
+	// Sponsor Defaults
 	$scope.sponsor = {};
 	$scope.sponsor.label = "Sponsor";
 	$scope.sponsor.title = "Sponsor Contact"
@@ -30,7 +30,7 @@ angular.module('controllers')
 		{ label: "Contact Number", type: "text", value: "" }
 	];
 
-	// Other Defaults	
+	// Other Defaults
 	$scope.other = {};
 	$scope.other.label = "Other";
 	$scope.other.title = "Other Contact"
@@ -45,4 +45,3 @@ angular.module('controllers')
 
 	$scope.forms = [$scope.student, $scope.sponsor, $scope.other];
 });
-

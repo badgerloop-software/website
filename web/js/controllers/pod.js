@@ -1,5 +1,5 @@
 angular.module('controllers')
 .controller('podController', function($scope) {
-  globalUpdateButtons();
-  
+  if (globalUpdateButtons()) globalUpdateButtons();
+
 });

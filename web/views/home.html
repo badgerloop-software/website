@@ -5,36 +5,29 @@
 	margin-bottom: 1em;
 }
 
-#youtube-videos {
-	width: 100%;
+.dark-body {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	display: inline-block;
 }
 
+#youtube-videos { width: 100%; }
 #youtube-videos div {
 	padding: 1em;
-	display: inline-block;
-	margin: auto;
-	margin-bottom: 2em;
-	margin-top: 2em;
-	color: white;
+	margin: 2em;
 	border-radius: 1em;
-	background-color: rgba(50, 50, 50, 0.9);
 	vertical-align: middle;
 }
 
+#mantra {
+	border-radius: 1em;
+	padding: 0em 1em;
+	margin: 2em;
+}
+
 #home-body {
-	background-color: rgba(50, 50, 50, 0.9);
-	color: white;
 	padding: 0.5em 1em;
-	display: inline-block;
 	max-width: 80%;
-}
-
-#home-body a:link {
-	color: #F44336;
-}
-
-#home-body a:visited {
-	color: #9B1C1F;
 }
 
 #home-body p {
@@ -42,24 +35,22 @@
 	text-align: left;
 }
 
-#home-body a {
-	text-decoration: none;
-}
-
 @media only screen and (max-width: 768px) {
-	#home-body {
-		max-width: 95%;
-	}
-
-	#home-body p {
-		font-size: 1em;
-	}
+	#home-body { max-width: 95%; }
+	#home-body p { font-size: 1em; }
 }
 
 </style>
 <div class="page-content inner1" md-whiteframe="9">
 	<img src="../im/logos/full-width.png" id="main-logo">
-	<div id="home-body" md-whiteframe="3">
+
+	<div id="mantra" class="dark-body">
+		<h1>Contributing to the development of hyperloop technology</h1>
+	</div>
+
+	<br>
+
+	<div id="home-body" class="dark-body" md-whiteframe="3">
 		<p>Founded in the Summer of 2015 after <a href="http://www.spacex.com/" target="_newtab">SpaceX</a> announced
 		the Hyperloop Pod Design Competition, Badgerloop is a student organization at the
 		<a href="http://www.wisc.edu/" target="_newtab">University of Wisconsin-Madison</a>
@@ -87,21 +78,21 @@
 
 	<div id="youtube-videos">
 
-		<div md-whiteframe="6">
+		<div md-whiteframe="6" class="dark-body">
 			SpaceX's footage of MIT, Delft, and WARR<br>
 	 		<iframe md-whiteframe="3" allowfullscreen
 				 	src="https://www.youtube.com/embed/PMd_QGmmkgY">
 	 		</iframe>
 		</div>
 
-		<div md-whiteframe="6">
+		<div md-whiteframe="6" class="dark-body">
 			Our experience at Competition Weekend I<br>
 	 		<iframe md-whiteframe="3" allowfullscreen
 	 				src="https://www.youtube.com/embed/8_SJmbxhp2Y">
 	 	 	</iframe>
 		</div>
 
-		<div md-whiteframe="6">
+		<div md-whiteframe="6" class="dark-body">
 			Our first pod Reveal Event<br>
 	 		<iframe md-whiteframe="3" allowfullscreen
 	 				src="https://www.youtube.com/embed/6xuP8K7ROrk">

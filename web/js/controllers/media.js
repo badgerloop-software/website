@@ -1,5 +1,5 @@
 angular.module('controllers')
 .controller('mediaController', function($scope) {
-  globalUpdateButtons();
-  
+  if (globalUpdateButtons()) globalUpdateButtons();
+
 });

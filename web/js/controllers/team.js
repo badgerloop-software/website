@@ -1,5 +1,5 @@
 angular.module('controllers')
 .controller('teamController', function($scope) {
-  globalUpdateButtons();
-     
+  if (globalUpdateButtons()) globalUpdateButtons();
+
 });
