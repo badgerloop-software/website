@@ -1,0 +1,40 @@
+<form class="center-la form-style" md-whiteframe="3" md-theme="dark">
+	<md-input-container class="md-block short-input">
+		<label>Name</label>
+		<input type="text" ng-model="application.input"></input>
+	</md-input-container>
+	<md-input-container class="md-block short-input">
+		<label>Email</label>
+		<input type="text"></input>
+	</md-input-container>
+	<md-input-container class="md-block short-input">
+		<label>Major</label>
+		<input type="text"></input>
+	</md-input-container>
+	<md-input-container class="md-block short-input">
+		<label>Year</label>
+		<md-select ng-model="student.year">
+			<md-option ng-repeat="year in student.years" value="{{year}}">
+				{{year}}
+			</md-option>
+		</md-select>
+	</md-input-container>
+	<div class="md-block short-input">
+		<u>Teams Interested In</u>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="#/team">(What does each team do?)</a>
+		<br><br>
+		<md-checkbox ng-repeat="team in student.teams"
+			ng-checked="check_selected(team, student.teams_selected)"
+			ng-click="toggle_selected(team, student.teams_selected)">
+			{{team}}
+		</md-checkbox>
+	</div>
+	<br>Tell us about yourself.<br><br>
+	<md-input-container class="md-block short-input">
+		<label>Brief Description</label>
+		<textarea></textarea>
+	</md-input-container>
+	<div style="text-align: center">
+		<md-button class="md-raised">Submit</md-button>
+	</div>
+</form>
