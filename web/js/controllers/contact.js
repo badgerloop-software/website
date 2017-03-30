@@ -11,9 +11,19 @@ angular.module('controllers')
 		return list.indexOf(item) > -1;
 	};
 
+	// Form Submit
+	$scope.submit = function(form) {
+		if ($scope.forms.indexOf(form) == -1)
+			console.log("Something went wrong!");
+		else {
+			// do $http.post
+			console.log("Sending " + form.label + " data");
+		}
+	};
+
 	// Student Defaults
 	$scope.student = {
-		label: "Student", title: "Team Application",
+		label: "student", title: "Team Application",
 		description:  
 			"Are you a current or future UW-Madison student interested in joining the team?",
 		year: "", years: [
@@ -32,7 +42,7 @@ angular.module('controllers')
 
 	// Sponsor Defaults
 	$scope.sponsor = {
-		label: "Sponsor", title: "Sponsor Contact",
+		label: "sponsor", title: "Sponsor Contact",
 		description: "Interested in sponsoring Badgerloop?",
 		input: "sponsor",
 		inputs: [
@@ -56,7 +66,7 @@ angular.module('controllers')
 
 	// Other Defaults
 	$scope.other = {
-		label: "Other", title: "Other Contact",
+		label: "other", title: "Other Contact",
 		description: "Want to know more?",
 		input: "other",
 		inputs: [
@@ -64,5 +74,7 @@ angular.module('controllers')
 			{ label: "Email", type: "email", value: "" },
 		]
 	};
+
+	$scope.forms = [$scope.student, $scope.sponsor, $scope.media, $scope.other];
 
 });
