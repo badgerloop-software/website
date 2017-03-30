@@ -1,19 +1,19 @@
 <form class="center-la form-style" md-whiteframe="3" md-theme="dark">
 	<md-input-container class="md-block short-input">
 		<label>Name</label>
-		<input type="text" ng-model="application.input"></input>
+		<input type="text" required ng-model="application.name"></input>
 	</md-input-container>
 	<md-input-container class="md-block short-input">
 		<label>Email</label>
-		<input type="text"></input>
+		<input type="text" required ng-model="application.email"></input>
 	</md-input-container>
 	<md-input-container class="md-block short-input">
 		<label>Major</label>
-		<input type="text"></input>
+		<input type="text" required ng-model="application.major"></input>
 	</md-input-container>
 	<md-input-container class="md-block short-input">
 		<label>Year</label>
-		<md-select ng-model="student.year">
+		<md-select required ng-model="student.year">
 			<md-option ng-repeat="year in student.years" value="{{year}}">
 				{{year}}
 			</md-option>

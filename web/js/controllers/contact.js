@@ -15,9 +15,11 @@ angular.module('controllers')
 	$scope.submit = function(form) {
 		if ($scope.forms.indexOf(form) == -1)
 			console.log("Something went wrong!");
+		else if (!form.handler()) {
+			console.log("Error!");
+		}
 		else {
-			// do $http.post
-			console.log("Sending " + form.label + " data");
+			console.log("Worked!");
 		}
 	};
 
@@ -37,7 +39,13 @@ angular.module('controllers')
 			"Industry Relations", "Media & Marketing",
 			"Propulsion", "Structural Analysis",
 			"Structural Design", "Virtual Reality"
-		], teams_selected: []
+		], teams_selected: [],
+		name: "", email: "", major: "",
+		handler: function() {
+			console.log("student handler");
+			// do $http request
+			return true;
+		}
 	};
 
 	// Sponsor Defaults
@@ -50,7 +58,12 @@ angular.module('controllers')
 			{ label: "Contact Name", type: "text", value: "" },
 			{ label: "Contact Email", type: "email", value: "" },
 			{ label: "Contact Number", type: "text", value: "" }
-		]
+		],
+		handler: function() {
+			console.log("sponsor handler");
+			// do $http request
+			return true;
+		}
 	};
 
 	// Media Defaults
@@ -61,7 +74,12 @@ angular.module('controllers')
 		inputs: [
 			{ label: "Name", type: "text", value: "" },
 			{ label: "Email", type: "email", value: "" },
-		]
+		],
+		handler: function() {
+			console.log("media handler");
+			// do $http request
+			return true;
+		}
 	};
 
 	// Other Defaults
@@ -72,7 +90,12 @@ angular.module('controllers')
 		inputs: [
 			{ label: "Name", type: "text", value: "" },
 			{ label: "Email", type: "email", value: "" },
-		]
+		],
+		handler: function() {
+			console.log("other handler");
+			// do $http request
+			return true;
+		}
 	};
 
 	$scope.forms = [$scope.student, $scope.sponsor, $scope.media, $scope.other];
