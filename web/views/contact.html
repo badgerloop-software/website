@@ -27,56 +27,12 @@
 </style>
 <div id="contact-page" class="page-content inner2" md-whiteframe="9">
 	<md-tabs md-dynamic-height>
-
-		<md-tab label="{{student.label}}">
-			<h1>{{student.title}}</h1>
-			<div class="center-la">
-				{{student.description}}
-			</div>
+		
+		<md-tab ng-repeat="form in forms" label="{{form.label}}">
+			<h1>{{form.title}}</h1>
+			<div class="center-la">{{form.description}}</div>
 			<br><br>
-			<team-application></team-application>
-		</md-tab>
-
-		<md-tab label="{{sponsor.label}}">
-			<h1>{{sponsor.title}}</h1>
-			<div class="center-la">
-				{{sponsor.description}}
-			</div>
-			<br><br>
-			<sponsor-form></sponsor-form>
-		</md-tab>
-
-		<md-tab label="{{media.label}}">
-			<h1>{{media.title}}</h1>
-			<div class="center-la">
-				{{media.description}}
-			</div>
-			<br><br>
-			<media-form></media-form>
-		</md-tab>
-
-		<md-tab label="{{other.label}}">
-			<h1>{{other.title}}</h1>
-			<div class="center-la">
-				{{other.description}}
-			</div>
-			<br><br>
-			<form class="center-la form-style" md-whiteframe="3" md-theme="dark">
-
-				<md-input-container class="md-block">
-					<label>Label</label>
-					<input type="text" ng-model="other.input"></input>
-				</md-input-container>
-
-				<md-input-container class="md-block">
-					<label>Comments</label>
-					<textarea></textarea>
-				</md-input-container>
-
-				<div style="text-align: center">
-					<md-button class="md-raised" ng-click="submit(other)">Submit</md-button>
-				</div>
-			</form>
+			<ng-include src="form.template"></ng-include>
 		</md-tab>
 
 	</md-tabs>

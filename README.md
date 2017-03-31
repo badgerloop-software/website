@@ -25,6 +25,7 @@ This is necessary because Angular routing requests template pages dynamically an
 	* [angular](https://angularjs.org/) *(1.5.8)*
 	* [angular-aria](https://docs.angularjs.org/api/ngAria) *(1.5.8)*
 	* [angular-animate](https://docs.angularjs.org/api/ngAnimate) *(1.5.8)*
+	* [angular-messages](https://docs.angularjs.org/api/ngMessages) *(1.5.8)*
 
 	We have also opted to use Angular routing:
 
