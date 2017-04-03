@@ -20,7 +20,7 @@ var student_form = {
 	label: "student", title: "Team Application",
 	description: "Are you a current or future UW-Madison student interested in joining the team?", 
 	handler: studentHandler,
-	template: "directives/forms/application.html"
+	template: "directives/forms/student.html"
 };
 
 var sponsor_form = {
