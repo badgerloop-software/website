@@ -25,5 +25,11 @@ angular.module('directives')
 		templateUrl: 'directives/slideshow.html',
 		controller: 'sponsorshipController'
 	};
+})
+
+.directive('formError', function() {
+	return {
+		templateUrl: 'directives/forms/errors.html'
+	};
 });
 

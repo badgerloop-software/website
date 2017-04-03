@@ -1,9 +1,10 @@
-<div ng-controller="mediaController">
+<div ng-controller="sponsorFormController">
+	<form-error></form-error>
 	<form class="center-la form-style" md-whiteframe="3" md-theme="dark">
 
 		<md-input-container class="md-block">
 			<label>Label</label>
-			<input type="text" ng-model="media.input"></input>
+			<input type="text" ng-model="sponsor.input"></input>
 		</md-input-container>
 
 		<md-input-container class="md-block">
@@ -12,7 +13,7 @@
 		</md-input-container>
 
 		<div style="text-align: center">
-			<md-button class="md-raised" ng-click="submit(media)">Submit</md-button>
+			<md-button class="md-raised"ng-click="submit(sponsor)">Submit</md-button>
 		</div>
 	</form>
 </div>

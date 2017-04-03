@@ -70,8 +70,13 @@ a:visited { color: #9B1C1F; }
 	width: 100%;
 }
 
-#under-construction{
+#under-construction {
   font-size: 70px;
+}
+
+#ng-view-parent {
+	overflow-x: hidden; 
+	overflow-y: auto;
 }
 
 #line {

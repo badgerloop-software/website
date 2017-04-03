@@ -1,3 +1,25 @@
+/*                               Utility Functions                           */
+String.prototype.capitalize = function() {
+	return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+function globalScrollTo(xPos) {
+	document.getElementById("ng-view-parent").scrollTop = xPos;
+}
+
+function toggle_element(id, state) {
+	document.getElementById(id).style.visibility = (state) ?
+		"visible" : "hidden";
+}
+
+function toggle_display(id, state) {
+	document.getElementById(id).style.display = (state) ?
+		"table" : "none";
+}
+
+function default_handler() { console.log("bad function handler!"); }
+/*****************************************************************************/
+
 /*                    Additional Module Declarations                         */
 angular.module('controllers', []);
 angular.module('directives', []);
@@ -78,10 +100,4 @@ angular.module('badgerloop-site', dependencyList)
     /*************************************************************************/
 	.otherwise({redirectTo: '/home'});
 });
-/*****************************************************************************/
-
-/*                               Utility Functions                           */
-String.prototype.capitalize = function() {
-	return this.charAt(0).toUpperCase() + this.slice(1);
-}
 /*****************************************************************************/

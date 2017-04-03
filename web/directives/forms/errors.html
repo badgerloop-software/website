@@ -1,0 +1,6 @@
+<div class="form-error" md-colors="{backgroundColor: 'primary-900'}"
+	id="{{form_id}}">
+	Error(s): <b><span style="color: black" ng-repeat="error in errors">
+		{{error}}<span ng-show="!$last">, </span>
+	</span></b>
+</div>

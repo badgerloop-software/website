@@ -1,64 +1,57 @@
-var studentHandler;
-var sponsorHandler;
-var mediaHandler;
-var otherHandler;
-var handlersUpdated = false;
-
 function accumulate_errors(array, errors) {
 	while (array.length > 0) array.pop();
 	for (var i = 0; i < errors.length; i++)
 		array.push(errors[i].$name.capitalize());
 }
 
+function handle_errors(array, errors) {
+	accumulate_errors(array, errors);
+	globalScrollTo(0);
+	return false;
+}
+
+var studentHandler = default_handler;
+var sponsorHandler = default_handler;
+var mediaHandler = default_handler;
+var otherHandler = default_handler;
+
+// Initializations (later becomes a factory)
+var student_form = {
+	label: "student", title: "Team Application",
+	description: "Are you a current or future UW-Madison student interested in joining the team?", 
+	handler: studentHandler,
+	template: "directives/forms/application.html"
+};
+
+var sponsor_form = {
+	label: "sponsor", title: "Sponsor Contact",
+	description: "Interested in sponsoring Badgerloop?", 
+	handler: sponsorHandler,
+	template: "directives/forms/sponsor.html"
+};
+
+var media_form = {
+	label: "media", title: "Media Contact",
+	description: "Want to know more?", handler: mediaHandler,
+	template: "directives/forms/media.html"
+};
+
+var other_form = {
+	label: "other", title: "Other Contact",
+	description: "Want to know more?", handler: mediaHandler,
+	template: "directives/forms/other.html"
+};
+
 angular.module('controllers')
 .controller('contactController', function($scope) {
 
-	var student_desc = "Are you a current or future UW-Madison student interested in joining the team?";
-	var sponsor_desc = "Interested in sponsoring Badgerloop?";
-	var media_desc = "Want to know more?";
-	var other_desc = "Want to know more?";
-
 	// Form Submit
 	$scope.submit = function(form) {
-
-		// handlers start out null
-		if (!handlersUpdated) {
-			$scope.updateHandlers();
-			handlersUpdated = true;
-		}
-
+		$scope.updateHandlers();
 		if ($scope.forms.indexOf(form) == -1)
 			console.log("Something went wrong!");
 		else if (!form.handler()) console.log("Error!");
 		else console.log("Worked!");
-	};
-
-	// Student Defaults
-	$scope.student = {
-		label: "student", title: "Team Application",
-		description: student_desc, handler: studentHandler,
-		template: "directives/application.html"
-	};
-
-	// Sponsor Defaults
-	$scope.sponsor = {
-		label: "sponsor", title: "Sponsor Contact",
-		description: sponsor_desc, handler: sponsorHandler,
-		template: "directives/sponsor-form.html"
-	};
-
-	// Media Defaults
-	$scope.media = {
-		label: "media", title: "Media Contact",
-		description: media_desc, handler: mediaHandler,
-		template: "directives/media-form.html"
-	};
-
-	// Other Defaults
-	$scope.other = {
-		label: "other", title: "Other Contact",
-		description: other_desc, handler: mediaHandler,
-		template: "directives/other-form.html"
 	};
 
 	// Javascript AKA hacking
@@ -69,8 +62,12 @@ angular.module('controllers')
 		$scope.other.handler = otherHandler;
 	};
 
+	// Gotta make this index based
+	$scope.student = student_form;
+	$scope.sponsor = sponsor_form;
+	$scope.media = media_form;
+	$scope.other = other_form;
 	$scope.forms = [$scope.student, $scope.sponsor, $scope.media, $scope.other];
 
-	console.log("controller loaded");
 	if (globalUpdateButtons) globalUpdateButtons();
 });
