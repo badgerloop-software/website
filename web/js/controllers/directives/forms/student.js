@@ -43,13 +43,22 @@ angular.module('controllers')
 	$scope.errors = [];
 	$scope.handler = function() {
 
-		// Check for form errors
-		if ($scope.studentForm.$error.required) {
-			handle_errors($scope.errors, $scope.studentForm.$error.required);
+		empty_array($scope.errors);
+		
+		if (Object.keys($scope.studentForm.$error).length > 0) {
+			globalScrollTo(0);
+			for (var prop in $scope.studentForm.$error) {
+				if (!$scope.studentForm.$error.hasOwnProperty(prop))
+					continue;
+
+				accumulate_errors($scope.errors, $scope.studentForm.$error[prop]);
+			}	
+
 			if ($scope.teams_selected.length == 0)
 				$scope.errors.push("No Teams Selected");
+
 			$scope.toggle_errors(true);
-			console.log($scope.errors);
+
 			return false;
 		}
 
