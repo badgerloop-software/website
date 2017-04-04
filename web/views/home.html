@@ -1,8 +1,8 @@
 <style>
 
 #elon-main {
-	width: 95%;
-	height: 95%;
+	width: 100%;
+	height: 100%;
 	margin-bottom: 1em;
 	border-radius: 25px;
 	max-height: 80vh;
@@ -19,6 +19,27 @@
 	display: inline-block;
 }
 
+.text-body {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	display: inline-block;
+	margin: 1em;
+}
+
+.text-body p{
+	font-size: 22px;
+}
+
+#individual {
+	display: inline-block;
+	word-wrap: break-word;
+	width: 400px;
+	height: 400px;
+	font-size: 12px;
+	display: table-cell;
+
+}
+
 
 #youtube-videos { width: 100%; }
 #youtube-videos div {
@@ -30,8 +51,8 @@
 
 #who-what-why { width: 100%; }
 #who-what-why div {
-	padding: 1em;
-	margin: 1em;
+	padding: 2em 2em;
+	margin: 1em 1em;
 	border-radius: 1em;
 	vertical-align: middle;
 }
@@ -57,6 +78,11 @@
 	#home-body p { font-size: 1em; }
 }
 
+#underline{
+	width: 150px;
+}
+
+
 </style>
 <div class="page-content inner1" md-whiteframe="9">
 	<!--<img src="../im/logos/full-width.png" id="main-logo">-->
@@ -67,7 +93,7 @@
 
 	<div>
 		<figure>
-			<img src="../im/elon/freeze_frame.jpg" id="elon-main">
+			<img id="elon-main" src="../im/elon/freeze_frame.jpg">
 			<figcaption><b> Elon Musk sitting in our pod at Competition I</b></figcaption>
 		</figure>
 	</div>
@@ -105,32 +131,29 @@
 
 </div>-->
 
-<div id="who-what-why">
-
-	<div md-whiteframe="6" class="dark-body">
+<div md-whiteframe="6" class="text-body">
+	<div id="individual">
 		<h1>Who we are</h1>
+		<hr>
 		<p>- University of Wisconsin-Madison students</p>
 		<p>- Multidisciplinary majors</p>
 		<p>- Freshmen to PhD students</p>
 	</div>
-
-	<div md-whiteframe="6" class="dark-body">
+	<div id="individual">
 		<h1>What we do</h1>
+		<hr>
 		<p>- Build pods to compete in SpaceX Hyperloop Pod Competitions</p>
 		<p>- Analyze the feasibility of a nationwide Hyperloop network</p>
 		<p>- Create an unparalleled learning environment for students to<br> work on real world problems in a pseudo-startup setting</p>
 	</div>
-
-	<div md-whiteframe="6" class="dark-body">
+	<div id="individual">
 		<h1>Why we do it</h1>
+		<hr>
 		<p>- Enthusiastic about the concept of Hyperloop technology</p>
 		<p>- Love to work on challenging problems that could improve<br> speed and sustainability of future transportation</p>
 		<p>- Grow as students by taking our learning outside the<br> classroom and conquering real-world challenges</p>
 	</div>
-
 </div>
-
-
 
 
 
