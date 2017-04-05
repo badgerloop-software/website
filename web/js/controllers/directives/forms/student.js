@@ -55,12 +55,8 @@ angular.module('controllers')
 			}
 
 			if ($scope.teams_selected.length == 0)
-<<<<<<< HEAD
-				$scope.errors.push("Preferred Team(s)");
-=======
 				$scope.errors.push("Preferred Team(s)");
 
->>>>>>> e277e5f99017dd62dbd4b089c12063e108842de8
 			$scope.toggle_errors(true);
 
 			return false;
