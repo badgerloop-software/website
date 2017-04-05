@@ -1,0 +1,25 @@
+<style>
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+	vertical-align: middle;
+}
+
+</style>
+
+
+<div class="form-error" md-colors="{backgroundColor: 'primary-700'}"
+	id="{{form_id}}">
+	You forgot to include <b><span style="color: black" ng-repeat="error in errors">
+		{{error}}<span ng-show="!$last">, </span>
+	</span> <i class="material-icons">sentiment_very_dissatisfied</i> </b>
+</div>

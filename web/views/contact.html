@@ -24,10 +24,25 @@
 	max-width: 35em;
 	margin: 0.5em;
 }
+
+.form-error {
+	padding: 1em;
+	border-radius: 1em;
+	visibility: hidden;
+	margin: auto;
+	display: none;
+	border: black;
+	border-style: solid;
+	border-width: 2px;
+}
+
+
 </style>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 <div id="contact-page" class="page-content inner2" md-whiteframe="9">
 	<md-tabs md-dynamic-height>
-		
+
 		<md-tab ng-repeat="form in forms" label="{{form.label}}">
 			<h1>{{form.title}}</h1>
 			<div class="center-la">{{form.description}}</div>
@@ -37,4 +52,3 @@
 
 	</md-tabs>
 </div>
-

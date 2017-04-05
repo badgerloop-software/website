@@ -26,7 +26,7 @@
 	<body ng-app="badgerloop-site">
 		<div layout="column" id="main_container" ng-cloak>
 			<badgerloop-navbar></badgerloop-navbar>
-			<div flex="grow" layout="column" style="overflow-x: hidden; overflow-y: auto"> 
+			<div flex="grow" layout="column" id="ng-view-parent"> 
 				<hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
 				<div flex="grow" id="ng-view-container" ng-view>
 					<!-- Current View Renders Here -->
@@ -57,6 +57,9 @@
 	<script src="js/controllers/pod.js"></script>
 	<script src="js/controllers/team.js"></script>
 	<script src="js/controllers/contact.js"></script>
-	<script src="js/controllers/directives/forms.js"></script>
 	<script src="js/controllers/docs.js"></script>
+	<script src="js/controllers/directives/forms/student.js"></script>
+	<script src="js/controllers/directives/forms/sponsor.js"></script>
+	<script src="js/controllers/directives/forms/other.js"></script>
+	<script src="js/controllers/directives/forms/media.js"></script>
 </html>

@@ -1,4 +1,5 @@
-<div ng-controller="studentController">
+<div ng-controller="studentFormController">
+	<form-error></form-error>
 	<form name="studentForm" class="center-la form-style" md-whiteframe="3" md-theme="dark">
 
 		<!-- Name -->
@@ -51,7 +52,7 @@
 		<br>Tell us about yourself.<br><br>
 		<md-input-container class="md-block short-input">
 			<label>Brief Description</label>
-			<textarea></textarea>
+			<textarea required name="description" ng-model="description"></textarea>
 		</md-input-container>
 
 		<!-- Submit -->
