@@ -24,6 +24,12 @@
 	</head>
 
 	<body ng-app="badgerloop-site">
+
+		<div id="splash_screen">
+			<span class="image_helper"></span>
+			<img src="im/logos/full-width.png" id="splash_logo">
+		</div>
+
 		<div layout="column" id="main_container" ng-cloak>
 			<badgerloop-navbar></badgerloop-navbar>
 			<div flex="grow" layout="column" id="ng-view-parent"> 
@@ -62,4 +68,5 @@
 	<script src="js/controllers/directives/forms/sponsor.js"></script>
 	<script src="js/controllers/directives/forms/other.js"></script>
 	<script src="js/controllers/directives/forms/media.js"></script>
+	<script src="js/splash.js"></script>
 </html>

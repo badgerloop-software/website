@@ -70,13 +70,38 @@ a:visited { color: #9B1C1F; }
 	width: 100%;
 }
 
-#under-construction {
-  font-size: 70px;
-}
-
 #ng-view-parent {
 	overflow-x: hidden; 
 	overflow-y: auto;
+}
+
+#splash_screen {
+	position: absolute;
+	left: 0; top: 0;
+	z-index: 100;
+	width: 100vw; height: 100vh;
+	background-color: white;
+	text-align: center;
+	white-space: nowrap;
+	-webkit-animation: loading_screen 4s ease-in 0s 1 normal forwards paused;
+	animation: loading_screen 4s ease-in 0s 1 normal forwards paused;
+}
+@-webkit-keyframes loading_screen { from { opacity: 1; } to { opacity: 0; } }
+@keyframes loading_screen { from { opacity: 1; } to { opacity: 0; } }
+
+.image_helper {
+	vertical-align: middle;
+	display: inline-block;
+	height: 100%;
+}
+
+#splash_logo {
+	vertical-align: middle;
+	width: 95%;
+}
+
+#under-construction {
+  font-size: 70px;
 }
 
 #line {
