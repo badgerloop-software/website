@@ -1,13 +1,10 @@
 function accumulate_errors(array, errors) {
-	while (array.length > 0) array.pop();
-	for (var i = 0; i < errors.length; i++)
-		array.push(errors[i].$name.capitalize());
-}
-
-function handle_errors(array, errors) {
-	accumulate_errors(array, errors);
-	globalScrollTo(0);
-	return false;
+	var curr = "";
+	for (var i = 0; i < errors.length; i++) {
+		curr = errors[i].$name.capitalize();
+		if (array.indexOf(curr) == -1)
+			array.push(curr);
+	}
 }
 
 var studentHandler = default_handler;

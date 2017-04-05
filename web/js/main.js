@@ -3,6 +3,8 @@ String.prototype.capitalize = function() {
 	return this.charAt(0).toUpperCase() + this.slice(1);
 }
 
+function empty_array(array) { while (array.length > 0) array.pop(); }
+
 function globalScrollTo(xPos) {
 	document.getElementById("ng-view-parent").scrollTop = xPos;
 }
