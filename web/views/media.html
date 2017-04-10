@@ -1,36 +1,35 @@
 <style>
-
-#articlebox{
-	width: 90%;
-	height: 400px;
-
+.media-logos {
+	position: relative;
+	margin-top: 0.5em;
+	display: inline-block;
 }
 
-
+.media-logos img {
+	height: 125px;
+	margin: 1em;
+}
 </style>
 
 
-<div id="centered" class="page-content inner2" md-whiteframe="9">
+
+<div class="page-content inner2" md-whiteframe="9">
+
+  <div class="page-content inner2" md-whiteframe="9">
+    <h1>Image Slideshow</h1>
+  </div>
 
 
-<div>
-	Hang on
-
+<div class="page-content inner2" md-whiteframe="9">
+	<h2>Featured In</h2>
+	<div class="media-logos" ng-repeat="source in articles">
+		<a ng-href="{{source.site}}" target="_newtab"><img ng-src="../im/FI-Logos/{{source.name}}.png"></a>
+        <md-tooltip md-direction="bottom">{{source.name}}</md-tooltip>
+	</div>
 </div>
 
-<div>
-	Hang on
-
+<div class="page-content inner2" md-whiteframe="9">
+  <h1> Information on the SpaceX Hyperloop Competition</h1>
 </div>
-
-<div class="articlebox">
-	
-
-</div>
-
-
-
-
-
 
 </div>

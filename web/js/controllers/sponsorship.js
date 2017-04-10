@@ -3,10 +3,10 @@ var logos = [
 		name: '1403',
 		site: 'http://universityresearchpark.org/the-property/1403-2/'
 	},
-	//{
-	//	name: 'Altium',
-	//	site: '#/home'
-	//},
+	{
+		name: 'Altium', // not in slideshow yet 
+		site: 'http://www.altium.com/'
+	},
 	{
 		name: 'ANSYS',
 		site: 'http://www.ansys.com/'
