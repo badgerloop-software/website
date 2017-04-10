@@ -24,7 +24,9 @@
 	<h2>Featured In</h2>
 	<div class="media-logos" ng-repeat="source in articles">
 		<a ng-href="{{source.site}}" target="_newtab"><img ng-src="../im/FI-Logos/{{source.name}}.png"></a>
-        <md-tooltip md-direction="bottom">{{source.name}}</md-tooltip>
+        <md-tooltip md-direction="bottom">
+          {{source.title}}
+        </md-tooltip>
 	</div>
 </div>
 
