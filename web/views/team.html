@@ -1,21 +1,21 @@
 <style>
 
 .team-member{
-	border-radius: 4px;
+	border-radius: .25em;
 	overflow: hidden;
 	position: relative;
-	height: 350px;
+	height: 21.875em;
+	width: 20em;
 }
 .team-member .profile-pic{
     border-radius: 50%;
-    width: 174px;
-		height: 174px;
+    width: 10.875em;
+		height: 10.875em;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 0.938em;
 		overflow: hidden;
 		border-color: black;
-		float: left;
-		margin-left: 60px;
+		margin-left: 3.750em;
 	}
 .team-member .profile-pic img{
 	width: 100%;
@@ -28,73 +28,45 @@
 
 #card{
 	border-style: solid;
-	border-radius: 35px;
-  height: 350px;
-	margin-bottom: 12px;
-	/*display: inline-block;*/
+	border-radius: 2.188em;
+  height: 19em;
+	width: 20em;
+	display: inline-block;
   /*background-color: hsla(278, 96%, 100%, 1.0);*/
 }
 
 .team-member .info div{
-	margin: -1px;
-	padding: 1px;
+	margin: -.063em;
+	padding: .063em;
 	text-align: left;
-	margin-left: 40px;
+	margin-left: 2.5em;
 }
 
 .team-member .info h2{
-	margin: -1px;
-	text-align: left;
-	margin-left: 50px;
-}
-#left{
-	float: left;
-	background-color: blue;
-	width: 280px;
+	margin: -.063em;
+	text-align: middle;
 }
 
-#center{
-	float: center;
-	background-color: red;
-}
-
-#right{
-	float: right;
-	background-color: yellow;
-}
 
 </style>
 
 
-
 <div class="page-content inner2" md-whiteframe="9">
-	<h1>Meet the Team </h1>
-  <div id="card" ng-repeat="lead in team_leads">
-		<div id="left">
-	   <div class=team-member>
-		     <div>
+ 	<h1>Meet the Team </h1>
+   <div id="card" ng-repeat="lead in team_leads">
+ 	   <div class=team-member>
+ 		     <div>
 		         <figure class="profile-pic">
-			            <img ng-src="../im/team_leads/{{lead.headshot}}" alt>
-		         </figure>
-	       </div>
-	   <div class="info">
-	      <h2><b>{{lead.name}}</b></h2>
-		        <div><b>Role:</b> {{lead.role}}</div>
-		        <div><b>Major:</b> {{lead.major}}</div>
-		        <div><b>Year:</b> {{lead.year}}</div>
-						<br><br><br>
-     </div>
-	 </div>
-   </div>
-<div id="center">
-
-	On its way
-
-</div>
-
-<div id="right">
-	Incoming
-</div>
-
-
-</div>
+ 			            <img ng-src="../im/team_leads/{{lead.headshot}}" alt>
+ 		         </figure>
+ 	       </div>
+ 	   <div class="info">
+ 	      <h2><b>{{lead.name}}</b></h2>
+ 		        <div><b>Role:</b> {{lead.role}}</div>
+ 		        <div><b>Major:</b> {{lead.major}}</div>
+ 		        <div><b>Year:</b> {{lead.year}}</div>
+ 						<br><br><br>
+      </div>
+    </div>
+ </div>
+  </div>
