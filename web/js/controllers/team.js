@@ -6,7 +6,7 @@ var president = {
 	role: "President",
 	email: "xwang523@wisc.edu",
 	mantra: "Responsible for overall team performance and lean management.",
-	major: "Systems Engineering & Decision Science",
+	major: "Systems Engineering & Decision Analysis",
 	year: "1st year MS",
 	description: "I'm tasked with maximizing available resources and human potential in order to tackle engineering and organizational challenges given time and funding constraints. It is my personal mission to ensure long term sustainability of Badgerloop.",
 	linkedin: "https://www.linkedin.com/in/zuf-wang/",
