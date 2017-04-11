@@ -4,7 +4,7 @@ var logos = [
 		site: 'http://universityresearchpark.org/the-property/1403-2/'
 	},
 	{
-		name: 'Altium', // not in slideshow yet 
+		name: 'Altium', // not in slideshow yet
 		site: 'http://www.altium.com/'
 	},
 	{
@@ -31,10 +31,10 @@ var logos = [
 		name: 'Design-Concepts',
 		site: 'http://www.design-concepts.com/'
 	},
-	//{
-	//	name: 'ESwitch',
-	//	site: '#/home'
-	//},
+	{
+		name: 'ESwitch',	// not in slideshow yet
+		site: 'https://www.e-switch.com/'
+	},
 	{
 		name: 'HomeRevolution',
 		site: 'https://www.homerev.com/'

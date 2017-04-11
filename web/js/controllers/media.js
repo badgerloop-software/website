@@ -1,40 +1,40 @@
 var articles = [
   	{
-  		name: 'WID',
+  		name: 'Wisconsin Institute of Discovery',
   		site: 'http://wid.wisc.edu/featured-science/virtual-reality-goes-hyper-speed-with-badgerloop/',
       title: 'Virtual Reality Goes Hyper-speed with Badgerloop',
       date: 'Feb 16, 2017'
   	},
-  	/*{
+  	{
   		name: 'UW-Madison',
   		site: 'http://news.wisc.edu/uw-madison-team-wins-innovation-award-in-hyperloop-competition/',
       title: 'UW-Madison team wins Innovation Award in Hyperloop competition',
       date: 'Jan 30, 2017'
-  	},*/
+  	},
   	{
   		name: 'Daily Cardinal',
   		site: 'http://www.dailycardinal.com/article/2016/12/badgerloop-unveils-pod-exposes-public-to-hyperloop-transportation',
       title: 'Badgerloop unviels pod, exposes public to Hyperloop transportation',
       date: 'Dec 6, 2016'
   	},
-  	/*{
+  	{
   		name: 'UW-Madison',
   		site: 'http://news.wisc.edu/uw-madison-places-among-top-teams-in-spacex-hyperloop-competition/',
       title: 'UW-Madison places among top teams in SpaceX Hyperloop competition',
       date: 'Feb 3, 2016'
-  	},*/
+  	},
   	{
-  		name: 'WMTV15',
+  		name: 'WMTV 15',
   		site: 'http://www.nbc15.com/home/headlines/Students-Compete-to-Change-the-Future-of-Transportation-366267801.html?ref=801',
       title: 'Students Compete to Change the Future of Transportation',
       date: 'Jan 31, 2016'
   	},
-  	/*{
+  	{
   		name: 'The Badger Herald',
   		site: 'https://badgerherald.com/news/2016/12/07/badgerloop-unveils-futuristic-hyperloop-pod-model/',
       title: 'Badgerloop unveils futuristic Hyperloop pod model',
       date: 'Dec 7, 2016'
-  	},*/
+  	},
   	{
   		name: 'Daily Cardinal',
   		site: 'http://www.dailycardinal.com/article/2017/01/badgerloop-wins-innovation-award-a72e',
@@ -65,35 +65,29 @@ var articles = [
       title: 'Badgerloop Pod Reveal',
       date: 'Dec 6, 2016'
   	},
-    /*{
+    {
   		name: 'Milwaukee Electronics',
   		site: 'http://blog.milwaukeeelectronics.com/2017/01/24/screaming-circuits-provides-prototype-circuits-to-badgerloop/',
       title: 'Screaming Circuits provides Prototype Circuits to Badgerloop',
       date: 'Jan 24, 2017'
-  	},*/
-    /*{
+  	},
+    {
   		name: 'WORT FM',
   		site: 'https://www.wortfm.org/hyperloop-and-uw-madisons-badgerloop-team/',
       title: '[Podcast] Hyperloop And UW-Madison\'s Badgerloop Team',
       date: 'Apr 21, 2016'
-  	},*/
-    /*{
+  	},
+    {
   		name: 'Daily Mail',
   		site: 'http://www.dailymail.co.uk/video/sciencetech/video-1402923/University-Wisconsin-students-introduce-Badgerloop-pod.html',
       title: 'University of Wisconsin students introduce the Badgerloop pod',
       date: 'Jan 1, 2017' // I made this up, no date provided
-  	},*/
+  	},
     /*{
   		name: 'PRLOG',
   		site: 'https://www.prlog.org/12572393-badgerloop-3rd-place-spacex-hyperloop-team-to-compete-in-finale-hyperloop-competition-in-fall-2016.html',
       title: 'Badgerloop, 3rd place SpaceX Hyperloop Team, To Compete in Finale Hyperloop Competition in Fall 2016',
       date: 'Jul 12, 2016'
-  	},*/
-    /*{
-  		name: 'Next Generation Blogs',
-  		site: 'https://nextgenerationblogs.wordpress.com/2016/06/15/hyperloop-technology-young-people-and-the-future/',
-      title: 'Hyperloop Technology, Young People and the Future',
-      date: 'Jun 15, 2016'
   	},*/
     {
   		name: 'Popular Science',
@@ -119,24 +113,18 @@ var articles = [
       title: 'MIT leads in first round of Elon Musk\'s Hyperloop contest, but UW is in the race',
       date: 'Jan 31, 2016'
     },
-    /*{
+    {
   		name: 'Metro',
   		site: 'http://www.metro-magazine.com/rail/video/720032/video-badgerloop-s-success-travels-fast',
       title: '[Video] Badgerloop\'s success travels fast',
       date: 'Dec 6, 2016'
-  	},*/
-  	/*{
-  		name: 'Mcfarland Thistle',
-  		site: 'http://www.hngnews.com/mcfarland_thistle/news/local/article_4f4a3aa4-f301-11e6-8f02-a327f49da3f7.html',
-      title: 'McFarland grad gets in the Badgerloop',
-      date: 'Feb 14, 2017'
-  	},*/
-  	/*{
+  	},
+  	{
   		name: 'The Lacrosse Tribune',
   		site: 'http://lacrossetribune.com/badgerloop/image_2db6c792-f133-5199-a7ea-67f650327b11.html',
       title: 'Badgerloop',
       date: 'Jan 16, 2017'
-  	},*/
+  	},
   	{
   		name: 'ANSYS',
   		site: 'http://www.ansys-blog.com/badgerloop-hyperloop-competition/',
