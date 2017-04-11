@@ -1,17 +1,18 @@
 <div ng-controller="studentFormController">
 	<form-error></form-error>
+	<form-success></form-success>
 	<form name="studentForm" class="center-la form-style" md-whiteframe="3" md-theme="dark">
 
 		<!-- Name -->
 		<md-input-container class="md-block short-input">
 			<label>Name</label>
-			<input name="name" type="text" required ng-model="name" />
+			<input name="name" type="text" required ng-model="data.name" />
 		</md-input-container>
 
 		<!-- Email -->
 		<md-input-container class="md-block short-input">
 			<label>Email</label>
-			<input name="email" type="text" required ng-model="email" 
+			<input name="email" type="text" required ng-model="data.email" 
 					minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
 			<div ng-messages="studentForm.email.$error">
 				<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
@@ -23,13 +24,13 @@
 		<!-- Major -->
 		<md-input-container class="md-block short-input">
 			<label>Major</label>
-			<input type="text" name="major" ng-model="major" />
+			<input type="text" name="major" ng-model="data.major" />
 		</md-input-container>
 
 		<!-- Year -->
 		<md-input-container class="md-block short-input">
 			<label>Year</label>
-			<md-select required name="year" ng-model="year">
+			<md-select required name="year" ng-model="data.year">
 				<md-option ng-repeat="year in years" value="{{year}}">
 					{{year}}
 				</md-option>
@@ -42,8 +43,8 @@
 			<a href="#/team">(What does each team do?)</a>
 			<br><br>
 			<md-checkbox ng-repeat="team in teams"
-				ng-checked="check_selected(team, teams_selected)"
-				ng-click="toggle_selected(team, teams_selected)">
+				ng-checked="check_selected(team, data.teams_selected)"
+				ng-click="toggle_selected(team, data.teams_selected)">
 				{{team}}
 			</md-checkbox>
 		</div>
@@ -52,12 +53,13 @@
 		<br>Tell us about yourself.<br><br>
 		<md-input-container class="md-block short-input">
 			<label>Brief Description</label>
-			<textarea required name="description" ng-model="description"></textarea>
+			<textarea required name="description" ng-model="data.description"></textarea>
 		</md-input-container>
 
 		<!-- Submit -->
 		<div style="text-align: center">
-			<md-button class="md-raised" ng-click="submit(student)">Submit</md-button>
+			<md-button ng-disabled="submitted" class="md-raised"
+			ng-click="submit(student)">Submit</md-button>
 		</div>
 	</form>
 </div>

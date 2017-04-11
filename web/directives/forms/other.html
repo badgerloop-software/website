@@ -1,19 +1,43 @@
 <div ng-controller="otherFormController">
 	<form-error></form-error>
-	<form class="center-la form-style" md-whiteframe="3" md-theme="dark">
+	<form-success></form-success>
+	<form name="otherForm" class="center-la form-style" md-whiteframe="3" md-theme="dark">
 
-		<md-input-container class="md-block">
-			<label>Label</label>
-			<input type="text" ng-model="other.input"></input>
+		<!-- Name -->
+		<md-input-container class="md-block short-input">
+			<label>Name</label>
+			<input name="name" type="text" required ng-model="data.name" />
 		</md-input-container>
 
-		<md-input-container class="md-block">
-			<label>Comments</label>
-			<textarea></textarea>
+		<!-- Email -->
+		<md-input-container class="md-block short-input">
+			<label>Email</label>
+			<input name="email" type="text" required ng-model="data.email" 
+					minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+			<div ng-messages="otherForm.email.$error">
+				<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+					Please enter a valid e-mail address.
+				</div>
+			</div>
+		</md-input-container>
+	
+		<!-- Company -->
+		<md-input-container class="md-block short-input">
+			<label>Company</label>
+			<input name="company" type="text" ng-model="data.company" />
+		</md-input-container>
+
+		<!-- Description -->
+		<div>Briefly describe why you are reaching out.</div>
+		<br>
+		<md-input-container class="md-block short-input">
+			<label>Description</label>
+			<textarea required name="description" ng-model="data.description"></textarea>
 		</md-input-container>
 
 		<div style="text-align: center">
-			<md-button class="md-raised" ng-click="submit(other)">Submit</md-button>
+			<md-button ng-disabled="submitted" class="md-raised" 
+			ng-click="submit(other)">Submit</md-button>
 		</div>
 	</form>
 </div>

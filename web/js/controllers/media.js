@@ -150,6 +150,5 @@ var articles = [
     $scope.header = "Featured In";
     $scope.articles = articles;
 
-
   if (globalUpdateButtons) globalUpdateButtons();
 });

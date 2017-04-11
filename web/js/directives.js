@@ -8,9 +8,7 @@ angular.module('directives')
 })
 
 .directive('badgerloopFooter', function() {
-    return {
-	    templateUrl: 'directives/footer.html'
-    };
+    return { templateUrl: 'directives/footer.html' };
 })
 
 .directive('teamLeads', function() {
@@ -28,8 +26,10 @@ angular.module('directives')
 })
 
 .directive('formError', function() {
-	return {
-		templateUrl: 'directives/forms/errors.html'
-	};
+	return { templateUrl: 'directives/forms/errors.html' };
+})
+
+.directive('formSuccess', function() {
+	return { templateUrl: 'directives/forms/success.html' };
 });
 

@@ -1,4 +1,5 @@
 <style>
+
 .media-logos {
 	position: relative;
 	margin-top: 0.5em;
@@ -9,43 +10,33 @@
 	height: 125px;
 	margin: 1em;
 }
+
 </style>
 
-
-
 <div class="page-content inner2" md-whiteframe="9">
-
-  <div class="page-content inner2" md-whiteframe="9">
-    <h1>Image Slideshow</h1>
-  </div>
-
+	<h1>Image Slideshow</h1>
+	<p>Coming soon!!</p>
+</div>
 
 <div class="page-content inner2" md-whiteframe="9">
 	<h2>Featured In</h2>
 	<div class="media-logos" ng-repeat="source in articles">
 		<a ng-href="{{source.site}}" target="_newtab"><img ng-src="../im/FI-Logos/{{source.name}}.png"></a>
-        <md-tooltip md-direction="bottom">
-          {{source.title}}
-        </md-tooltip>
+		<md-tooltip md-direction="bottom">
+			{{source.title}}
+		</md-tooltip>
 	</div>
 </div>
 
 <div class="page-content inner2" md-whiteframe="9">
-  <h1> Information on the SpaceX Hyperloop Competition</h1>
-		<div>
-			<a href="http://www.spacex.com/sites/spacex/files/hyperloop_alpha-20130812.pdf" target="_newtab">
-				<md-button class="md-raised"><b>HYPERLOOP ALPHA</b></md-button>
-			</a>
+	<h1> Information on the SpaceX Hyperloop Competition</h1>
+	<div>
+		<a href="http://www.spacex.com/sites/spacex/files/hyperloop_alpha-20130812.pdf" target="_newtab">
+			<md-button class="md-raised"><b>HYPERLOOP ALPHA</b></md-button>
+		</a>
 
-			<a href="http://www.spacex.com/sites/spacex/files/2016_0831_hyperloop_competition_ii_rules.pdf" target="_newtab">
-				<md-button class="md-raised"><b>RULES and REGULATIONS</b></md-button>
-			</a>
-		</div>
-
-		<div>
-			
-
-		</div>
-</div>
-
+		<a href="http://www.spacex.com/sites/spacex/files/2016_0831_hyperloop_competition_ii_rules.pdf" target="_newtab">
+			<md-button class="md-raised"><b>RULES and REGULATIONS</b></md-button>
+		</a>
+	</div>
 </div>

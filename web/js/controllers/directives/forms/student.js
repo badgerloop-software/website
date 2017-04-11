@@ -3,10 +3,8 @@ angular.module('controllers')
 .controller('studentFormController', function($scope) {
 
 	$scope.form_id = "student-form";
-	$scope.toggle_errors = function(state) {
-			toggle_element($scope.form_id, state);
-			toggle_display($scope.form_id, state);
-	};
+	$scope.success_message = "Thanks for applying! We'll reach out to you soon.";
+	$scope.submitted = false;
 
 	var YEARS = [
 		"Newly Admitted", "Freshman", "Sophomore",
@@ -32,41 +30,35 @@ angular.module('controllers')
 		return list.indexOf(item) > -1;
 	};
 
-	$scope.year = "";
 	$scope.years = YEARS;
 	$scope.teams = TEAMS;
-	$scope.teams_selected = [];
-	$scope.name = "";
-	$scope.email = "";
-	$scope.major = "";
-	$scope.description = "";
+
+	// Inputs
+	$scope.data = {
+		year: "", teams_selected: [],
+		name: "", email: "",
+		major: "", description: ""
+	};
+	
 	$scope.errors = [];
 	$scope.handler = function() {
 
-		empty_array($scope.errors);
+		if (accumulate_errors($scope.errors, $scope.studentForm.$error, $scope.form_id)
+			|| $scope.data.teams_selected.length == 0) {
 
-		if (Object.keys($scope.studentForm.$error).length > 0) {
-			globalScrollTo(0);
-			for (var prop in $scope.studentForm.$error) {
-				if (!$scope.studentForm.$error.hasOwnProperty(prop))
-					continue;
-
-				accumulate_errors($scope.errors, $scope.studentForm.$error[prop]);
-			}
-
-			if ($scope.teams_selected.length == 0)
+			if ($scope.data.teams_selected.length == 0) {
 				$scope.errors.push("Preferred Team(s)");
 
-			$scope.toggle_errors(true);
+				// In this case we have to do it manually
+				if ($scope.errors.length == 1)
+					toggle_errors($scope.form_id, true);
+			}
 
 			return false;
 		}
 
-		$scope.toggle_errors(false);
-
-		// Submit data
-		console.log("[student] success!");
-		return true;
+		$scope.submitted = true;
+		return $scope.data;
 	};
 
 	studentHandler = $scope.handler;
