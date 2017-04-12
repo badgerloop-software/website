@@ -1,19 +1,84 @@
 <div ng-controller="sponsorFormController">
+	<div style="margin-bottom: 1em">Check out our
+	<a href="pdf/BadgerloopSponsorPacket.pdf" target="_newtab">
+		<b>Sponsorship Packet</b>
+	</a>
+	if you haven't yet!</div>
 	<form-error></form-error>
-	<form class="center-la form-style" md-whiteframe="3" md-theme="dark">
+	<form-success></form-success>
+	<form name="sponsorForm" class="center-la form-style" md-whiteframe="3" md-theme="dark">
 
-		<md-input-container class="md-block">
-			<label>Label</label>
-			<input type="text" ng-model="sponsor.input"></input>
+		<!-- Name -->
+		<md-input-container class="md-block short-input">
+			<label>Name</label>
+			<input name="name" type="text" required ng-model="data.name" />
 		</md-input-container>
 
-		<md-input-container class="md-block">
-			<label>Comments</label>
-			<textarea></textarea>
+		<!-- Email -->
+		<md-input-container class="md-block short-input">
+			<label>Email</label>
+			<input name="email" type="text" required ng-model="data.email" 
+					minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+			<div ng-messages="sponsorForm.email.$error">
+				<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+					Please enter a valid e-mail address.
+				</div>
+			</div>
 		</md-input-container>
 
+		<!-- Company -->
+		<md-input-container class="md-block short-input">
+			<label>Company</label>
+			<input name="company" type="text" required ng-model="data.company" />
+		</md-input-container>
+
+		<!-- Phone -->
+		<md-input-container class="md-block short-input">
+			<label>Phone Number</label>
+			<input name="phone" ng-model="data.phone" 
+				ng-pattern="/^[(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$/" />
+			<div ng-messages="sponsorForm.phone.$error">
+				<div ng-message-exp="['pattern']">
+					(###) ###-#### Please enter a valid phone number.
+				</div>
+			</div><br>
+			<md-checkbox ng-model="data.should_call">Contact me via phone</md-checkbox>
+		</md-input-container>
+
+		<!-- Call Set Up -->
+		<md-input-container ng-if="data.should_call" class="md-block short-input">
+            <label>Date</label>
+            <md-datepicker name="date" ng-model="data.best_time"></md-datepicker>
+			Set up a call (Optional)<br>
+        </md-input-container>
+
+		<!-- Best Time To Reach -->
+        <div>Best time to reach you?</div>
+		<br>
+		<div>
+			<md-input-container class="short-input">
+				<label>Earliest</label>
+				<input type="time" step="900" name="earliest" ng-model="data.earliest" />
+			</md-input-container>
+			-
+			<md-input-container class="short-input">
+				<label>Latest</label>
+				<input type="time" step="900" name="latest" ng-model="data.latest" />
+			</md-input-container>
+		</div>
+	
+		<!-- Description -->
+		<div>Briefly describe why you are reaching out.</div>
+		<br>
+		<md-input-container class="md-block short-input">
+			<label>Description</label>
+			<textarea required name="description" ng-model="data.description"></textarea>
+		</md-input-container>
+
+		<!-- Submit -->
 		<div style="text-align: center">
-			<md-button class="md-raised"ng-click="submit(sponsor)">Submit</md-button>
+			<md-button ng-disabled="submitted" class="md-raised" 
+			ng-click="submit(sponsor)">Submit</md-button>
 		</div>
 	</form>
 </div>

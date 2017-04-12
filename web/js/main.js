@@ -33,10 +33,8 @@ angular.module('directives', []);
 var dependencyList = ['ngMaterial', 'ngRoute', 'controllers', 'directives', 'ngMessages']; 
 
 var themeColors = {
-    primary: 'red',
-    accent: 'deep-orange',
-    warn: 'orange',
-    background: 'grey'
+    primary: 'red', accent: 'deep-orange',
+    warn: 'orange', background: 'grey'
 };
 
 var routes = {
@@ -71,7 +69,6 @@ var routes = {
 };
 /*****************************************************************************/
 
-
 /*                       Main Application Setup                              */
 angular.module('badgerloop-site', dependencyList)
 
@@ -103,3 +100,13 @@ angular.module('badgerloop-site', dependencyList)
 	.otherwise({redirectTo: '/home'});
 });
 /*****************************************************************************/
+
+/*                         Splash Screen Setup                               */
+window.onload = function() {
+	document.getElementById('splash_screen').style.animationPlayState = "running";
+	setTimeout(function() {
+		document.getElementById('splash_screen').style.visibility = "hidden";
+	}, 2700);
+}
+/*****************************************************************************/
+

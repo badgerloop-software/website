@@ -4,8 +4,8 @@ angular.module('controllers')
 .controller('navbarController', function($scope, $location) {
 
 	$scope.buttons = [
-		{ text: "docs",		 enabled: false },
-		{ text: "pod",		  enabled: false },
+		//{ text: "docs",		 enabled: false },
+		//{ text: "pod",		  enabled: false },
 		{ text: "contact",	  enabled: false },
 		{ text: "sponsorship",  enabled: false },
 		{ text: "media",		enabled: false },

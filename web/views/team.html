@@ -1,72 +1,16 @@
-<style>
-
-.team-member{
-	border-radius: .25em;
-	overflow: hidden;
-	position: relative;
-	height: 21.875em;
-	width: 20em;
-}
-.team-member .profile-pic{
-    border-radius: 50%;
-    width: 10.875em;
-		height: 10.875em;
-    /*margin: auto;
-    margin-top: 0.938em;*/
-		overflow: hidden;
-		border-color: black;
-		margin: .5em 4.5em;
-	}
-.team-member .profile-pic img{
-	width: 100%;
-	height: 100%;
-
-}
-
-.team-member .profile-pic figure{
-}
-
-#card{
-	border-style: solid;
-	border-radius: 2.188em;
-  height: 19em;
-	width: 20em;
-	display: inline-block;
-  /*background-color: hsla(278, 96%, 100%, 1.0);*/
-}
-
-.team-member .info div{
-	margin: -.063em;
-	padding: .063em;
-	text-align: left;
-	margin-left: 2.5em;
-}
-
-.team-member .info h2{
-	margin: -.063em;
-	text-align: middle;
-}
-
-
-</style>
-
-
 <div class="page-content inner2" md-whiteframe="9">
- 	<h1>Meet the Team </h1>
-   <div id="card" ng-repeat="lead in team_leads">
- 	   <div class=team-member>
- 		     <div>
-		         <figure class="profile-pic">
- 			            <img ng-src="../im/team_leads/{{lead.headshot}}" alt>
- 		         </figure>
- 	       </div>
- 	   <div class="info">
- 	      <h2><b>{{lead.name}}</b></h2>
- 		        <div><b>Role:</b> {{lead.role}}</div>
- 		        <div><b>Major:</b> {{lead.major}}</div>
- 		        <div><b>Year:</b> {{lead.year}}</div>
- 						<br><br><br>
-			</div>
-    </div>
- </div>
-  </div>
+	<h1>Meet the Leads</h1>
+	<div class="card" md-whiteframe="3" ng-repeat="lead in team_leads">
+
+		<img md-whiteframe="3" ng-src="../im/team_leads/{{lead.headshot}}" alt>
+
+		<h2><b>{{lead.name}}</b></h2> <a ng-href="{{lead.linkedin}" target="_newtab"><img ng-src="../im/logos/linkedin_logo.png"></a>
+		<div class="info">
+			<b>Role:</b> {{lead.role}}<br>
+			<b>Major:</b> {{lead.major}}<br>
+			<b>Year:</b> {{lead.year}}<br>
+		</div>
+
+	</div>
+</div>
+

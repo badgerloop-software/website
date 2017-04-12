@@ -83,8 +83,8 @@ a:visited { color: #9B1C1F; }
 	background-color: white;
 	text-align: center;
 	white-space: nowrap;
-	-webkit-animation: loading_screen 4s ease-in 0s 1 normal forwards paused;
-	animation: loading_screen 4s ease-in 0s 1 normal forwards paused;
+	-webkit-animation: loading_screen 2.5s ease-in 0s 1 normal forwards paused;
+	animation: loading_screen 2.5s ease-in 0s 1 normal forwards paused;
 }
 @-webkit-keyframes loading_screen { from { opacity: 1; } to { opacity: 0; } }
 @keyframes loading_screen { from { opacity: 1; } to { opacity: 0; } }
@@ -113,6 +113,73 @@ a:visited { color: #9B1C1F; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+/*****************************************************************************/
+/*****************************************************************************/
+
+/*****************************************************************************/
+/*                              Contact Form                                 */
+/*****************************************************************************/
+#contact-page {
+	font-size: 1.25em;
+	width: 100%;
+}
+
+#contact-page .center-la {
+	text-align: left;
+	display: inline-block;
+	padding: 0em 1em;
+}
+
+#contact-page .form-style {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	border-radius: 1em;
+	padding: 1em;
+	max-width: 90%;
+	margin: 1em;
+}
+
+.short-input {
+	max-width: 35em;
+	margin: 0.5em;
+}
+
+.form-event {
+	padding: 1em;
+	border-radius: 1em;
+	visibility: hidden;
+	margin: auto;
+	display: none;
+}
+
+.form-error { background-color: rgba(237, 83, 35, 0.7); }
+.form-success { background-color: rgba(0, 255, 0, 0.7); }
+/*****************************************************************************/
+/*****************************************************************************/
+
+/*****************************************************************************/
+/*                               Team Page                                   */
+/*****************************************************************************/
+.card {
+	border-radius: 2em;
+	width: 20em;
+	color: white;
+	margin: 1em;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: inline-block;
+}
+
+.card img {
+	border-radius: 50%;
+	max-width: 60%;
+	margin-top: 1.5em;
+}
+
+.card .info {
+	text-align: left;
+	padding: 1em 2em;
+	padding-top: 0em;
 }
 /*****************************************************************************/
 /*****************************************************************************/
