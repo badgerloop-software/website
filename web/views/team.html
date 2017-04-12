@@ -5,14 +5,14 @@
 <div class="page-content inner2" md-whiteframe="9">
 	<h1>Meet the Leads</h1>
 	<div class="card" md-whiteframe="3" ng-repeat="lead in team_leads">
+		<img class="card img" md-whiteframe="3" ng-src="../im/team_leads/{{lead.headshot}}" alt>
 
-		<img md-whiteframe="3" ng-src="../im/team_leads/{{lead.headshot}}" alt>
-
-		<h2><b>{{lead.name}}</b></h2> 
+		<h2><b>{{lead.name}}</b></h2>
 		<div class="info">
 			<b>Role:</b> {{lead.role}}<br>
 			<b>Major:</b> {{lead.major}}<br>
 			<b>Year:</b> {{lead.year}}<br>
+			<a ng-href="{{lead.linkedin}}" target="_newtab"><img class="linkedin_icon" ng-src="../im/logos/linkedin_logo.png"></a>
 		</div>
 
 	</div>
