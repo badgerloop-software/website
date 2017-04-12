@@ -250,6 +250,19 @@ headshot: "Peter-V2.jpg",
 members: ["Cale Geffre"]
 };
 
+var outreach_recruiting= {
+name: "Cole Hess",
+role: "Outreach & Recruiting Team Lead",
+email: "cole.hess@wisc.edu",
+	mantra: "Educates the general public about Badgerloop and Hyperloop technology",
+	major: "Mechanical Engineering",
+	year: "2nd Year MS",
+	Description: "The goal of our team is to promote Badgerloop through participation in community events that are designed to educate the public about our team and what Hyperloop is. ALso, through our outreach activities we hope to inspire future generations to pursue innovative new ideas and become future leaders. In addition, we seek to recruit driven, passionate new Badgerloop members and we work closelely with the Industry Relations to develop and maintain support from our industry partners.",
+	linkedin: "https://www.linkedin.com/in/cole-hess-637a99106/",
+	headshot: "Cole-V2.jpg",
+	members: ["Isak Bowron", "Abby Lamb"]
+};
+
 	$scope.team_leads = [
 		president, technical_director,
 		electrical_systems_director,
@@ -257,7 +270,7 @@ members: ["Cale Geffre"]
 		braking, composites, controls,
 		electrical, propulsion, stability,
 		structural_design, structural_analysis,
-		software, fsc, industry, marketing, media, virtual_reality
+		software, fsc, industry, marketing, media, virtual_reality, outreach_recruiting
 	];
 
   if (globalUpdateButtons) globalUpdateButtons();
