@@ -179,7 +179,8 @@ a:visited { color: #9B1C1F; }
 .linkedin_icon{
   width: 1.5em;
   height: 1.5em;
-  text-align: center;
+  float: right;
+  margin-bottom: .75em;
 }
 
 .card .info {

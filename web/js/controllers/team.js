@@ -76,7 +76,7 @@ var braking = {
 	description: "You can only go as fast as you can stop and for a speed challenge we must envision, create, and deliver on that using the learnings from every corner of engineering and I’m here to facilitate precisely that each step of the way. ",
 	linkedin: "",
 	headshot: "Arjun-V2.jpg",
-	members: ["Kyle Seledic", "Atul Anand", "Ethan Coloma", "Will Moe", "Adam Alfieri", "Majed Alawami", "Sanket Singal", "Mitch Wall"]
+	members: ["Kyle Seledic", "Atul Anand", "Will Moe", "Adam Alfieri", "Mitch Wall"]
 };
 
 var composites = {
@@ -89,7 +89,7 @@ var composites = {
 	description: "The goal of my team is to design and simulate a sleek, lightweight shell that can handle any loads that the pod may encounter.  By creating our our own foam plug and mold, we are able to make the shell from the ground up using advanced composite materials and techniques.  In addition, we design any extra components that benefit from the strong, lightweight aspects of composite structures.",
 	linkedin: " https://www.linkedin.com/in/nathan-orf-56a17310b/",
 	headshot: "Nathan-V2.jpg",
-	members: ["Cody Schwartz"]
+	members: ["Cody Schwartz", "Luke Kabasta", "Matt Benbenek"]
 };
 
 var controls = {
@@ -102,7 +102,7 @@ var controls = {
 	description: "Our team’s primary goal is to develop better engineers. With better engineers, we will have a better controls team and a better pod. ",
 	linkedin: "https://www.linkedin.com/in/nicholas-beckwith-87199365/",
 	headshot: "Nick.jpg",
-	members: ["Doug Dresser", "Ezra Boley", "Owen Zinkgraf", "Austin Muschott" ]
+	members: ["Doug Dresser", "Ezra Boley", "Owen Zinkgraf", "Gregg Van Dycke", "Sam Schreiner"]
 };
 
 
@@ -116,7 +116,7 @@ var electrical = {
 	description: "We move electrons— Building a pod requires bringing the principles taught in the ECE curriculum into the real world. We ensure that mechatronics of the pod are functional, accurate and feasible.",
 	linkedin: "https://www.linkedin.com/in/ryan-castle-589721106/",
 	headshot: "Ryan-V2.jpg",
-	members: ["Gregg Van Dycke", "Sam Bitter", "Ezra Boley", "Doug Dresser", "William Gorecki", "Wangnan Zhong", "Tristan Steiner", "Christian Martinez", "Jeffrey Keyser"]
+	members: ["Gregg Van Dycke", "Sam Bitter", "Ezra Boley", "Doug Dresser", "William Gorecki", "Wangnan Zhong", "Tristan Steiner", "Noah Mailloux"]
 };
 
 
@@ -130,7 +130,7 @@ var propulsion= {
 	description: "",
 	linkedin: "https://www.linkedin.com/in/clayton-fellman-b182a4102/",
 	headshot: "Clay-V2.jpg",
-	members: ["Mark Swartz", "Zach Alden", "Trent Gerew" ]
+	members: ["Mark Swartz", "Zach Alden", "Trent Gerew", "Derrick Bohl", "Matt Challe"]
 };
 
 var stability= {
@@ -138,7 +138,7 @@ var stability= {
 	role: "Stability Team Lead",
 	email: "benkishter@gmail.com",
 	mantra: "Ensures that the pod remains stable on the test track throughout the run",
-	major: "Engineering Mechanics Astronautics",
+	major: "Engineering Mechanics & Astronautics",
 	year: "Freshman",
 	description: "Ensure pod does not vary from its desired course along the run by designing and building a passive suspension system that controls the pod laterally and attitudinally.",
 	linkedin: "",
@@ -185,6 +185,19 @@ var software= {
 	members: ["Kody Fisher"]
 };
 
+var vacuum_testing= {
+	name: "Brandon Hahn",
+	role: "Vacuum Test Team Lead",
+	email: "x",
+	mantra: "",
+	major: "x",
+	year: "x",
+	description: "",
+	linkedin: "x",
+	headshot: "",
+	members: ["x"]
+};
+
 var fsc= {
 	name: "Alex Kuo",
 	role: "Finance and Supply Chain Team Lead",
@@ -208,7 +221,7 @@ var industry= {
 	description: "The Industry Relations team works in collaboration with sponsors and Badgerloop members to find a solution that the sponsor company can provide. This, in turn, furthers the fabrication process of the pod and allows Badgerloop to remain competitive.",
 	linkedin: "https://www.linkedin.com/in/kali-kinziger-68a5b1123/",
 	headshot: "Kali-V2.jpg",
-	members: ["Emma Krueger", "Abby Lamb", "Ben Gust", "Isak Bowron", "Cole Hess" ]
+	members: ["Emma Krueger", "Abby Lamb", "Ben Gust", "Isak Bowron", "Cole Hess", "Leah Akins"]
 };
 
 var marketing= {
@@ -234,7 +247,7 @@ var media= {
 	Description: "Our team’s role is to maintain a quality portrayal of the Badgerloop team by creating media content that promotes the team’s efforts. We work with everything from graphic design to video production and journalism, all meant to inform the public about the many aspects of the team",
 	linkedin: "https://www.linkedin.com/in/noah-pulvermacher-8a36b5a8/",
 	headshot: "Noah-V2.jpg",
-	members: []
+	members: ["Chris Lueneburg", "Nate Mach", "Leon Yee Leong Tan", "Emil Dobrev"]
 };
 
 var virtual_reality= {
@@ -247,7 +260,7 @@ year: "Graduate Student",
 Description: "In an effort to provide meaningful applications of virtual reality in engineering and industry applications, we seek to explore extensions to current Virtual reality technologies. We aim to provide a platform for students to learn topics in graphics, virtual reality technologies, and human perception.",
 linkedin: "",
 headshot: "Peter-V2.jpg",
-members: ["Cale Geffre"]
+members: ["Cale Geffre", "Darby Anderson", "James Liu", "Utkarsh Maheshwari", "Shikhar Mittal", "Eric Amikam"]
 };
 
 var outreach_recruiting= {
@@ -263,6 +276,32 @@ email: "cole.hess@wisc.edu",
 	members: ["Isak Bowron", "Abby Lamb"]
 };
 
+var feasibility= {
+name: "Michael Schlicting",
+role: "Feasibility Team Lead",
+email: "michael.schlicting@gmail.com",
+	mantra: "Educates the general public about Badgerloop and Hyperloop technology",
+	major: "Transportation Administration",
+	year: "PHD",
+	Description: "",
+	linkedin: "",
+	headshot: "Mike-V2.jpg",
+	members: ["Justin Schrimmer", "Utkarsh Maheshwari"]
+};
+
+var faculty_advisor = {
+name: "Michael Cheadle",
+role: "Faculty Advisor",
+email: "mcheadle@wisc.edu",
+	mantra: "",
+	major: "Mechanical Engineering",
+	year: "",
+	Description: "",
+	linkedin: "",
+	headshot: "cheadle_michael.jpg",
+	members: []
+};
+
 	$scope.team_leads = [
 		president, technical_director,
 		electrical_systems_director,
@@ -270,7 +309,8 @@ email: "cole.hess@wisc.edu",
 		braking, composites, controls,
 		electrical, propulsion, stability,
 		structural_design, structural_analysis,
-		software, fsc, industry, marketing, media, virtual_reality, outreach_recruiting
+		software, fsc, industry, marketing, media, virtual_reality, outreach_recruiting,
+		feasibility, faculty_advisor
 	];
 
   if (globalUpdateButtons) globalUpdateButtons();

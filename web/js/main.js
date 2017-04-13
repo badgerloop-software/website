@@ -30,7 +30,7 @@ angular.module('directives', []);
 
 
 /*                            Configuration Settings                         */
-var dependencyList = ['ngMaterial', 'ngRoute', 'controllers', 'directives', 'ngMessages']; 
+var dependencyList = ['ngMaterial', 'ngRoute', 'controllers', 'directives', 'ngMessages'];
 
 var themeColors = {
     primary: 'red', accent: 'deep-orange',
@@ -38,7 +38,7 @@ var themeColors = {
 };
 
 var routes = {
-    homeRoute: {    
+    homeRoute: {
 	    templateUrl: 'views/home.html',
 	    controller: 'homeController'
     },
@@ -60,12 +60,17 @@ var routes = {
     },
     mediaRoute: {
         templateUrl: 'views/media.html',
-        controller: 'mediaController' 
+        controller: 'mediaController'
+    },
+		aboutRoute: {
+        templateUrl: 'views/about.html',
+        controller: 'aboutController'
     },
     teamRoute: {
         templateUrl: 'views/team.html',
-        controller: 'teamController' 
+        controller: 'teamController'
     }
+
 };
 /*****************************************************************************/
 
@@ -95,6 +100,7 @@ angular.module('badgerloop-site', dependencyList)
 	.when('/docs', routes.docsRoute)
 	.when('/team', routes.teamRoute)
 	.when('/media', routes.mediaRoute)
+	.when('/about', routes.aboutRoute)
 	.when('/sponsorship', routes.sponsorshipRoute)
     /*************************************************************************/
 	.otherwise({redirectTo: '/home'});
@@ -109,4 +115,3 @@ window.onload = function() {
 	}, 2700);
 }
 /*****************************************************************************/
-

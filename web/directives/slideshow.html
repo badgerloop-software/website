@@ -28,9 +28,11 @@
 </style>
 <div class="page-content inner2" md-whiteframe="9">
 	<div id="sponsor-slideshow">
-		<span ng-repeat="im in logos">
+		<span ng-repeat="x in logos">
+		<span ng-repeat="im in x">
 			<a ng-href="{{im.site}}" target="_newtab"><img ng-src="../im/sponsor/{{im.name}}.png"></a>
 		</span>
+	</span>
 
 		<!-- To make sure infinite scroll doesn't have a gap -->
 		<span ng-repeat="im in logos">
