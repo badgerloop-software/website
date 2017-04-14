@@ -12,19 +12,21 @@
 
 .line {
 	padding: 0;
-	border: 1px solid;
+	border: .063em solid;
 	color: #333;
 	text-align: center;
 }
 
 .box {
-    background-color:teal;
-    width:150px;
-    height:30px;
+    background-color:white;
+		color: black;
+    width:10em;
+    height: 1.875em;
     position:relative;
-    left: 40%;
+		float: center;
+    left: 45%;
     bottom:90%;
-    padding-top:20px;
+    padding-top:1.250em;
 
 }
 
@@ -38,31 +40,31 @@
 		<md-button class="md-raised"><b>SPONSORSHIP PACKET</b></md-button>
 	</a>-->
 
-	<div class="box">Platinum Sponsors</div>
+	<div class="box"><b>Platinum Sponsors</b></div>
 	<hr class="line">
 	<div class="sponsor-logos" ng-repeat="sponsor in platinum_logos">
-		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.name}}.png"></a>
+		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
         <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
 			</div>
 
-	<div class="box">Gold Sponsors</div>
+	<div class="box"><b>Gold Sponsors</b></div>
 	<hr class="line">
 	<div class="sponsor-logos" ng-repeat="sponsor in gold_logos">
-		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.name}}.png"></a>
+		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
         <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
 			</div>
 
-	<div class="box">Silver Sponsors</div>
+	<div class="box"><b>Silver Sponsors</b></div>
 	<hr class="line">
 	<div class="sponsor-logos" ng-repeat="sponsor in silver_logos">
-		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.name}}.png"></a>
+		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
         <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
 			</div>
 
-	<div class="box">Bronze Sponsors</div>
+	<div class="box"><b>Bronze Sponsors</b></div>
 	<hr class="line">
 	<div class="sponsor-logos" ng-repeat="sponsor in bronze_logos">
-		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.name}}.png"></a>
+		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
         <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
 			</div>
 

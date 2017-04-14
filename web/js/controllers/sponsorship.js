@@ -1,95 +1,121 @@
 var platinum_logos = [
 	{
-		name: 'Altium', // not in slideshow yet
+		name: 'Altium',
+		img: 'Altium',
 		site: 'http://www.altium.com/'
 	},
 	{
 		name: 'ANSYS',
+		img: 'ANSYS',
 		site: 'http://www.ansys.com/'
 	},
 	{
-		name: 'Bimba',
-		site: 'http://www.bimba.com/'
-	},
-	{
-		name: 'Derksen',
-		site: 'http://www.derksenprinters.com/'
-	},
-	{
-		name: 'Design-Concepts',
-		site: 'http://www.design-concepts.com/'
-	},
-	{
-		name: 'Plymouth_Foam',
-		site: 'http://www.plymouthfoam.com/'
-	},
-	{
 		name: 'Boxx',
+		img: 'Boxx',
 		site: 'https://www.boxx.com/'
 	},
-	{
-		name: 'Tektronix',
+	/*{
+		name: 'Tektronix', //thisn
+		img: 'Tektronix',
 		site: 'http://www.tek.com/'
-	},
+	},*/
 	{
 		name: 'HP',
+		img: 'HP',
 		site: 'http://www.hp.com/country/us/en/welcome.html'
 	},
-	{
-		name: 'OnFloor',
+	/*{
+		name: 'OnFloor', //thisn
+		img: 'OnFloor',
 		site: 'https://onfloor.com/'
-	},
-	{
-		name: 'Siemens',
-		site: 'http://www.siemens.com/us/en/home.html'
-	},
+	},*/
 	{
 		name: 'Snap-on',
+		img: 'Snap-on',
 		site: 'https://store.snapon.com/'
 	}
 ]
 var gold_logos= [
 	{
-		// name: ,
-		// site: ''
-	}
+		name: 'Siemens',
+		img: 'Siemens',
+		site: 'http://www.siemens.com/us/en/home.html'
+	},
 ]
 
 var silver_logos=[
 	{
 		name: 'Qualcomm',
+		img: 'Qualcomm',
 		site: 'https://www.qualcomm.com/'
 	},
 	{
-		name: '1403',
+		name: '@1403',
+		img: '1403',
 		site: 'http://universityresearchpark.org/the-property/1403-2/'
 	},
 	{
 		name: 'Plexus',
+		img: 'Plexus',
 		site: 'http://www.plexus.com/'
 	},
 ]
 
 var bronze_logos=[
-	{
-		name: 'Keysight_Technologies',
+	/*{
+		name: 'Keysight Technologies', //thisn
+		img: 'Keysight_Technologies',
 		site: 'http://www.keysight.com/main/home.jspx?cc=US&lc=eng'
-	},
+	},*/
 	{
-		name: 'ATA_Engineering',
+		name: 'ATA Engineering',
+		img: 'ATA_Engineering',
 		site: 'http://www.ata-e.com/'
 	},
 	{
-		name: 'ESwitch',	// not in slideshow yet
+		name: 'E-Switch',
+		img: 'ESwitch',
 		site: 'https://www.e-switch.com/'
 	},
 	{
-		name: 'Bulletproof_Automotive',
+		name: 'Bulletproof Automotive',
+		img: 'Bulletproof_Automotive',
 		site: 'http://www.bulletproofautomotive.com/'
 	},
-	{
-		name: 'HomeRevolution',
+	/*{
+		name: 'HomeRevolution', //thisn
+		img: 'HomeRevolution',
 		site: 'https://www.homerev.com/'
+	},*/
+	{
+		name: 'Plymouth Foam',
+		img: 'Plymouth_Foam',
+		site: 'http://www.plymouthfoam.com/'
+	},
+	{
+		name: 'Derksen',
+		img: 'Derksen',
+		site: 'http://www.derksenprinters.com/'
+	},
+	{
+		name: 'Bimba',
+		img: 'Bimba',
+		site: 'http://www.bimba.com/'
+	},
+	{
+		name: 'Design Concepts',
+		img: 'Design-Concepts',
+		site: 'http://www.design-concepts.com/'
+	},
+	{
+		name: 'AWC Wire',
+		img: 'AWC',
+		site: 'http://www.awcwire.com/'
+	},
+	{
+		name: 'Triad Magnetics',
+		img: 'Triad',
+		site: 'http://www.triadmagnetics.com/index.html'
 	},
 ]
 

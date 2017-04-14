@@ -3,7 +3,7 @@
 /* Gotta figure out the equation for the offset */
 @keyframes slideshow {
 	0%		{ left: 0; }
-	100%	{ left: calc(-6678px); }
+	100%	{ left: calc(-7620px); }
 }
 
 #sponsor-slideshow {
@@ -28,16 +28,18 @@
 </style>
 <div class="page-content inner2" md-whiteframe="9">
 	<div id="sponsor-slideshow">
-		<span ng-repeat="x in logos">
-		<span ng-repeat="im in x">
-			<a ng-href="{{im.site}}" target="_newtab"><img ng-src="../im/sponsor/{{im.name}}.png"></a>
+		<span ng-repeat="tier in logos">
+		<span ng-repeat="sponsor in tier">
+			<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
 		</span>
 	</span>
 
 		<!-- To make sure infinite scroll doesn't have a gap -->
-		<span ng-repeat="im in logos">
-			<a ng-href="{{im.site}}" target="_newtab"><img ng-src="../im/sponsor/{{im.name}}.png"></a>
+		<span ng-repeat="tier in logos">
+			<span ng-repeat="sponsor in tier">
+			<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
 		</span>
+	</span>
 	</div>
 	<h2 style="margin: 1em">{{header}} Click
 		<a href="#/sponsorship">here</a>
