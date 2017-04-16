@@ -177,10 +177,18 @@ a:visited { color: #9B1C1F; }
 }
 
 .linkedin_icon{
-  width: 1.5em;
-  height: 1.5em;
-  float: right;
-  margin-bottom: .75em;
+  width: 1.75em;
+  height: 2em;
+  margin-left: 6em;
+  margin-top: .2em;
+  margin-bottom: .25em;
+}
+
+.email_icon{
+  width: 3em;
+  height: 3em;
+  margin-left: .2em;
+  vertical-align: bottom;
 }
 
 .card .info {

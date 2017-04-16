@@ -1,6 +1,12 @@
+<style>
+.title{
+	font-size: 48px;
+}
+</style>
+
 
 <div class="page-content inner2" md-whiteframe="9">
-	<h1>Meet the Team Leads</h1>
+	<h1 class="title">Meet the Team Leads</h1>
 	<div class="card" md-whiteframe="3" ng-repeat="lead in team_leads">
 		<img class="card img" md-whiteframe="3" ng-src="../im/team_leads/{{lead.headshot}}" alt>
 
@@ -9,8 +15,8 @@
 			<b>Role:</b> {{lead.role}}<br>
 			<b>Major:</b> {{lead.major}}<br>
 			<b>Year:</b> {{lead.year}}<br>
-			<!--<a ng-href="{{lead.linkedin}}" target="_newtab"><img class="linkedin_icon" ng-src="../im/logos/linkedin_logo.png"></a>
-			<a ng-href="{{lead.email}}" target="_newtab"><img class="linkedin_icon" ng-src="../im/logos/envelope.png"></a>-->
+			<a ng-href="{{lead.linkedin}}" target="_newtab"><img class="linkedin_icon" ng-src="../im/logos/linkedin_logo.png"></a>
+			<md-tooltip md-direction="bottom">{{lead.email}}</md-tooltip><img class="email_icon" ng-src="../im/logos/email (1).png">
 		</div>
 
 	</div>

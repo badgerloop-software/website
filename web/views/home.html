@@ -1,11 +1,5 @@
 <style>
 
-.dark-body {
-	background-color: rgba(50, 50, 50, 0.9);
-	color: white;
-	display: inline-block;
-}
-
 #youtube-videos { width: 100%; }
 #youtube-videos div {
 	padding: 1em;
@@ -13,19 +7,43 @@
 	border-radius: 1em;
 	vertical-align: middle;
 }
-
-#who-what-why { width: 100%; }
-#who-what-why div {
-	padding: 2em 2em;
-	margin: 1em 1em;
-	border-radius: 1em;
-	vertical-align: middle;
-}
-
 #mantra {
 	border-radius: 1em;
 	padding: 0em 1em;
 	margin: 2em;
+}
+
+.dark-body {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	display: inline-block;
+}
+
+
+@media only screen and (max-width: 768px) {
+	#home-body { max-width: 95%; }
+	#home-body p { font-size: 1em; }
+}
+
+.text-body {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	display: inline-block;
+	margin: 1em;
+	margin-left: 10em;
+	float: left;
+}
+
+.text-body p{
+	font-size: 22px;
+	text-align: left;
+	margin-right: 3em;
+	margin-left: 3em;
+}
+
+.text-body h2{
+	font-size: 38px;
+	text-decoration: underline;
 }
 
 #home-body {
@@ -39,12 +57,27 @@
 	text-align: left;
 }
 
-@media only screen and (max-width: 768px) {
-	#home-body { max-width: 95%; }
-	#home-body p { font-size: 1em; }
+#individual {
+	display: inline-block;
+	word-wrap: break-word;
+	width: 400px;
+	height: 400px;
+	font-size: 12px;
+	display: table-cell;
+
 }
 
+#container{
+	display: flex;
+	align-items: center;
+}
+
+#reveal{
+	height: 399px;
+	width: 641px;
+}
 </style>
+
 <div class="page-content inner1" md-whiteframe="9">
 
 	<div id="mantra" class="dark-body">
@@ -72,37 +105,47 @@
 		</div>
 	</div>
 
-	<div id="home-body" class="dark-body" md-whiteframe="3">
-		<p>Founded in the Summer of 2015 after <a href="http://www.spacex.com/" target="_newtab">SpaceX</a> announced
-		the Hyperloop Pod Design Competition, Badgerloop is a student organization at the
-		<a href="http://www.wisc.edu/" target="_newtab">University of Wisconsin-Madison</a>
-		helping determine if <a href="https://en.wikipedia.org/wiki/Hyperloop" target="_newtab">
-		hyperloop</a>
-		could become reality. We provide members with the unique
-		opportunity to work on real world engineering and transportation
-		infrastructure challenges. <a href="#/team">Our members</a>
-		come from a diverse variety of majors and range in age from
-		freshmen to graduate students.</p>
-		<br>
-		<p>At the Design Weekend competition in early 2016,
-		our efforts earned us third place out of 120
-		international teams. A year later in January 2017,
-		we competed at <a href="http://www.spacex.com/hyperloop" target="_newtab">Hyperloop Pod Competition</a> I and took
-		home one of two Innovation Awards. We are currently
-		creating a light, fast and safe pod to compete in
-		Competition II with the goal of performing best
-		overall and establishing Badgerloop as a contributor
-		in the development of high-speed transportation
-		related technology!</p>
-	</div>
+<div id="container">
+<div class="text-body">
+<h2>Who we are</h2>
+<p> - University of Wisconsin-Madison students</p>
+<p> - Multidisciplinary majors</p>
+<p> - Freshmen to PhD students</p>
+
+<h2>What we do</h2>
+<p> - Build pods to compete in Hyperloop Competitions</p>
+<p> - Create an unparalleled learning environment for students to<br> work on real world problems in a pseudo-startup setting</p>
+<p> - Analyze the feasibility of Hyperloop technology across the U.S.</p>
+
+<h2>Why we do it</h2>
+<p> - Enthused by the concept of Hyperloop technology</p>
+<p> - Love to work on challenging problems that could improve<br> the speed and sustainability of future transportation</p>
+<p> - Grow as students by applying our knowledge outside the<br> classroom and conquering real-world challenges</p>
+</div>
+
+<div>
+
+	<figure>
+		<img src="../im/elon/freeze_frame.jpg">
+		<figcaption> Elon sitting in our Pod </figcaption>
+	</figure>
+
+	<figure>
+		<img id="reveal" src="../im/action/Reveal Event (1).jpg">
+		<figcaption> The pod at our reveal event </figcaption>
+	</figure>
+
+</div>
+
+</div>
 
 </div>
 
 <image-slideshow></image-slideshow>
 
-<div class="page-content inner2" md-whiteframe="9">
+<!--<div class="page-content inner2" md-whiteframe="9">
 	<figure>
 		<img src="../im/elon/freeze_frame.jpg" style="border-radius: 10%; margin-bottom: 1em">
 		<figcaption><b>Thanks for checking out our pod, Elon!</b></figcaption>
 	</figure>
-</div>
+</div>-->

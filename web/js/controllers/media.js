@@ -130,11 +130,11 @@ var articles = [
   		site: 'http://www.ansys-blog.com/badgerloop-hyperloop-competition/',
       title: 'Badgerloop Takes Number 3 Spot at Hyperloop Competition',
       date: 'Feb 12, 2016'
-  	}
-  ];
+  	},
+  ]
 
-  angular.module('controllers')
-  .controller('mediaController', function($scope) {
+angular.module('controllers')
+  .controller('mediaController', function ($scope) {
     $scope.header = "Featured In";
     $scope.articles = articles;
 

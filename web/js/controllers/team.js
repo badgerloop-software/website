@@ -69,7 +69,7 @@ var battery = {
 var braking = {
 	name: "Arjun Chaudhary",
 	role: "Braking Team Lead",
-	email: "achaudhary4@wisc.edua",
+	email: "achaudhary4@wisc.edu",
 	mantra: "Designs and builds the pod’s high speed braking system",
 	major: "Mechanical Engineering",
 	year: "Sophomore",
