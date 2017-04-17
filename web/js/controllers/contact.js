@@ -57,9 +57,10 @@ var other_form = {
 	template: "directives/forms/other.html"
 };
 
-var slack_url = 'https://hooks.slack.com/services/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';
+var activity_url = 'https://hooks.slack.com/services/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';
+var teamleads_url = 'https://hooks.slack.com/services/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';
 
-function submit_form(data, form_title) {
+function submit_form(data, form_title, url) {
 	var xhr = new XMLHttpRequest();
 	xhr.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status != 200) {
@@ -68,7 +69,7 @@ function submit_form(data, form_title) {
 			console.log(this.status + ": " + xhr.responseText);
 		}
 	}
-	xhr.open("POST", slack_url, true);
+	xhr.open("POST", url, true);
 	xhr.send(build_post(data, form_title));
 }
 
@@ -93,7 +94,10 @@ angular.module('controllers')
 		if ($scope.forms.indexOf(form) == -1)
 			console.log("Something went wrong!");
 		var result = form.handler();
-		if (result) submit_form(result, form.title);
+		if (result)
+			submit_form(result, form.title,
+			(form === $scope.student) ? 
+				teamleads_url : activity_url);
 	};
 
 	// Javascript AKA hacking
