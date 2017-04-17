@@ -4,10 +4,14 @@
 	background-color: rgba(50, 50, 50, 0.9);
 	color: white;
 	display: inline-block;
-	width: 40em;
-	height: 30em;
+	/*width: 40em;*/
+	height: 32em;
+	width: 30%;
+	margin-right: 2em;
 	padding: 0.5em 1em;
 	margin-bottom: 2em;
+	word-wrap: normal;
+	margin-top: 3em;
 }
 
 .dark-body p {
@@ -19,20 +23,20 @@
 	font-size: 48px;
 }
 
-
 #team_photo{
 	width: 70em;
+	max-width: 90%;
 	height: 35em;
 	margin-top: 1.5em;
 }
 
 #photoandtext{
-	display: inline-block;
+	display: flex;
+	float: left;
 }
 
 #container{
-	display: flex;
-	align-items: center;
+	display: inline-block;
 }
 
 </style>
@@ -45,7 +49,7 @@
 
 <div id="photoandtext">
 	<figure>
-		<img src="../im/team/Team-Photo-Narrow.png" id = "team_photo">
+		<img src="../im/team/Team-Photo-Narrow.png" id="team_photo">
 		<figcaption><b>Our Team</b></figcaption>
 	</figure>
 </div>
