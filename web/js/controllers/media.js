@@ -65,12 +65,12 @@ var articles = [
       title: 'Badgerloop Pod Reveal',
       date: 'Dec 6, 2016'
   	},
-    {
+    /*{
   		name: 'Milwaukee Electronics',
   		site: 'http://blog.milwaukeeelectronics.com/2017/01/24/screaming-circuits-provides-prototype-circuits-to-badgerloop/',
       title: 'Screaming Circuits provides Prototype Circuits to Badgerloop',
       date: 'Jan 24, 2017'
-  	},
+  	},*/
     {
   		name: 'WORT FM',
   		site: 'https://www.wortfm.org/hyperloop-and-uw-madisons-badgerloop-team/',
