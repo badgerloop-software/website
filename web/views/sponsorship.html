@@ -7,99 +7,65 @@
 }
 
 .sponsor-logos img {
-	height: 125px;
+	height: 7.813em;
 	margin: 1em;
 }
 
 .line {
-	font-size: 32px;
+	font-size: 2em;
 	background-color: black;
-	padding: 8px 18px;
+	padding: 0.5em 1.125em;
 	color: rgb(187, 0, 0);
-	border-radius: 20px;
+	border-radius: 1.25em;
 }
 
 .box {
 	width: 100%;
-	height: 20px;
-	border-bottom: 1px solid black;
+	height: 1.25em;
+	border-bottom: .063em solid black;
 	text-align: center
-}
-
-.title{
-	font-size: 48px;
-	display: inline-block;
-}
-
-.title-bar{
-	display: inline-block;
-}
-
-#packet{
-	float: right;
-	margin-right: 20px;
-	margin-top: 55px;
-}
-
-#go-away{
-	margin-top: 10px;
 }
 
 
 </style>
 <div class="page-content inner2" md-whiteframe="9">
 
-
 	<div class="title-bar">
-	<h2 class="title" id="title">Our Sponsors</h2>
-</div>
-<!--<div class="title-bar" id="packet">
-	<a href="pdf/BadgerloopSponsorPacket.pdf" target="_newtab">
-		<md-button class="md-raised"><b>SPONSORSHIP PACKET</b></md-button>
-	</a>
-</div>-->
+		<h1>Our Sponsors</h1>
+	</div>
+
+	<div class="box">
+  	<span class="line">Platinum Sponsors</span>
+	</div>
+	<div class="sponsor-logos" ng-repeat="sponsor in platinum_logos">
+		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+    <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
+	</div>
+
+	<div class="box">
+		<span class="line">Gold Sponsors</span>
+	</div>
+	<div class="sponsor-logos" ng-repeat="sponsor in gold_logos">
+		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+  	<md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
+	</div>
 
 
 	<div class="box">
-  <span class="line">
-    Platinum Sponsors
-  </span>
-</div>
-	<div class="sponsor-logos" ng-repeat="sponsor in platinum_logos">
-		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
-        <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
-			</div>
-
-			<div class="box">
-			<span class="line">
-				Gold Sponsors
-			</span>
-		</div>
-	<div class="sponsor-logos" ng-repeat="sponsor in gold_logos">
-		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
-        <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
-			</div>
-
-
-			<div class="box">
-			<span class="line">
-				Silver Sponsors
-			</span>
-		</div>
+		<span class="line">Silver Sponsors</span>
+	</div>
 	<div class="sponsor-logos" ng-repeat="sponsor in silver_logos">
 		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
-        <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
-			</div>
+    <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
+	</div>
 
 
-			<div class="box">
-			<span class="line">
-				Bronze Sponsors
-			</span>
-		</div>
+	<div class="box">
+		<span class="line">Bronze Sponsors</span>
+	</div>
 	<div class="sponsor-logos" ng-repeat="sponsor in bronze_logos">
 		<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
-        <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
-			</div>
+    <md-tooltip md-direction="bottom">{{sponsor.name}}</md-tooltip>
+	</div>
 
 </div>

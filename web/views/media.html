@@ -1,5 +1,4 @@
 <style>
-
 .media-logos {
 	position: relative;
 	margin-top: 0.5em;
@@ -10,11 +9,6 @@
 	height: 125px;
 	margin: 1em;
 }
-
-.title{
-	font-size: 48px;
-}
-
 </style>
 
 <div class="page-content inner2" md-whiteframe="9">
@@ -23,7 +17,7 @@
 </div>
 
 <div class="page-content inner2" md-whiteframe="9">
-	<h2 class="title">Featured In</h2>
+	<h1>Featured In</h1>
 	<div class="media-logos" ng-repeat="source in articles">
 		<a ng-href="{{source.site}}" target="_newtab"><img ng-src="../im/FI-Logos/{{source.name}}.png"></a>
 		<md-tooltip md-direction="bottom">
@@ -34,19 +28,19 @@
 
 <div class="page-content inner2" md-whiteframe="9">
 	<h1> Information on the SpaceX Hyperloop Competition</h1>
-	<div>
-		<a href="http://www.spacex.com/hyperloopalpha" target="_newtab">
-			<md-button class="md-raised"><b>Hyperloop Alpha</b></md-button>
-		</a>
+		<div>
+			<a href="http://www.spacex.com/hyperloopalpha" target="_newtab">
+				<md-button class="md-raised"><b>Hyperloop Alpha</b></md-button>
+			</a>
 
-		<a href="http://www.spacex.com/sites/spacex/files/2016_0831_hyperloop_competition_ii_rules.pdf" target="_newtab">
-			<md-button class="md-raised"><b>Rules and Regulations</b></md-button>
-		</a>
-		<a href="https://en.wikipedia.org/wiki/Hyperloop_pod_competition" target="_newtab">
-			<md-button class="md-raised"><b>Hyperloop Competition's Wikipedia Page</b></md-button>
-		</a>
-		<a href="http://www.spacex.com/hyperloop" target="_newtab">
-			<md-button class="md-raised"><b>SpaceX Website</b></md-button>
-		</a>
-	</div>
+			<a href="http://www.spacex.com/sites/spacex/files/2016_0831_hyperloop_competition_ii_rules.pdf" target="_newtab">
+				<md-button class="md-raised"><b>Rules and Regulations</b></md-button>
+			</a>
+			<a href="https://en.wikipedia.org/wiki/Hyperloop_pod_competition" target="_newtab">
+				<md-button class="md-raised"><b>Hyperloop Competition's Wikipedia Page</b></md-button>
+			</a>
+			<a href="http://www.spacex.com/hyperloop" target="_newtab">
+				<md-button class="md-raised"><b>SpaceX Website</b></md-button>
+			</a>
+		</div>
 </div>

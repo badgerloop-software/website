@@ -141,7 +141,7 @@ var stability= {
 	major: "Engineering Mechanics & Astronautics",
 	year: "Freshman",
 	description: "Ensure pod does not vary from its desired course along the run by designing and building a passive suspension system that controls the pod laterally and attitudinally.",
-	linkedin: "",
+	linkedin: "https://www.linkedin.com/in/ben-kishter-93853a140/",
 	headshot: "Ben-V2.jpg",
 	members: ["Chris Rushmore", "James Ewald", "Trent Gerew"]
 };

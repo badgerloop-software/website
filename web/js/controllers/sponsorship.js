@@ -9,11 +9,6 @@ var platinum_logos = [
 		img: 'ANSYS',
 		site: 'http://www.ansys.com/'
 	},
-	{
-		name: 'Boxx',
-		img: 'Boxx',
-		site: 'https://www.boxx.com/'
-	},
 	/*{
 		name: 'Tektronix', //thisn
 		img: 'Tektronix',
@@ -29,11 +24,6 @@ var platinum_logos = [
 		img: 'OnFloor',
 		site: 'https://onfloor.com/'
 	},*/
-	{
-		name: 'Snap-on',
-		img: 'Snap-on',
-		site: 'https://store.snapon.com/'
-	}
 ]
 var gold_logos= [
 	{
@@ -59,6 +49,16 @@ var silver_logos=[
 		img: 'Plexus',
 		site: 'http://www.plexus.com/'
 	},
+	{
+		name: 'Boxx',
+		img: 'Boxx',
+		site: 'https://www.boxx.com/'
+	},
+	{
+		name: 'Snap-on',
+		img: 'Snap-on',
+		site: 'https://store.snapon.com/'
+	}
 ]
 
 var bronze_logos=[
