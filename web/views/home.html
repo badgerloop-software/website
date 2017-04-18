@@ -1,5 +1,4 @@
 <style>
-
 #youtube-videos { width: 100%; }
 #youtube-videos div {
 	padding: 1em;
@@ -7,6 +6,7 @@
 	border-radius: 1em;
 	vertical-align: middle;
 }
+
 #mantra {
 	border-radius: 1em;
 	padding: 0em 1em;
@@ -19,57 +19,33 @@
 	display: inline-block;
 }
 
-
 @media only screen and (max-width: 768px) {
 	#home-body { max-width: 95%; }
 	#home-body p { font-size: 1em; }
 }
 
+.text-body p { text-align: left; }
 .text-body {
+	font-size: 1.5em;
 	background-color: rgba(50, 50, 50, 0.9);
 	color: white;
 	margin: 1em;
-	margin-left: 4em;
+	padding: 0.5em 1.5em;
 	word-wrap: normal;
 	max-width: 90%;
 }
 
-.text-body p{
-	font-size: 1.3em;
-	text-align: left;
-	margin-right: 3em;
-	margin-left: 3em;
-}
-
-.text-body h2{
-	font-size: 2em;
-	text-decoration: underline;
-}
-
-#container{
-	display: flex;
-	align-items: center;
-}
-
-#reveal{
-	margin-bottom: 1em;
-	height: 20em;
-	max-width: 90%;
-}
-
-.elon{
-	margin-right: 1em;
-}
-
-#photobox{
-	margin-bottom: 4em;
+.photobox {
 	display: inline-block;
+	margin: 0em;
+	margin-top: 2em;
 }
-
-
-
+.photobox img {
+	max-height: 20em;
+	max-width: 90%;
+	border-radius: 0.5em;
+}
 </style>
-
 <div class="page-content inner1" md-whiteframe="9">
 
 	<div id="mantra" class="dark-body">
@@ -97,44 +73,37 @@
 		</div>
 	</div>
 
-<div class="text-body">
-		<h2>Who we are</h2>
-		<p> - University of Wisconsin-Madison students</p>
-		<p> - Multidisciplinary majors</p>
-		<p> - Freshmen to PhD students</p>
-
-		<h2>What we do</h2>
-		<p> - Build pods to compete in Hyperloop Competitions</p>
-		<p> - Create an unparalleled learning environment for students to work on real world problems in a pseudo-startup setting</p>
-		<p> - Analyze the feasibility of Hyperloop technology across the U.S.</p>
-
-		<h2>Why we do it</h2>
-		<p> - Enthused by the concept of Hyperloop technology</p>
-		<p> - Love to work on challenging problems that could improve the speed and sustainability of future transportation</p>
-		<p> - Grow as students by applying our knowledge outside the classroom and conquering real-world challenges</p>
-		<br>
-</div>
-
-<figure id="photobox">
-<img id="reveal" class="elon" src="../im/elon/freeze_frame.jpg">
-<figcaption>Elon sitting in our pod at Competition I </figcaption>
-</figure>
-
-
-
-<figure id="photobox">
-<img id="reveal" src="../im/action/Reveal Event (1).jpg">
-<figcaption> Our first pod reveal event</figcaption>
-</figure>
-
-
 </div>
 
 <image-slideshow></image-slideshow>
 
-<!--<div class="page-content inner2" md-whiteframe="9">
-	<figure>
-		<img src="../im/elon/freeze_frame.jpg" style="border-radius: 10%; margin-bottom: 1em">
-		<figcaption><b>Thanks for checking out our pod, Elon!</b></figcaption>
+<div class="page-content inner1" md-whiteframe="9">
+
+	<figure class="photobox">
+		<img src="../im/elon/freeze_frame.jpg">
+		<figcaption>Thanks for checking out our pod, Elon!</figcaption>
 	</figure>
-</div>-->
+
+	<figure class="photobox">
+		<img src="../im/action/Reveal Event (1).jpg">
+		<figcaption>Pod Reveal Event for Competition I</figcaption>
+	</figure>
+
+	<div class="text-body">
+		<h2>Who we are</h2>
+		<p> - University of Wisconsin-Madison students</p>
+		<p> - Multidisciplinary majors</p>
+		<p> - Freshmen to PhD students</p>
+		<br>
+		<h2>What we do</h2>
+		<p> - Build pods to compete in Hyperloop Competitions</p>
+		<p> - Create an unparalleled learning environment for students to work on real world problems in a pseudo-startup setting</p>
+		<p> - Analyze the feasibility of Hyperloop technology across the U.S.</p>
+		<br>
+		<h2>Why we do it</h2>
+		<p> - Enthused by the concept of Hyperloop technology</p>
+		<p> - Love to work on challenging problems that could improve the speed and sustainability of future transportation</p>
+		<p> - Grow as students by applying our knowledge outside the classroom and conquering real-world challenges</p>
+	</div>
+
+</div>
