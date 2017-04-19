@@ -29,18 +29,19 @@
 <div class="page-content inner2" md-whiteframe="9">
 	<div id="sponsor-slideshow">
 		<span ng-repeat="tier in logos">
-		<span ng-repeat="sponsor in tier">
-			<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+			<span ng-repeat="sponsor in tier.array">
+				<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+			</span>
 		</span>
-	</span>
 
 		<!-- To make sure infinite scroll doesn't have a gap -->
 		<span ng-repeat="tier in logos">
-			<span ng-repeat="sponsor in tier">
-			<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+			<span ng-repeat="sponsor in tier.array">
+				<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+			</span>
 		</span>
-	</span>
 	</div>
+
 	<h2 style="margin: 1em">{{header}} Click
 		<a href="#/sponsorship">here</a>
 		to learn more about sponsorship
