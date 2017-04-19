@@ -13,6 +13,7 @@ html {
 
 h1 {
   font-size: 48px;
+  margin-bottom: 1em;
 }
 
 #main_container {
@@ -48,7 +49,7 @@ iframe {
 
 a { text-decoration: none; }
 /*a:link { color: #F44336; } Fixes differing color on about page hyperlinks */
-a:visited { color: #9B1C1F; }
+a { color: #9B1C1F; }
 /*****************************************************************************/
 /*****************************************************************************/
 
@@ -183,32 +184,9 @@ a:visited { color: #9B1C1F; }
 .linkedin_icon{
   width: 1.2em;
   height: 1.2em;
-  margin-left: 6.5em;
+  margin-left: 1em;
   margin-top: .2em;
   margin-bottom: .25em;
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  margin-top: .5em;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  margin-left: .2em;
-  color: #A7A7A7;
-}
-
-.card .info {
-	text-align: left;
-	padding: 1em 2em;
-	padding-top: 0em;
 }
 /*****************************************************************************/
 /*****************************************************************************/

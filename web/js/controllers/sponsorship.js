@@ -35,19 +35,9 @@ var gold_logos= [
 
 var silver_logos=[
 	{
-		name: 'Qualcomm',
-		img: 'Qualcomm',
-		site: 'https://www.qualcomm.com/'
-	},
-	{
 		name: '@1403',
 		img: '1403',
 		site: 'http://universityresearchpark.org/the-property/1403-2/'
-	},
-	{
-		name: 'Plexus',
-		img: 'Plexus',
-		site: 'http://www.plexus.com/'
 	},
 	{
 		name: 'Boxx',
@@ -55,10 +45,26 @@ var silver_logos=[
 		site: 'https://www.boxx.com/'
 	},
 	{
+		name: 'Carrier Web',
+		img: 'Carrier-Web',
+		site: 'https://www.carrierweb.com/'
+
+	},
+	{
+		name: 'Plexus',
+		img: 'Plexus',
+		site: 'http://www.plexus.com/'
+	},
+	{
+		name: 'Qualcomm',
+		img: 'Qualcomm',
+		site: 'https://www.qualcomm.com/'
+	},
+	{
 		name: 'Snap-on',
 		img: 'Snap-on',
 		site: 'https://store.snapon.com/'
-	}
+	},
 ]
 
 var bronze_logos=[
@@ -73,14 +79,34 @@ var bronze_logos=[
 		site: 'http://www.ata-e.com/'
 	},
 	{
-		name: 'E-Switch',
-		img: 'ESwitch',
-		site: 'https://www.e-switch.com/'
+		name: 'AWC Wire',
+		img: 'AWC',
+		site: 'http://www.awcwire.com/'
+	},
+	{
+		name: 'Bimba',
+		img: 'Bimba',
+		site: 'http://www.bimba.com/'
 	},
 	{
 		name: 'Bulletproof Automotive',
 		img: 'Bulletproof_Automotive',
 		site: 'http://www.bulletproofautomotive.com/'
+	},
+	{
+		name: 'Derksen',
+		img: 'Derksen',
+		site: 'http://www.derksenprinters.com/'
+	},
+	{
+		name: 'Design Concepts',
+		img: 'Design-Concepts',
+		site: 'http://www.design-concepts.com/'
+	},
+	{
+		name: 'E-Switch',
+		img: 'ESwitch',
+		site: 'https://www.e-switch.com/'
 	},
 	/*{
 		name: 'HomeRevolution', //thisn
@@ -91,26 +117,6 @@ var bronze_logos=[
 		name: 'Plymouth Foam',
 		img: 'Plymouth_Foam',
 		site: 'http://www.plymouthfoam.com/'
-	},
-	{
-		name: 'Derksen',
-		img: 'Derksen',
-		site: 'http://www.derksenprinters.com/'
-	},
-	{
-		name: 'Bimba',
-		img: 'Bimba',
-		site: 'http://www.bimba.com/'
-	},
-	{
-		name: 'Design Concepts',
-		img: 'Design-Concepts',
-		site: 'http://www.design-concepts.com/'
-	},
-	{
-		name: 'AWC Wire',
-		img: 'AWC',
-		site: 'http://www.awcwire.com/'
 	},
 	{
 		name: 'Triad Magnetics',
