@@ -94,6 +94,11 @@ var bronze_logos=[
 		site: 'http://www.bulletproofautomotive.com/'
 	},
 	{
+		name: 'Cirrus Aircraft',
+		img: 'Cirrus',
+		site: 'https://cirrusaircraft.com/'
+	},
+	{
 		name: 'Derksen',
 		img: 'Derksen',
 		site: 'http://www.derksenprinters.com/'

@@ -1,5 +1,5 @@
 angular.module('controllers')
-.controller('teamController', function($scope) {
+.controller('teamController', function($scope, $mdPanel) {
 
 var president = {
 	name: "Zuf Wang",
