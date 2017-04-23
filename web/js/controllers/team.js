@@ -1,6 +1,3 @@
-angular.module('controllers')
-.controller('teamController', function($scope, $mdPanel) {
-
 var president = {
 	name: "Zuf Wang",
 	role: "President",
@@ -251,22 +248,22 @@ var media= {
 };
 
 var virtual_reality= {
-name: "Peter Procek",
-role: "Virtual Reality Team Lead",
-email: "procek@wisc.edu",
-mantra: "Designs and creates innovations in virtual reality and software",
-major: "Electrical and Computer Engineering & Computer Science",
-year: "Graduate Student",
-Description: "In an effort to provide meaningful applications of virtual reality in engineering and industry applications, we seek to explore extensions to current Virtual reality technologies. We aim to provide a platform for students to learn topics in graphics, virtual reality technologies, and human perception.",
-linkedin: "",
-headshot: "Peter-V2.jpg",
-members: ["Cale Geffre", "Darby Anderson", "James Liu", "Utkarsh Maheshwari", "Shikhar Mittal", "Eric Amikam"]
+	name: "Peter Procek",
+	role: "Virtual Reality Team Lead",
+	email: "procek@wisc.edu",
+	mantra: "Designs and creates innovations in virtual reality and software",
+	major: "Electrical and Computer Engineering & Computer Science",
+	year: "Graduate Student",
+	Description: "In an effort to provide meaningful applications of virtual reality in engineering and industry applications, we seek to explore extensions to current Virtual reality technologies. We aim to provide a platform for students to learn topics in graphics, virtual reality technologies, and human perception.",
+	linkedin: "",
+	headshot: "Peter-V2.jpg",
+	members: ["Cale Geffre", "Darby Anderson", "James Liu", "Utkarsh Maheshwari", "Shikhar Mittal", "Eric Amikam"]
 };
 
 var outreach_recruiting= {
-name: "Cole Hess",
-role: "Outreach & Recruiting Team Lead",
-email: "cole.hess@wisc.edu",
+	name: "Cole Hess",
+	role: "Outreach & Recruiting Team Lead",
+	email: "cole.hess@wisc.edu",
 	mantra: "Educates the general public about Badgerloop and Hyperloop technology",
 	major: "Mechanical Engineering",
 	year: "2nd Year MS",
@@ -277,9 +274,9 @@ email: "cole.hess@wisc.edu",
 };
 
 var feasibility= {
-name: "Michael Schlicting",
-role: "Feasibility Team Lead",
-email: "michael.schlicting@gmail.com",
+	name: "Michael Schlicting",
+	role: "Feasibility Team Lead",
+	email: "michael.schlicting@gmail.com",
 	mantra: "Educates the general public about Badgerloop and Hyperloop technology",
 	major: "Transportation Administration",
 	year: "PHD",
@@ -290,9 +287,9 @@ email: "michael.schlicting@gmail.com",
 };
 
 var faculty_advisor = {
-name: "Michael Cheadle",
-role: "Faculty Advisor",
-email: "mcheadle@wisc.edu",
+	name: "Michael Cheadle",
+	role: "Faculty Advisor",
+	email: "mcheadle@wisc.edu",
 	mantra: "",
 	major: "Mechanical Engineering",
 	year: "",
@@ -301,6 +298,9 @@ email: "mcheadle@wisc.edu",
 	headshot: "cheadle_michael.jpg",
 	members: []
 };
+
+angular.module('controllers')
+.controller('teamController', function($scope, $mdPanel) {
 
 	$scope.team_leads = [
 		president, technical_director,
@@ -313,42 +313,29 @@ email: "mcheadle@wisc.edu",
 		feasibility, faculty_advisor
 	];
 
-
-function showPanel($event) {
 	var panelPosition = $mdPanel.newPanelPosition()
-			.absolute()
-			.top('50%')
-			.left('50%');
+						.absolute()
+						.center();
 
-	var panelAnimation = $mdPanel.newPanelAnimation()
-			.targetEvent($event)
-			.defaultAnimation('md-panel-animate-fly')
-			.closeTo('.show-button');
-
+	// Can play around with this
 	var config = {
 		attachTo: angular.element(document.body),
-		controller: DialogController,
-		controllerAs: 'ctrl',
+		templateUrl: 'views/team-popup.html',
+		hasBackdrop: true,
 		position: panelPosition,
-		animation: panelAnimation,
-		targetEvent: $event,
-		templateUrl: 'dialog-template.html',
+		trapFocus: true,
+		zIndex: 150,
 		clickOutsideToClose: true,
 		escapeToClose: true,
 		focusOnOpen: true
-	}
+	};
 
-	$mdPanel.open(config)
-			.then(function(result) {
-				panelRef = result;
-			});
-}
+	$scope.showPanel = function($event) {
+		// If you want a button to close instead of
+		// "click off" to close we need to do more
+		// here.
+		$mdPanel.open(config);
+	};
 
-function DialogController(MdPanelRef) {
-	function closeDialog() {
-		if (MdPanelRef) MdPanelRef.close();
-	}
-}
-
-  if (globalUpdateButtons) globalUpdateButtons();
+	if (globalUpdateButtons) globalUpdateButtons();
 });

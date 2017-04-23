@@ -63,6 +63,10 @@
 <div class="page-content inner2" md-whiteframe="9">
 	<h1>Meet the Team Leads</h1>
 
+	<md-button class="md-primary md-raised" ng-click="showPanel($event)">
+		Panel Test
+	</md-button><br>
+
 	<div class="card" md-whiteframe="3" ng-repeat="lead in team_leads">
 		<img class="card img" md-whiteframe="3" ng-src="../im/team_leads/{{lead.headshot}}" alt>
 		<h2><b>{{lead.name}}</b></h2>
@@ -74,10 +78,4 @@
 			<a ng-href="mailto:{{lead.email}}"><i style="color: #A7A7A7; margin-left: .25em;" class="material-icons">email</i></a>
 		</div>
 	</div>
-	<div class="demo-md-panel-content">
-	<md-button class="md-primary md-raised"
-						 ng-click="showPanel">
-		Dialog
-	</md-button>
-</div>
 </div>
