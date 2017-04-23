@@ -12,6 +12,21 @@
 	word-wrap: normal;
 	text-align: left;
 }
+
+.second-body p { font-size: 1.75em; }
+.second-body a { color: #9B1C1F; }
+.second-body {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	max-width: 90%;
+	font-size: 1em;
+	margin: 1em;
+	padding: 0.5em 1em;
+	word-wrap: normal;
+	text-align: left;
+}
+
+
 .team_photo{
 	margin-top: 1em;
 	max-width: 100%;
@@ -60,5 +75,42 @@
 		overall and establishing Badgerloop as a contributor
 		in the development of high-speed transportation
 		related technology!</p></div>
+
+</div>
+
+
+
+<div class="page-content inner2" md-whiteframe="9">
+	<h1> What is the SpaceX Hyperloop Competition?</h1>
+		<div>
+			<a href="https://en.wikipedia.org/wiki/Hyperloop_pod_competition" target="_newtab">
+				<md-button class="md-raised"><b>Wikipedia Page</b></md-button>
+				<md-tooltip md-direction="bottom">Hyperloop Competition's Wikipedia Page</md-tooltip>
+			</a>
+			<a href="http://www.spacex.com/hyperloopalpha" target="_newtab">
+				<md-button class="md-raised"><b>Hyperloop Alpha</b></md-button>
+				<md-tooltip md-direction="bottom">Elon Musk's 2013 Whitepaper on Hyperloop technology</md-tooltip>
+			</a>
+			<a href="http://www.spacex.com/sites/spacex/files/2016_0831_hyperloop_competition_ii_rules.pdf" target="_newtab">
+				<md-button class="md-raised"><b>Rules and Regulations</b></md-button>
+				<md-tooltip md-direction="bottom">Competition II Rules Packet</md-tooltip>
+			</a>
+			<a href="http://www.spacex.com/hyperloop" target="_newtab">
+				<md-button class="md-raised"><b>Competition Page</b></md-button>
+				<md-tooltip md-direction="bottom">Hyperloop Pod Competition page on SpaceX's website</md-tooltip>
+			</a>
+		</div>
+		<div>
+				<div class="second-body">
+				<h2 style="text-align: center;"> The Hyperloop Pod Competition </h2>
+				<div ng-repeat="fact in factoids" style="display: inline-block;">
+					<ul>
+					<li><b style="color:rgb(171, 0, 0);">{{fact.fact}}</b> {{fact.answer}} &nbsp;</li>
+				</ul>
+				</div>
+			</div>
+</div>
+
+		</div>
 
 </div>
