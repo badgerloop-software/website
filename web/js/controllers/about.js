@@ -26,6 +26,18 @@ $scope.factoids = [
     fact:"Objective of the Competition: ",
     answer: "Maximum Speed",
   },
+  {
+    fact: "Length of the Vacuum Tube: ",
+    answer: " 3960 feet (3/4ths of a mile)"
+  },
+  {
+    fact: "Will the event be livestreamed? ",
+    answer: " You bet! We will post the link as the event draws closer."
+  },
+  {
+    fact: "Can We See the Badgerloop Pod Before it goes to California? ",
+    answer: " Yes! Our reveal event will be in late June. More details to come!"
+  },
 ];
 
   if (globalUpdateButtons) globalUpdateButtons();

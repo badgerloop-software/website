@@ -26,20 +26,10 @@
 	text-align: left;
 }
 
-
 .team_photo{
 	margin-top: 1em;
 	max-width: 100%;
 	border-radius: 1em;
-}
-
-#team_photo {
-	margin-top: 1.5em;
-	max-width: 100%;
-}
-
-#container {
-	display: inline-block;
 }
 
 
@@ -81,11 +71,11 @@
 
 
 <div class="page-content inner2" md-whiteframe="9">
-	<h1> What is the SpaceX Hyperloop Competition?</h1>
+	<h1> What is the Hyperloop Pod Competition?</h1>
 		<div>
 			<a href="https://en.wikipedia.org/wiki/Hyperloop_pod_competition" target="_newtab">
 				<md-button class="md-raised"><b>Wikipedia Page</b></md-button>
-				<md-tooltip md-direction="bottom">Hyperloop Competition's Wikipedia Page</md-tooltip>
+				<md-tooltip md-direction="bottom">General Info on the Competition</md-tooltip>
 			</a>
 			<a href="http://www.spacex.com/hyperloopalpha" target="_newtab">
 				<md-button class="md-raised"><b>Hyperloop Alpha</b></md-button>
@@ -93,7 +83,7 @@
 			</a>
 			<a href="http://www.spacex.com/sites/spacex/files/2016_0831_hyperloop_competition_ii_rules.pdf" target="_newtab">
 				<md-button class="md-raised"><b>Rules and Regulations</b></md-button>
-				<md-tooltip md-direction="bottom">Competition II Rules Packet</md-tooltip>
+				<md-tooltip md-direction="bottom">Competition II Technical Rules</md-tooltip>
 			</a>
 			<a href="http://www.spacex.com/hyperloop" target="_newtab">
 				<md-button class="md-raised"><b>Competition Page</b></md-button>
@@ -102,10 +92,10 @@
 		</div>
 		<div>
 				<div class="second-body">
-				<h2 style="text-align: center;"> The Hyperloop Pod Competition </h2>
+				<h2 style="text-align: center;"> Competition II Fun Facts </h2>
 				<div ng-repeat="fact in factoids" style="display: inline-block;">
 					<ul>
-					<li><b style="color:rgb(171, 0, 0);">{{fact.fact}}</b> {{fact.answer}} &nbsp;</li>
+					<li><b style="color:rgb(255, 128, 128);">{{fact.fact}}</b> {{fact.answer}} &nbsp;</li>
 				</ul>
 				</div>
 			</div>

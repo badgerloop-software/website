@@ -1,4 +1,4 @@
-var articles = [
+var bloop_articles = [
   	{
   		name: 'Wisconsin Institute of Discovery',
   		site: 'http://wid.wisc.edu/featured-science/virtual-reality-goes-hyper-speed-with-badgerloop/',
@@ -89,12 +89,12 @@ var articles = [
       title: 'Badgerloop, 3rd place SpaceX Hyperloop Team, To Compete in Finale Hyperloop Competition in Fall 2016',
       date: 'Jul 12, 2016'
   	},*/
-    {
+    /*{
   		name: 'Popular Science',
   		site: 'http://www.popsci.com/behind-scenes-at-spacexs-hyperloop-pod-competition',
       title: 'Behind the Scenes at SpaceX\'s Hyperloop Pod Competition',
       date: 'Feb 3, 2016'
-  	},
+  	},*/
     {
       name: 'WKOW',
       site: 'http://www.wkow.com/story/33992719/uw-students-to-compete-in-space-x-hyperloop-contest',
@@ -105,7 +105,7 @@ var articles = [
       name: 'Ametherm',
       site: 'https://www.ametherm.com/blog/thermistors/ntc-thermistors-used-tesla-hyperloop',
       title: 'NTC Thermistors Used in Tesla Hyperloop Pod',
-      date: 'Jan 1, 2017' //I made this up, they didn't list a date
+      date: '' //I made this up, they didn't list a date
     },
     {
       name: 'GeekWire',
@@ -133,10 +133,105 @@ var articles = [
   	},
   ]
 
+  var competition_I_articles = [
+    {
+      title: 'Here are the winners of Elon Musk’s Hyperloop pod competition',
+      link: 'https://news.fastcompany.com/here-are-the-winners-of-elon-musks-hyperloop-pod-competition-4029572',
+      source: 'Fast Company News',
+      date: 'Jan 30, 2017',
+      format: 'Article',
+    },
+    {
+      title: 'Hyperloop pod competition yields a few outstanding models, tunnel announcement ',
+      link: 'https://arstechnica.com/business/2017/01/at-spacex-headquarters-27-teams-test-out-half-size-hyperloop-pods/',
+      source: 'Arstechnica',
+      date: 'Jan 30, 2017',
+      format: 'Article',
+    },
+    {
+      title: 'SpaceX’s Hyperloop competition finally puts pods in the tube',
+      link: 'https://www.engadget.com/2017/01/30/spacex-hyperloop-pod-competition-2017/ ',
+      source: 'Engadget',
+      date: 'Jan 30, 2017',
+      format: 'Article',
+    },
+    {
+      title: 'Dutch team wins Elon Musk’s SpaceX Hyperloop competition -- Winners List',
+      link: 'http://www.teslarati.com/dutch-team-wins-elon-musks-spacex-hyperloop-competition-winners-list/',
+      source: 'Teslarati',
+      date: 'Jan 30, 2017',
+      format: 'Article',
+    },
+    {
+      title: 'SpaceX\' Hyperloop Ccompetition sees three companies run their pods',
+      link: 'https://techcrunch.com/2017/01/30/spacexs-hyperloop-competition-sees-three-companies-run-their-pods/',
+      source: 'Techcrunch',
+      date: 'Jan 30, 2017',
+      format: 'Article',
+    },
+    {
+      title: 'Pipe Dreams: A Conversation with the Engineers at the Hyperloop Competition',
+      link: 'https://motherboard.vice.com/en_us/article/pipe-dreams-a-conversation-with-the-engineers-at-the-hyperloop-competition',
+      source: 'MotherBoard',
+      date: 'Jan 29, 2017',
+      format: 'Article',
+    },
+    {
+      title: 'Elon Musk SpaceX Hyperloop results first phase',
+      link: 'http://www.businessinsider.com/elon-musk-spacex-hyperloop-results-first-phase-2017-1',
+      source: 'Business Insider',
+      date: 'Jan 29, 2017',
+      format: 'Article',
+    },
+      {
+    		title: 'Here are the big winners of Elon Musk\'s Hyperloop pod competition',
+    		link: 'http://www.businessinsider.com/elon-musk-spacex-hyperloop-results-first-phase-2017-1',
+        source: 'Business Insider',
+        date: 'Jan 29, 2017',
+        format: 'Article',
+    	},
+      {
+    		title: 'Elon Musk\'s Hyperloop contest is happening this weekend -- here\'s  a look at all the competing pods',
+    		link: 'http://www.businessinsider.com/spacex-hyperloop-competitions-teams-2017-1/#mit-hyperloop-1',
+        source: 'Business Insider',
+        date: 'Jan 27, 2017',
+        format: 'Article',
+    	},
+        /*{
+      		title: 'Here’s What Hyperloop Pods Could One Day Look Like',
+      		link: 'https://esist.tech/2016/06/14/heres-what-hyperloop-pods-could-one-day-look-like-esist/',
+          source: 'ESIST',
+          date: 'Jun 24, 2016',
+          format: 'Article',
+      	},
+        {
+          title: 'Behind the Scenes at SpaceX\'s Hyperloop Pod Competition',
+          link: 'http://www.popsci.com/behind-scenes-at-spacexs-hyperloop-pod-competition',
+          source: 'Popular Science',
+          date: 'Feb 3, 2016',
+          format: 'Article',
+        },
+          {
+            title: 'MIT leads in the first round of Elon Musk\'s Hyperloop contest, but UW is in the race',
+            link: 'http://www.geekwire.com/2016/mit-leads-in-first-round-of-spacexs-hyperloop-contest-but-uw-is-in-the-race/',
+            source: 'GeekWire',
+            date: 'Jan 31, 2016',
+            format: 'Article',
+          },
+        {
+          title: 'Over 1,000 college students will compete to design the best Hyperloop pod',
+          link: 'http://www.theverge.com/2015/12/15/10232526/hyperloop-university-design-competition-spacex-elon-musk',
+          source: 'The Verge',
+          date: 'Dec 15, 2015',
+          format: 'Article',
+        },*/
+    ]
+
 angular.module('controllers')
   .controller('mediaController', function ($scope) {
     $scope.header = "Featured In";
-    $scope.articles = articles;
+    $scope.bloop_articles = bloop_articles;
+    $scope.competition_I_articles = competition_I_articles;
 
   if (globalUpdateButtons) globalUpdateButtons();
 });

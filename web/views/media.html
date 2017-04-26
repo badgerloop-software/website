@@ -9,6 +9,22 @@
 	height: 125px;
 	margin: 1em;
 }
+
+.competition_article_card a{ color: lightblue;}
+.competition_article_card {
+	width: 20em;
+	color: white;
+	margin: 2em;
+	padding: 2em 2em;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: inline-block;
+}
+
+.red {
+	color: rgb(179, 0, 0);
+}
+
 </style>
 
 <div class="page-content inner2" md-whiteframe="9">
@@ -18,10 +34,20 @@
 
 <div class="page-content inner2" md-whiteframe="9">
 	<h1>Featured In</h1>
-	<div class="media-logos" ng-repeat="source in articles">
+	<div class="media-logos" ng-repeat="source in bloop_articles">
 		<a ng-href="{{source.site}}" target="_newtab"><img ng-src="../im/FI-Logos/{{source.name}}.png"></a>
 		<md-tooltip md-direction="bottom">
 			{{source.title}}
 		</md-tooltip>
 	</div>
+</div>
+
+<div class="page-content inner2" md-whiteframe="9">
+	<h1>Articles about Pod Competition I</h1>
+	<div class="competition_article_card" ng-repeat="article in competition_I_articles">
+			<b class="red">Title:</b> <a ng-href="{{article.link}}" target="_newtab">{{article.title}}</a> <br>
+			<b class="red">Source:</b> {{article.source}} <br>
+			<b class="red">Date:</b> {{article.date}} <br>
+	</div>
+</div>
 </div>

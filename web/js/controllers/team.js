@@ -295,7 +295,7 @@ var faculty_advisor = {
 	year: "",
 	Description: "",
 	linkedin: "",
-	headshot: "cheadle_michael.jpg",
+	headshot: "Cheadle.png",
 	members: []
 };
 
