@@ -44,11 +44,14 @@ var silver_logos = [
 	{
 		name: 'Carrier Web', img: 'Carrier-Web',
 		site: 'https://www.carrierweb.com/'
-
 	},
 	{
 		name: 'Plexus', img: 'Plexus',
 		site: 'http://www.plexus.com/'
+	},
+	{
+		name: 'ThePaperMillStore', img: 'PaperMill',
+		site: 'https://www.thepapermillstore.com/'
 	},
 	{
 		name: 'Qualcomm', img: 'Qualcomm',
