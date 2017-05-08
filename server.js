@@ -11,12 +11,13 @@ server = http.createServer(app).listen(port, function() {
 });
 var folder = __dirname + '/web';
 
+
 /*
 if (process.argv.length != 3) startupError('have the right number of arguments');
 switch (process.argv[2].toLowerCase()) {
   case 'd':
   case 'dash':
-  case 'dashboard': 
+  case 'dashboard':
     file = 'dashboard.html';
     console.log("starting dashboard locally on port " + port);
     break;

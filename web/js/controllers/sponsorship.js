@@ -103,7 +103,7 @@ var bronze_logos = [
 	},
 	{
 		name: 'Triad Magnetics', img: 'Triad',
-		site: 'http://www.triadmagnetics.com/index.html'
+		site: 'https://www.triadsemi.com/'
 	},
 ];
 

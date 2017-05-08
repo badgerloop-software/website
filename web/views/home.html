@@ -29,7 +29,30 @@
 	margin: 1em;
 	padding: 0.5em 1.5em;
 	word-wrap: normal;
-	max-width: 90%;
+	float: left;
+	max-width: 40%;
+	display: inline-block;
+}
+
+.reveal-event-body {
+	font-size: 1.5em;
+	background-color: rgba(50, 50, 50, 0.9);
+	margin: 1em;
+	padding: 0.5em 1.5em;
+	word-wrap: normal;
+	float: left;
+	max-width: 40%;
+	display: inline-block;
+}
+
+.reveal-event-overlay li {
+	text-align: left;
+	margin-left: .5em;
+}
+.reveal-event-overlay{
+	background-color: white;
+	max-height: 95%;
+	padding: .25em 1em;
 }
 
 .photobox {
@@ -42,19 +65,29 @@
 	max-width: 90%;
 	border-radius: 0.5em;
 }
+
+.reveal_event{
+	display: inline-block;
+	min-width: 25%;
+	background-color: blue;
+	height: 40%;
+	margin-top: 3em;
+
+}
+
 </style>
 <div class="page-content inner1" md-whiteframe="9">
 
-	<div class="dark-body">
+	<div class="dark-body" md-whiteframe="9">
 		<h1>Contributing to the development of Hyperloop technology</h1>
 	</div>
 
 	<div id="youtube-videos">
 		<div md-whiteframe="6" class="dark-body">
-			SpaceX's footage of MIT, Delft, and WARR<br>
-	 		<iframe md-whiteframe="3" allowfullscreen
-				 	src="https://www.youtube.com/embed/PMd_QGmmkgY">
-	 		</iframe>
+			Our first pod Reveal Event<br>
+			<iframe md-whiteframe="3" allowfullscreen
+					src="https://www.youtube.com/embed/6xuP8K7ROrk">
+			</iframe>
 		</div>
 		<div md-whiteframe="6" class="dark-body">
 			Our experience at Competition Weekend I<br>
@@ -63,32 +96,25 @@
 	 	 	</iframe>
 		</div>
 		<div md-whiteframe="6" class="dark-body">
-			Our first pod Reveal Event<br>
-	 		<iframe md-whiteframe="3" allowfullscreen
-	 				src="https://www.youtube.com/embed/6xuP8K7ROrk">
-	 	 	</iframe>
+			SpaceX's footage of MIT, Delft, and WARR<br>
+			<iframe md-whiteframe="3" allowfullscreen
+					src="https://www.youtube.com/embed/PMd_QGmmkgY">
+			</iframe>
 		</div>
 	</div>
 
-</div>
-
-<image-slideshow></image-slideshow>
-
-<div class="page-content inner1" md-whiteframe="9">
-
-<div class="page-content inner2" md-whiteframe="9">
 	<figure class="photobox">
-		<img src="../im/elon/freeze_frame.jpg">
+		<img src="../im/elon/freeze_frame.jpg" md-whiteframe="6">
 		<figcaption>Thanks for checking out our pod, Elon!</figcaption>
 	</figure>
 
 	<figure class="photobox">
-		<img src="../im/action/Reveal Event (1).jpg">
+		<img src="../im/action/Reveal Event (1).jpg" md-whiteframe="6">
 		<figcaption>Pod Reveal Event for Competition I</figcaption>
 	</figure>
-</div>
 
-	<div class="text-body" md-whiteframe="9">
+
+	<div class="text-body" md-whiteframe="3">
 		<h2>Who we are</h2>
 		<p> - University of Wisconsin-Madison students</p>
 		<p> - Multidisciplinary majors</p>
@@ -105,4 +131,38 @@
 		<p> - Looking to grow as students by applying our knowledge outside the classroom and conquering real-world challenges</p>
 	</div>
 
+	<div class="reveal-event-body" md-whiteframe="3">
+		<div class="reveal-event-overlay">
+		<h2> Our Reveal Event </h2>
+		<h3> Want to see our Competition II pod? </h3>
+		<p> Then come to our reveal event on <b style="color: rgb(118, 118, 228);">Saturday, June 17th from 3-4 PM! </b></p>
+		<br>
+		<p>This event is a great opportunity to:</p>
+		<li>See our brand new pod </li>
+		<li>Meet the members of Badgerloop </li>
+		<li>Ask questions about the making of the pod and Hyperloop technolog </li>
+		<li>Sit inside the pod </li>
+			<br>
+			<br>
+			<p>Our reveal event will take place in the <a href="https://www.google.com/maps/place/Mechanical+Engineering+Building,+1513+University+Ave,+Madison,+WI+53706/@43.0727717,-89.4146364,17z/data=!3m1!4b1!4m5!3m4!1s0x8807acc6ca2fa4f3:0xa6d5fc3cf7eff093!8m2!3d43.0727652!4d-89.4125831" target="_blank">Mechanical Engineering building</a> at UW-Madison.
+				Parking can be found nearby at <a href="https://www.google.com/maps/place/Parking+Lot+17,+Madison,+WI+53706/@43.0723938,-89.4123909,17.8z/data=!4m13!1m7!3m6!1s0x8807acc6ca2fa4f3:0xa6d5fc3cf7eff093!2sMechanical+Engineering+Building,+1513+University+Ave,+Madison,+WI+53706!3b1!8m2!3d43.0727652!4d-89.4125831!3m4!1s0x8807acc6a1915cf5:0x34d3db40e7bded43!8m2!3d43.0720777!4d-89.4116219" target="_blank">Lot 17</a> or
+					below <a href="https://www.google.com/maps/place/Union+South/@43.0715159,-89.4101168,17.8z/data=!4m13!1m7!3m6!1s0x8807acc6ca2fa4f3:0xa6d5fc3cf7eff093!2sMechanical+Engineering+Building,+1513+University+Ave,+Madison,+WI+53706!3b1!8m2!3d43.0727652!4d-89.4125831!3m4!1s0x0:0x6f185049ff291ef7!8m2!3d43.0717877!4d-89.4078326" target="_blank">Union South</a></p>.
+
+			<p style="padding: 1.5em;"> Have questions? Feel free to <a href="#/contact" target="_blank">reach out</a> to us! We are happy to help </p>
+
+
+
+	</div>
+</div>
+</div>
+
+
+
+<image-slideshow></image-slideshow>
+
+</div>
+
+
+</div>
+</div>
 </div>
