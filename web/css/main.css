@@ -66,6 +66,16 @@ a { color: #9B1C1F; }
 	overflow-x: hidden;
 }
 
+.team-content {
+	margin: auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	text-align: center;
+	background-color: white;
+	padding: 0.5em;
+	overflow-x: hidden;
+}
+
 .inner1 {
 	border-radius: 2em;
 	width: 95%;
@@ -182,7 +192,6 @@ a { color: #9B1C1F; }
   height: 1.2em;
   margin-left: 1em;
   margin-top: .2em;
-  margin-bottom: .25em;
 }
 /*****************************************************************************/
 /*****************************************************************************/

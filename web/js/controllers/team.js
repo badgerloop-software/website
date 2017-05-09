@@ -1,6 +1,7 @@
 var president = {
 	name: "Zuf Wang",
 	role: "President",
+	team: "President",
 	email: "xwang523@wisc.edu",
 	mantra: "Responsible for overall team performance and lean management.",
 	major: "Systems Engineering & Decision Analysis",
@@ -8,12 +9,13 @@ var president = {
 	description: "I'm tasked with maximizing available resources and human potential in order to tackle engineering and organizational challenges given time and funding constraints. It is my personal mission to ensure long term sustainability of Badgerloop.",
 	linkedin: "https://www.linkedin.com/in/zuf-wang/",
 	headshot: "Zuf-V2.jpg",
-	members: []
+	members: [],
 };
 
 var technical_director = {
 	name: "Max Henry",
 	role: "Technical Director",
+	team: "Technical Director",
 	email: "henry5@wisc.edu",
 	mantra: "Oversees all aspects of technical systems’ design, integration, and testing.",
 	major: "Mechanical Engineering",
@@ -27,6 +29,7 @@ var technical_director = {
 var electrical_systems_director = {
 	name: "Vaughn Kottler",
 	role: "Electrical Systems Director",
+	team: "Electrical Systems Director",
 	email: "vkottler@wisc.edu",
 	mantra: "Ensure that the pod’s electronics operate and integrate properly.",
 	major: "Computer Engineering & Computer Science",
@@ -40,6 +43,7 @@ var electrical_systems_director = {
 var operations_director = {
 	name: "Johnny Kohlbeck",
 	role: "Operations Director",
+	team: "Operations Director",
 	email: "jkohlbeck@wisc.edu",
 	mantra: "Orchestrate non-technical side of the pod and manage operations of organization.",
 	major: "Information Systems & Management Human Resources",
@@ -53,6 +57,7 @@ var operations_director = {
 var battery = {
 	name: "Max Goldberg",
 	role: "Battery Team Lead",
+	team: "Battery Team",
 	email: "mgoldberg4@wisc.edu",
 	mantra: "Designs, assembles, and tests the pod’s high and low voltage power systems.",
 	major: "Materials Science & Engineering",
@@ -66,6 +71,7 @@ var battery = {
 var braking = {
 	name: "Arjun Chaudhary",
 	role: "Braking Team Lead",
+	team: "Braking Team",
 	email: "achaudhary4@wisc.edu",
 	mantra: "Designs and builds the pod’s high speed braking system",
 	major: "Mechanical Engineering",
@@ -79,6 +85,7 @@ var braking = {
 var composites = {
 	name: "Nathan Orf",
 	role: "Composites Team Lead",
+	team: "Composites Team",
 	email: "norf@wisc.edu",
 	mantra: "Creates the pod’s carbon fiber external shell and any other composite components.",
 	major: "Engineering Mechanics & Astronautics",
@@ -92,6 +99,7 @@ var composites = {
 var controls = {
 	name: "Nick Beckwith",
 	role: "Controls Team Lead",
+	team: "Controls Team",
 	email: "nbeckwith2@wisc.edu",
 	mantra: "Determines pod’s control scheme and writes code to accomplish this.",
 	major: "Computer Engineering & Mathematics",
@@ -106,6 +114,7 @@ var controls = {
 var electrical = {
 	name: "Ryan Castle",
 	role: "Electrical Team Lead",
+	team: "Electrical Team",
 	email: "rcastle@wisc.edu",
 	mantra: "Implements pod’s electrical system including DAQ, circuit design, and harnessing.",
 	major: "Electrical Engineering",
@@ -120,6 +129,7 @@ var electrical = {
 var propulsion= {
 	name: "Clayton Fellman",
 	role: "Propulsion Team Lead",
+	team: "Propulsion Team ",
 	email: "cfellman@wisc.edu",
 	mantra: "Designs, fabricates, and tests the pod’s pressurized gas propulsion system",
 	major: "Mechanical Engineering",
@@ -133,6 +143,7 @@ var propulsion= {
 var stability= {
 	name: "Ben Kishter",
 	role: "Stability Team Lead",
+	team: "Stability Team",
 	email: "benkishter@gmail.com",
 	mantra: "Ensures that the pod remains stable on the test track throughout the run",
 	major: "Engineering Mechanics & Astronautics",
@@ -146,6 +157,7 @@ var stability= {
 var structural_design= {
 	name: "Chris Rushmore",
 	role: "Structural Design Team Lead",
+	team: "Structural Design Team",
 	email: "crushmore@wisc.edu",
 	mantra: "Designs and builds the primary structure of the pod and works with other teams to ensure reliable system integration ",
 	major: "Mechanical Engineering",
@@ -159,6 +171,7 @@ var structural_design= {
 var structural_analysis = {
 	name: "Justin Williams",
 	role: "Structural Analysis Team Lead",
+	team: "Structural Analysis Team",
 	email: "justin.williams@wisc.edu",
 	mantra: "Runs Finite Element Analysis on systems as well as thermal and magnetic modeling.",
 	major: "Engineering Physics & Computer Science",
@@ -172,6 +185,7 @@ var structural_analysis = {
 var software= {
 	name: "Vaughn Kottler",
 	role: "Software Team Lead",
+	team: "Software Team",
 	email: "vkottler@wisc.edu",
 	mantra: "Website & Dashboard",
 	major: "Computer Engineering & Computer Science",
@@ -198,6 +212,7 @@ var vacuum_testing= {
 var fsc= {
 	name: "Alex Kuo",
 	role: "Finance and Supply Chain Team Lead",
+	team: "Finance and Supply Chain Team",
 	email: "kuo24@wisc.edu ",
 	mantra: "Manages group funds and materials and processes purchase requests.",
 	major: "Industrial Engineering",
@@ -211,6 +226,7 @@ var fsc= {
 var industry= {
 	name: "Kali Kinziger",
 	role: "Industry Relations Team Lead",
+	team: "Industry Relations Team",
 	email: "kkinziger@wisc.edu",
 	mantra: "Maintains relationships with sponsors and finds new sponsorships.",
 	major: "Political Science & Communications",
@@ -224,11 +240,12 @@ var industry= {
 var marketing= {
 	name: "Yuliia Kapeliushna",
 	role: "Marketing Team Lead",
+	team: "Marketing Team",
 	email: "kapeliushna@wisc.edu  ",
 	mantra: "Promotes the Badgerloop brand through public relations.",
 	major: "Industrial Engineering",
 	year: "Junior",
-	Description: "Our team works on increasing Badgerloop recognition among students, professors, employers, and everyone who is exciting about hyperloop technology. We manage all social media accounts, communicate with journalists, disseminate ongoing progress, and showcase all facets of our dedicated and talented Badgerloop team.",
+	description: "Our team works on increasing Badgerloop recognition among students, professors, employers, and everyone who is exciting about hyperloop technology. We manage all social media accounts, communicate with journalists, disseminate ongoing progress, and showcase all facets of our dedicated and talented Badgerloop team.",
 	linkedin: "https://www.linkedin.com/in/yuliia-kapeliushna-96370396/",
 	headshot: "Yuliia-V2.jpg",
 	members: ["Alex Hahn", "Alex Nelson", "Anne Brennan", "Daniel Tryba", "Emil Dobrev", "Grace Na", "Kelly Lamb", "Kenzie Tighe", "Lauren Bayer", "Olivia Hofeld", "Saad Khan"]
@@ -237,11 +254,12 @@ var marketing= {
 var media= {
 	name: "Noah Pulvermacher",
 	role: "Media Team Lead",
+	team: "Media Team",
 	email: "npulvermache@wisc.edu",
 	mantra: "Creates media content in the form of photos, videos, and graphics",
 	major: "Mechanical Engineering",
 	year: "Junior",
-	Description: "Our team’s role is to maintain a quality portrayal of the Badgerloop team by creating media content that promotes the team’s efforts. We work with everything from graphic design to video production and journalism, all meant to inform the public about the many aspects of the team",
+	description: "Our team’s role is to maintain a quality portrayal of the Badgerloop team by creating media content that promotes the team’s efforts. We work with everything from graphic design to video production and journalism, all meant to inform the public about the many aspects of the team",
 	linkedin: "https://www.linkedin.com/in/noah-pulvermacher-8a36b5a8/",
 	headshot: "Noah-V2.jpg",
 	members: ["Chris Lueneburg", "Nate Mach", "Leon Yee Leong Tan", "Emil Dobrev"]
@@ -250,11 +268,12 @@ var media= {
 var virtual_reality= {
 	name: "Peter Procek",
 	role: "Virtual Reality Team Lead",
+	team: "Virtual Reality Team",
 	email: "procek@wisc.edu",
 	mantra: "Designs and creates innovations in virtual reality and software",
 	major: "Electrical and Computer Engineering & Computer Science",
 	year: "Graduate Student",
-	Description: "In an effort to provide meaningful applications of virtual reality in engineering and industry applications, we seek to explore extensions to current Virtual reality technologies. We aim to provide a platform for students to learn topics in graphics, virtual reality technologies, and human perception.",
+	description: "In an effort to provide meaningful applications of virtual reality in engineering and industry applications, we seek to explore extensions to current Virtual reality technologies. We aim to provide a platform for students to learn topics in graphics, virtual reality technologies, and human perception.",
 	linkedin: "",
 	headshot: "Peter-V2.jpg",
 	members: ["Cale Geffre", "Darby Anderson", "James Liu", "Utkarsh Maheshwari", "Shikhar Mittal", "Eric Amikam"]
@@ -263,11 +282,12 @@ var virtual_reality= {
 var outreach_recruiting= {
 	name: "Cole Hess",
 	role: "Outreach & Recruiting Team Lead",
+	team: "Outreach & Recruiting Team",
 	email: "cole.hess@wisc.edu",
 	mantra: "Educates the general public about Badgerloop and Hyperloop technology",
 	major: "Mechanical Engineering",
 	year: "2nd Year MS",
-	Description: "The goal of our team is to promote Badgerloop through participation in community events that are designed to educate the public about our team and what Hyperloop is. ALso, through our outreach activities we hope to inspire future generations to pursue innovative new ideas and become future leaders. In addition, we seek to recruit driven, passionate new Badgerloop members and we work closelely with the Industry Relations to develop and maintain support from our industry partners.",
+	description: "The goal of our team is to promote Badgerloop through participation in community events that are designed to educate the public about our team and what Hyperloop is. ALso, through our outreach activities we hope to inspire future generations to pursue innovative new ideas and become future leaders. In addition, we seek to recruit driven, passionate new Badgerloop members and we work closelely with the Industry Relations to develop and maintain support from our industry partners.",
 	linkedin: "https://www.linkedin.com/in/cole-hess-637a99106/",
 	headshot: "Cole-V2.jpg",
 	members: ["Isak Bowron", "Abby Lamb"]
@@ -276,11 +296,12 @@ var outreach_recruiting= {
 var feasibility= {
 	name: "Michael Schlicting",
 	role: "Feasibility Team Lead",
+	team: "Feasibliity Team",
 	email: "michael.schlicting@gmail.com",
 	mantra: "Educates the general public about Badgerloop and Hyperloop technology",
 	major: "Transportation Administration",
 	year: "PHD",
-	Description: "",
+	description: "",
 	linkedin: "",
 	headshot: "Mike-V2.jpg",
 	members: ["Justin Schrimmer", "Utkarsh Maheshwari"]
@@ -293,7 +314,7 @@ var faculty_advisor = {
 	mantra: "",
 	major: "Mechanical Engineering",
 	year: "",
-	Description: "",
+	description: "",
 	linkedin: "",
 	headshot: "Cheadle.png",
 	members: []
@@ -327,13 +348,22 @@ angular.module('controllers')
 		zIndex: 150,
 		clickOutsideToClose: true,
 		escapeToClose: true,
-		focusOnOpen: true
+		focusOnOpen: true,
+		scope: $scope,
 	};
 
-	$scope.showPanel = function($event) {
-		// If you want a button to close instead of
-		// "click off" to close we need to do more
-		// here.
+
+	$scope.showPanel = function(lead) {
+		$scope.name = lead.name
+		$scope.role = lead.role
+		$scope.team = lead.team
+		$scope.email = lead.email
+		$scope.mantra = lead.mantra
+		$scope.major = lead.major
+		$scope.year = lead.year
+		$scope.description = lead.description
+		$scope.linkedin = lead.linkedin
+		$scope.members = lead.members
 		$mdPanel.open(config);
 	};
 
