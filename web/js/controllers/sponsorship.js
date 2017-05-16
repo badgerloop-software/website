@@ -1,3 +1,5 @@
+/* Cirrus gold or silver?,*/
+
 var platinum_logos = [
 	{
 		name: 'Altium', img: 'Altium',
@@ -7,18 +9,14 @@ var platinum_logos = [
 		name: 'ANSYS', img: 'ANSYS',
 		site: 'http://www.ansys.com/'
 	},
-	/*{
-		name: 'Tektronix', img: 'Tektronix',
-		site: 'http://www.tek.com/'
-	},*/
 	{
 		name: 'HP', img: 'HP',
 		site: 'http://www.hp.com/country/us/en/welcome.html'
 	},
-	/*{
-		name: 'OnFloor', img: 'OnFloor',
-		site: 'https://onfloor.com/'
-	},*/
+	{
+		name: 'Rockwell Automation', img: 'Rockwell',
+		site: 'https://www.rockwellautomation.com/'
+	},
 ];
 
 var gold_logos = [
@@ -37,10 +35,10 @@ var silver_logos = [
 		name: '@1403', img: '1403',
 		site: 'http://universityresearchpark.org/the-property/1403-2/'
 	},
-	{
+	/*{
 		name: 'Boxx', img: 'Boxx',
 		site: 'https://www.boxx.com/'
-	},
+	},*/
 	{
 		name: 'Carrier Web', img: 'Carrier-Web',
 		site: 'https://www.carrierweb.com/'
@@ -48,10 +46,6 @@ var silver_logos = [
 	{
 		name: 'Plexus', img: 'Plexus',
 		site: 'http://www.plexus.com/'
-	},
-	{
-		name: 'ThePaperMillStore', img: 'PaperMill',
-		site: 'https://www.thepapermillstore.com/'
 	},
 	{
 		name: 'Qualcomm', img: 'Qualcomm',
@@ -64,10 +58,6 @@ var silver_logos = [
 ];
 
 var bronze_logos = [
-	/*{
-		name: 'Keysight Technologies', img: 'Keysight_Technologies',
-		site: 'http://www.keysight.com/main/home.jspx?cc=US&lc=eng'
-	},*/
 	{
 		name: 'ATA Engineering', img: 'ATA_Engineering',
 		site: 'http://www.ata-e.com/'
@@ -85,6 +75,14 @@ var bronze_logos = [
 		site: 'http://www.bulletproofautomotive.com/'
 	},
 	{
+		name: 'Department of Electrical & Computer Engineering', img: 'ECE',
+		site: 'https://www.engr.wisc.edu/department/electrical-computer-engineering/'
+	},
+	{
+		name: 'Department of Mechanical Engineering', img: 'ME',
+		site: 'https://www.engr.wisc.edu/department/mechanical-engineering/'
+	},
+	{
 		name: 'Derksen', img: 'Derksen',
 		site: 'http://www.derksenprinters.com/'
 	},
@@ -96,13 +94,45 @@ var bronze_logos = [
 		name: 'E-Switch', img: 'ESwitch',
 		site: 'https://www.e-switch.com/'
 	},
-	/*{
+	{
 		name: 'HomeRevolution', img: 'HomeRevolution',
 		site: 'https://www.homerev.com/'
-	},*/
+	},
+	{
+		name: 'Ians Pizza', img: 'Ians',
+		site: 'https://ianspizza.com/'
+	},
+	{
+		name: 'Maxpro Technologies', img: 'Maxpro',
+		site: 'http://www.maxprotech.com/index.html'
+	},
+	{
+		name: 'Midwest Prototyping', img: 'Midwest',
+		site: 'https://www.midwestproto.com/'
+	},
+	{
+		name: 'OnFloor', img: 'OnFloor',
+		site: 'https://onfloor.com/'
+	},
+	{
+		name: 'Parker', img: 'Parker',
+		site: 'http://www.parker.com/portal/site/PARKER/menuitem.b90576e27a4d71ae1bfcc510237ad1ca/?vgnextoid=c38888b5bd16e010VgnVCM1000000308a8c0RCRD&vgnextfmt=EN'
+	},
 	{
 		name: 'Plymouth Foam', img: 'Plymouth_Foam',
 		site: 'http://www.plymouthfoam.com/'
+	},
+	{
+		name: 'ThePaperMillStore', img: 'PaperMill',
+		site: 'https://www.thepapermillstore.com/'
+	},
+	{
+		name: 'Sector67', img: 'Sector_67',
+		site: 'http://www.sector67.org/blog/'
+	},
+	{
+		name: 'Swagelok', img: 'Swagelok',
+		site: 'https://www.swagelok.com/en'
 	},
 	{
 		name: 'Triad Magnetics', img: 'Triad',
