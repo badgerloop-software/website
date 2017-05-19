@@ -1,0 +1,12 @@
+To Do:
+
+- Fix color scheme of Competition I articles on Media Page
+- Change navbar order s.t. About is first
+- Add Pod Page framework
+- Figure out what to do with Team Leads with no Team Members
+- Add Summer team leads to team info popup on team page
+- Add updated sponsorship packet when its ready 
+- Implement Analytics
+
+
+

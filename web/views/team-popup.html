@@ -1,6 +1,14 @@
 <div class="team-content">
-	<h2>{{team}}</h2>
-	Team Mantra: <span>{{mantra}}</span> <br>
-	<br>
-	Team Members: <span ng-repeat="member in members"> {{member}}, </span>
+
+	<div>
+		<h2>{{team}}</h2>
+		<b>Team Goal:</b> <span>{{mantra}}</span> <br>
+		<br>
+		<!--<br>
+		<b>Team Description:</b> <span> {{description}}</span> <br>
+		<br>-->
+		<br>
+		<b>Team Members:</b> <span ng-repeat="member in members"> {{member}} </span>
+	</div>
+
 </div>

@@ -62,7 +62,7 @@ var routes = {
         templateUrl: 'views/media.html',
         controller: 'mediaController'
     },
-		aboutRoute: {
+    aboutRoute: {
         templateUrl: 'views/about.html',
         controller: 'aboutController'
     },
