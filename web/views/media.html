@@ -10,34 +10,27 @@
 	margin: 1em;
 }
 
-.competition_article_card a{ color: grey;}
+.competition_article_card a{ color: lightblue;}
 .competition_article_card {
 	width: 20em;
 	color: white;
 	margin: 2em;
-	padding: 1em 1em;
+	padding: 2em 2em;
 	text-align: left;
 	display: inline-block;
-	background-color: rgba(237, 237, 237, 1);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.black {
-	color: rgb(7, 7, 7);
-}
-
-.dark-background {
-        background-color: rgba(50, 50, 50, 0.9);
-        color: white;
-        border-radius: 1em;
-        margin: 2em;
+.red {
+	color: rgb(179, 0, 0);
 }
 
 </style>
 
-<div class="page-content inner2" md-whiteframe="9">
+<!--<div class="page-content inner2" md-whiteframe="9">
 	<h1>Image Slideshow</h1>
 	<p>Coming soon!!</p>
-</div>
+</div>-->
 
 <div class="page-content inner2" md-whiteframe="9">
 	<h1>Featured In</h1>
@@ -49,14 +42,14 @@
 	</div>
 </div>
 
-<!--<div class="dark-background" md-whiteframe="9">
+<div class="page-content inner2" md-whiteframe="9">
 	<h1 style="text-align: center">Articles about Pod Competition I</h1>
 	<div class="competition_article_card" ng-repeat="article in competition_I_articles">
-			<b class="black">Title:</b> <a ng-href="{{article.link}}" target="_newtab">{{article.title}}</a> <br>
-			<b class="black">Source:</b> {{article.source}} <br>
-			<b class="black">Date:</b> {{article.date}} <br>
+			<b class="red">Title:</b> <a ng-href="{{article.link}}" target="_newtab">{{article.title}}</a> <br>
+			<b class="red">Source:</b> {{article.source}} <br>
+			<b class="red">Date:</b> {{article.date}} <br>
 	</div>
-</div>-->
+</div>
 </div>
 
 

@@ -1,12 +1,29 @@
-To Do:
 
-- Fix color scheme of Competition I articles on Media Page
-- Change navbar order s.t. About is first
-- Add Pod Page framework
-- Figure out what to do with Team Leads with no Team Members
-- Add Summer team leads to team info popup on team page
-- Add updated sponsorship packet when its ready 
-- Implement Analytics
+Last Commit:
+-- Update Sponsorship page
+-- Change navbar order to alphabetical
+-- Add "Team Info" button to Team Lead cards
+-- Add updated sponsorship package
 
 
+Next Commit:
+-- Fix color scheme of Competition I articles on Media Page
+-- Add reveal event graphic to home page
+-- Add Reveal Event Page with very basic info about reveal event
+
+
+To Do (in no particular order):
+-- Add Pod Page framework
+-- Elaborate on "Interested in sponsoring?" section on Sponsorship page
+-- Add "Interested in Joining the Team?" section on Team page
+-- Media page image slideshow
+-- Figure out what to do with Team Leads with no team members
+-- Add Summer team leads to team info popup on team page 
+-- Figure out why Google Analytics isn't working
+-- Add "README junior" doc so that easier for anyone to work on site 
+-- Home page
+-- Work on issues on Github 
+-- Make Team Lead cards the same size 
+-- Vet the articles on the Media page
+ 
 

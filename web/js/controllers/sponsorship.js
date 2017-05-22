@@ -1,5 +1,3 @@
-/* Cirrus gold or silver?,*/
-
 var platinum_logos = [
 	{
 		name: 'Altium', img: 'Altium',
@@ -17,17 +15,17 @@ var platinum_logos = [
 		name: 'Rockwell Automation', img: 'Rockwell',
 		site: 'https://www.rockwellautomation.com/'
 	},
+	{
+		name: 'Siemens', img: 'Siemens',
+		site: 'http://www.siemens.com/us/en/home.html'
+	}
 ];
 
 var gold_logos = [
 	{
 		name: 'Cirrus Aircraft', img: 'Cirrus',
 		site: 'https://cirrusaircraft.com/'
-	},
-	{
-		name: 'Siemens', img: 'Siemens',
-		site: 'http://www.siemens.com/us/en/home.html'
-	},
+	}
 ];
 
 var silver_logos = [

@@ -1,9 +1,33 @@
+/
 <style>
+*.card {
+        border-radius: 2em;
+        width: 20em;
+        color: white;
+        margin: 1em;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+}
+
 .mail_icon{
 	color: #A7A7A7;
 	margin-left: .25em;
+	margin-right: .25em;
 }
 
+.card .img {
+        border-radius: 50%;
+        max-width: 60%;
+        margin-top: 1.5em;
+}
+
+.linkedin_icon{
+  width: 1.2em;
+  height: 1.2em;
+  margin-left: 1em;
+  margin-top: .2em;
+  margin-bottom: .3em;
+}
 
 </style>
 
@@ -18,7 +42,7 @@
 			<b>Year:</b> {{lead.year}}<br>
 			<a ng-href="{{lead.linkedin}}" target="_newtab"><img class="linkedin_icon" ng-src="../im/logos/linkedin_logo.png"></a>
 			<a ng-href="mailto:{{lead.email}}"><i style="color: #A7A7A7; margin-left: .25em;" class="material-icons">email</i></a>
-      <md-button ng-click="showPanel(lead)">
+      <md-button style="margin-bottom: 1.4em;" ng-click="showPanel(lead)">
     		Team Info
     	</md-button><br>
     </div>
