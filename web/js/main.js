@@ -69,6 +69,10 @@ var routes = {
     teamRoute: {
         templateUrl: 'views/team.html',
         controller: 'teamController'
+    },
+    revealRoute: {
+        templateUrl: 'views/reveal.html',
+        controller: 'revealController'
     }
 
 };
@@ -102,6 +106,7 @@ angular.module('badgerloop-site', dependencyList)
 	.when('/media', routes.mediaRoute)
 	.when('/about', routes.aboutRoute)
 	.when('/sponsorship', routes.sponsorshipRoute)
+	.when('/reveal', routes.revealRoute)
     /*************************************************************************/
 	.otherwise({redirectTo: '/home'});
 });
