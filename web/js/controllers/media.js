@@ -163,7 +163,7 @@ var bloop_articles = [
       format: 'Article',
     },
     {
-      title: 'SpaceX\' Hyperloop Ccompetition sees three companies run their pods',
+      title: 'SpaceX\' Hyperloop Competition sees three companies run their pods',
       link: 'https://techcrunch.com/2017/01/30/spacexs-hyperloop-competition-sees-three-companies-run-their-pods/',
       source: 'Techcrunch',
       date: 'Jan 30, 2017',

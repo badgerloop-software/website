@@ -8,21 +8,22 @@ Last Commit:
 
 
 Next Commit:
--- Fix color scheme of Competition I articles on Media Page
--- Add reveal event graphic to home page
--- Populate Reveal Event Page with basic info about reveal event
+[DONE]-- Fix color scheme of Competition I articles on Media Page
+[DONE]-- Add reveal event graphic to home page
+[DONE]-- Populate Reveal Event Page with basic info about reveal event
 
 
 To Do (in no particular order):
 -- Elaborate on "Interested in sponsoring?" section on Sponsorship page
 -- Build Media page image slideshow
 -- Figure out a design for Team Info popups on Team page
--- Figure out what to do with Team Leads with no team members
--- Add Summer team leads to team info popup on team page 
+-- Figure out what to do with Team Leads with no team members (How to write an if statement in AngularJS)
 -- Figure out why Google Analytics isn't working 
 -- Home page
 -- Work on issues on Github 
 -- Make Team Lead cards the same size 
 -- Vet the articles on the Media page
- 
+[DONE]-- Add "Interested in joining the team" section 
+[DONE]-- Add space at bottom of team card
+
 

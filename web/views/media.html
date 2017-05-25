@@ -10,19 +10,27 @@
 	margin: 1em;
 }
 
-.competition_article_card a{ color: lightblue;}
+.dark-body {
+        background-color: rgba(50, 50, 50, 0.9);
+        color: white;
+        display: inline-block;
+        border-radius: 1em;
+        padding: 0em 1em;
+        margin: 2em;
+}
+
 .competition_article_card {
 	width: 20em;
-	color: white;
+	color: black;
 	margin: 2em;
 	padding: 2em 2em;
 	text-align: left;
 	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: white;;
 }
 
 .red {
-	color: rgb(179, 0, 0);
+	color: black;
 }
 
 </style>
@@ -43,7 +51,8 @@
 </div>
 
 <div class="page-content inner2" md-whiteframe="9">
-	<h1 style="text-align: center">Articles about Pod Competition I</h1>
+	<div class="dark-body">
+	<h1 style="text-align: center">Articles about Competition I</h1>
 	<div class="competition_article_card" ng-repeat="article in competition_I_articles">
 			<b class="red">Title:</b> <a ng-href="{{article.link}}" target="_newtab">{{article.title}}</a> <br>
 			<b class="red">Source:</b> {{article.source}} <br>
@@ -51,7 +60,7 @@
 	</div>
 </div>
 </div>
-
+</div>
 
 
 
