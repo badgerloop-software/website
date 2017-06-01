@@ -1,17 +1,20 @@
-
 Last Commit:
 -- Update Sponsorship page
 -- Change navbar order to alphabetical
 -- Add "Team Info" button to Team Lead cards
 -- Add updated sponsorship package 
 -- Add Pod and Reveal Page Frameworks
+-- Fix color scheme of Competition I articles on Media Page
+-- Add reveal event graphic to home page
+-- Populate Reveal Event Page with basic info about reveal event
+-- Add "Interested in joining the team" section
+-- Add space at bottom of team card
 
 
 Next Commit:
-[DONE]-- Fix color scheme of Competition I articles on Media Page
-[DONE]-- Add reveal event graphic to home page
-[DONE]-- Populate Reveal Event Page with basic info about reveal event
-
+-- Add second image to about page
+-- fix home page main heading 
+-- fix reveal event image on home page (distorts on mobile)
 
 To Do (in no particular order):
 -- Elaborate on "Interested in sponsoring?" section on Sponsorship page
@@ -23,7 +26,5 @@ To Do (in no particular order):
 -- Work on issues on Github 
 -- Make Team Lead cards the same size 
 -- Vet the articles on the Media page
-[DONE]-- Add "Interested in joining the team" section 
-[DONE]-- Add space at bottom of team card
-
-
+-- add parking diagram to reveal event page 
+-- Add link to UW-F donation page 
