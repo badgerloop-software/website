@@ -15,6 +15,11 @@ Next Commit:
 -- Add second image to about page
 -- fix home page main heading 
 -- fix reveal event image on home page (distorts on mobile)
+-- Add "Donate" page
+-- Remove HomeRev and OnFloor from sponsorship page & slideshow
+-- Figure out if any sponsors need to be added to sponsorship page  
+
+
 
 To Do (in no particular order):
 -- Elaborate on "Interested in sponsoring?" section on Sponsorship page
@@ -26,5 +31,3 @@ To Do (in no particular order):
 -- Work on issues on Github 
 -- Make Team Lead cards the same size 
 -- Vet the articles on the Media page
--- add parking diagram to reveal event page 
--- Add link to UW-F donation page 
