@@ -92,10 +92,10 @@ var bronze_logos = [
 		name: 'E-Switch', img: 'ESwitch',
 		site: 'https://www.e-switch.com/'
 	},
-	{
+	/*{
 		name: 'HomeRevolution', img: 'HomeRevolution',
 		site: 'https://www.homerev.com/'
-	},
+	},*/
 	{
 		name: 'Ians Pizza', img: 'Ians',
 		site: 'https://ianspizza.com/'
@@ -108,10 +108,10 @@ var bronze_logos = [
 		name: 'Midwest Prototyping', img: 'Midwest',
 		site: 'https://www.midwestproto.com/'
 	},
-	{
+	/*{
 		name: 'OnFloor', img: 'OnFloor',
 		site: 'https://onfloor.com/'
-	},
+	},*/
 	{
 		name: 'Parker', img: 'Parker',
 		site: 'http://www.parker.com/portal/site/PARKER/menuitem.b90576e27a4d71ae1bfcc510237ad1ca/?vgnextoid=c38888b5bd16e010VgnVCM1000000308a8c0RCRD&vgnextfmt=EN'

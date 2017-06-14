@@ -1,4 +1,4 @@
-Last Commit:
+Last Few Commits:
 -- Update Sponsorship page
 -- Change navbar order to alphabetical
 -- Add "Team Info" button to Team Lead cards
