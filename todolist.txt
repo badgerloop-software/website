@@ -13,7 +13,7 @@ Last Few Commits:
 
 Next Commit:
 -- Add second image to about page
--- fix home page main heading 
+[DONE]-- fix home page main heading 
 -- fix reveal event image on home page (distorts on mobile)
 -- Add "Donate" page
 [DONE]-- Remove HomeRev and OnFloor from sponsorship page & slideshow
