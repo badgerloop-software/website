@@ -9,15 +9,14 @@ Last Few Commits:
 -- Populate Reveal Event Page with basic info about reveal event
 -- Add "Interested in joining the team" section
 -- Add space at bottom of team card
+-- fix home page main heading
+-- Remove HomeRev an OnFloor from sponsorship page & slideshow
 
 
 Next Commit:
--- Add second image to about page
-[DONE]-- fix home page main heading 
+-- Add second team image to about page
 -- fix reveal event image on home page (distorts on mobile)
--- Add "Donate" page
-[DONE]-- Remove HomeRev and OnFloor from sponsorship page & slideshow
--- Figure out if any sponsors need to be added to sponsorship page  
+-- Add "Donate" page or button
 
 
 
@@ -25,9 +24,10 @@ To Do (in no particular order):
 -- Elaborate on "Interested in sponsoring?" section on Sponsorship page
 -- Build Media page image slideshow
 -- Figure out a design for Team Info popups on Team page
--- Figure out what to do with Team Leads with no team members (How to write an if statement in AngularJS)
+-- Figure out what to do with Team Leads with no team members (How to write an if statement in Angular)
 -- Figure out why Google Analytics isn't working 
 -- Home page
 -- Work on issues on Github 
 -- Make Team Lead cards the same size 
 -- Vet the articles on the Media page
+-- Add post-Reveal articles to media page
