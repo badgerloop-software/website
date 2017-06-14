@@ -16,7 +16,7 @@ Next Commit:
 -- fix home page main heading 
 -- fix reveal event image on home page (distorts on mobile)
 -- Add "Donate" page
--- Remove HomeRev and OnFloor from sponsorship page & slideshow
+[DONE]-- Remove HomeRev and OnFloor from sponsorship page & slideshow
 -- Figure out if any sponsors need to be added to sponsorship page  
 
 
