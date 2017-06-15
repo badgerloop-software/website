@@ -10,14 +10,13 @@ Last Few Commits:
 -- Add "Interested in joining the team" section
 -- Add space at bottom of team card
 -- fix home page main heading
--- Remove HomeRev an OnFloor from sponsorship page & slideshow
+-- Remove HomeRev, Swagelok and OnFloor from sponsorship page & slideshow
 
 
 Next Commit:
 -- Add second team image to about page
 -- fix reveal event image on home page (distorts on mobile)
 -- Add "Donate" page or button
-
 
 
 To Do (in no particular order):
