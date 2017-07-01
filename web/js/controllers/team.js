@@ -326,8 +326,8 @@ angular.module('controllers')
 	$scope.team_leads = [
 		president, technical_director,
 		electrical_systems_director,
-		operations_director, battery,
-		braking, composites, controls,
+		operations_director,
+		braking, composites,
 		electrical, propulsion, stability,
 		structural_design, structural_analysis,
 		software, fsc, industry, marketing, media, virtual_reality, outreach_recruiting,
