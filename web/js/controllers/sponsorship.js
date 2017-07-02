@@ -68,6 +68,10 @@ var bronze_logos = [
 		name: 'Bimba', img: 'Bimba',
 		site: 'http://www.bimba.com/'
 	},
+    {
+        name: 'Bittele', img: 'Bittele',
+        site: 'http://www.7pcb.com/'
+    },
 	{
 		name: 'Bulletproof Automotive', img: 'Bulletproof_Automotive',
 		site: 'http://www.bulletproofautomotive.com/'
@@ -108,10 +112,10 @@ var bronze_logos = [
 		name: 'Midwest Prototyping', img: 'Midwest',
 		site: 'https://www.midwestproto.com/'
 	},
-	/*{
+	{
 		name: 'OnFloor', img: 'OnFloor',
 		site: 'https://onfloor.com/'
-	},*/
+	},
 	{
 		name: 'Parker', img: 'Parker',
 		site: 'http://www.parker.com/portal/site/PARKER/menuitem.b90576e27a4d71ae1bfcc510237ad1ca/?vgnextoid=c38888b5bd16e010VgnVCM1000000308a8c0RCRD&vgnextfmt=EN'
@@ -124,6 +128,14 @@ var bronze_logos = [
 		name: 'ThePaperMillStore', img: 'PaperMill',
 		site: 'https://www.thepapermillstore.com/'
 	},
+    {
+        name: 'Project Chrono', img: 'Chrono',
+        site: 'https://projectchrono.org/'
+    },   
+	{
+        name: 'SBEL', img: 'SBEL',
+        site: 'http://sbel.wisc.edu/'
+    },
 	{
 		name: 'Sector67', img: 'Sector_67',
 		site: 'http://www.sector67.org/blog/'
