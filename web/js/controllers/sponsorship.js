@@ -136,11 +136,11 @@ var bronze_logos = [
         name: 'SBEL', img: 'SBEL',
         site: 'http://sbel.wisc.edu/'
     },
-	{
+  /*{
 		name: 'Sector67', img: 'Sector_67',
 		site: 'http://www.sector67.org/blog/'
 	},
-	/*{
+	{
 		name: 'Swagelok', img: 'Swagelok',
 		site: 'https://www.swagelok.com/en'
 	},*/

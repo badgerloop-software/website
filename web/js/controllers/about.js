@@ -3,40 +3,60 @@ angular.module('controllers')
 
 $scope.factoids = [
   {
-    fact:"Competition II Dates: ",
-    answer: "August 25th - August 27th, 2017",
+    fact:"Competition II Date: ",
+    answer: "August 27th, 2017",
   },
   {
-    fact:"Host: ",
+    fact:"Host of Competition II: ",
     answer: "SpaceX",
   },
   {
-    fact:"Location: ",
-    answer: "SpaceX's Headquarters in Hawthorne, California",
+    fact:"Location of the competition: ",
+    answer: "Hawthorne, California at SpaceX's Headquarters",
   },
   {
-    fact:"Number of Teams: ",
-    answer: "22",
+    fact:"Number of Teams at Competition II: ",
+    answer: "24",
   },
-  {
-    fact:"Where are the Teams From? ",
-    answer: "16 from the United States, one from Poland, two from Germany, one from the United Kingdom, one from India, one from Japan",
-  }, // this needs to be checked, I don't think it includes rLoop
   {
     fact:"Objective of the Competition: ",
     answer: "Maximum Speed",
-  },
-  {
-    fact: "Length of the Vacuum Tube: ",
-    answer: " 3960 feet (3/4ths of a mile)"
   },
   {
     fact: "Will the event be livestreamed? ",
     answer: " You bet! We will post the link as the event draws closer."
   },
   {
-    fact: "Can We See the Badgerloop Pod Before it goes to California? ",
-    answer: " Yes! Our reveal event will be in late June. More details to come!"
+    fact: "Length of the Vacuum Tube: ",
+    answer: "3/4ths of a mile (3960 feet)"
+  },
+  {
+    fact: "How big is Badgerloop? ",
+    answer: "We have roughly 40 members "
+  },
+  {
+    fact: "How long did it take to make Pod II?",
+    answer: " You bet! We will post the link as the event draws closer."
+  },
+  {
+    fact: "Will the event be livestreamed? ",
+    answer: " You bet! We will post the link as the event draws closer."
+  },
+  {
+    fact: "Will the event be livestreamed? ",
+    answer: " You bet! We will post the link as the event draws closer."
+  },
+  {
+    fact: "Will the event be livestreamed? ",
+    answer: " You bet! We will post the link as the event draws closer."
+  },
+  {
+    fact: "Will the event be livestreamed? ",
+    answer: " You bet! We will post the link as the event draws closer."
+  },
+  {
+    fact: "How much did it cost to build Pod II? ",
+    answer: "??? "
   },
 ];
 
