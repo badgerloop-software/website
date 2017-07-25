@@ -32,31 +32,11 @@ $scope.factoids = [
   },
   {
     fact: "How big is Badgerloop? ",
-    answer: "We have roughly 40 members "
-  },
-  {
-    fact: "How long did it take to make Pod II?",
-    answer: " You bet! We will post the link as the event draws closer."
-  },
-  {
-    fact: "Will the event be livestreamed? ",
-    answer: " You bet! We will post the link as the event draws closer."
-  },
-  {
-    fact: "Will the event be livestreamed? ",
-    answer: " You bet! We will post the link as the event draws closer."
-  },
-  {
-    fact: "Will the event be livestreamed? ",
-    answer: " You bet! We will post the link as the event draws closer."
-  },
-  {
-    fact: "Will the event be livestreamed? ",
-    answer: " You bet! We will post the link as the event draws closer."
+    answer: "We have roughly 50 members, ranging from undergrads all the way up to PhDs from all majors "
   },
   {
     fact: "How much did it cost to build Pod II? ",
-    answer: "??? "
+    answer: "Roughly $40,000 "
   },
 ];
 
