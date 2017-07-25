@@ -1,3 +1,6 @@
+** This is out of date **
+
+
 Last Few Commits:
 -- Update Sponsorship page
 -- Change navbar order to alphabetical
