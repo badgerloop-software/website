@@ -42,6 +42,34 @@ var silver_logos = [
 		site: 'https://www.carrierweb.com/'
 	},
 	{
+        name: 'College of Engineering', img: 'COE',
+        site: 'https://www.engr.wisc.edu/'
+    },
+	{
+        name: 'Fastenal', img: 'Fastenal',
+        site: 'https://www.fastenal.com/'
+    },
+	{
+        name: 'Department of Electrical & Computer Engineering', img: 'ECE',
+        site: 'https://www.engr.wisc.edu/department/electrical-computer-engineering/'
+    },
+	{
+        name: 'Department of Industrial & Systems Engineering', img: 'ISYE',
+        site: 'https://www.engr.wisc.edu/department/industrial-systems-engineering/'
+    },
+    {
+        name: 'Department of Mechanical Engineering', img: 'ME',
+        site: 'https://www.engr.wisc.edu/department/mechanical-engineering/'
+    },
+	{
+        name: 'Derksen', img: 'Derksen',
+        site: 'http://www.derksenprinters.com/'
+    },
+	{
+        name: 'OnFloor', img: 'OnFloor',
+        site: 'https://onfloor.com/'
+    },
+	{
 		name: 'Plexus', img: 'Plexus',
 		site: 'http://www.plexus.com/'
 	},
@@ -64,6 +92,10 @@ var bronze_logos = [
 		name: 'AWC Wire', img: 'AWC',
 		site: 'http://www.awcwire.com/'
 	},
+    {
+        name: 'BCP Transportation', img: 'BCP',
+        site: 'https://www.bcptrans.com/'
+    },
 	{
 		name: 'Bimba', img: 'Bimba',
 		site: 'http://www.bimba.com/'
@@ -75,18 +107,6 @@ var bronze_logos = [
 	{
 		name: 'Bulletproof Automotive', img: 'Bulletproof_Automotive',
 		site: 'http://www.bulletproofautomotive.com/'
-	},
-	{
-		name: 'Department of Electrical & Computer Engineering', img: 'ECE',
-		site: 'https://www.engr.wisc.edu/department/electrical-computer-engineering/'
-	},
-	{
-		name: 'Department of Mechanical Engineering', img: 'ME',
-		site: 'https://www.engr.wisc.edu/department/mechanical-engineering/'
-	},
-	{
-		name: 'Derksen', img: 'Derksen',
-		site: 'http://www.derksenprinters.com/'
 	},
 	{
 		name: 'Design Concepts', img: 'Design-Concepts',
@@ -113,10 +133,6 @@ var bronze_logos = [
 		site: 'https://www.midwestproto.com/'
 	},
 	{
-		name: 'OnFloor', img: 'OnFloor',
-		site: 'https://onfloor.com/'
-	},
-	{
 		name: 'Parker', img: 'Parker',
 		site: 'http://www.parker.com/portal/site/PARKER/menuitem.b90576e27a4d71ae1bfcc510237ad1ca/?vgnextoid=c38888b5bd16e010VgnVCM1000000308a8c0RCRD&vgnextfmt=EN'
 	},
@@ -136,14 +152,6 @@ var bronze_logos = [
         name: 'SBEL', img: 'SBEL',
         site: 'http://sbel.wisc.edu/'
     },
-    {
-		name: 'Sector67', img: 'Sector_67',
-		site: 'http://www.sector67.org/blog/'
-	},
-/*	{
-		name: 'Swagelok', img: 'Swagelok',
-		site: 'https://www.swagelok.com/en'
-	},*/
 	{
 		name: 'Triad Magnetics', img: 'Triad',
 		site: 'https://www.triadsemi.com/'
