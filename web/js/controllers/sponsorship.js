@@ -121,6 +121,10 @@ var bronze_logos = [
 		site: 'https://www.homerev.com/'
 	},*/
 	{
+        name: 'Greenheck', img: 'Greenheck',
+        site: 'http://www.greenheck.com/'
+    },
+	{
 		name: 'Ians Pizza', img: 'Ians',
 		site: 'https://ianspizza.com/'
 	},
