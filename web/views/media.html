@@ -19,6 +19,7 @@
         margin: 2em;
 }
 
+.competition_article_card b { color: black } 
 .competition_article_card {
 	width: 20em;
 	color: black;
@@ -47,9 +48,9 @@
 	<div class="dark-body">
 	<h1 style="text-align: center">Articles about Competition I</h1>
 	<div class="competition_article_card" ng-repeat="article in competition_I_articles">
-			<b style="color: black">Title:</b> <a ng-href="{{article.link}}" target="_newtab">{{article.title}}</a> <br>
-			<b style="color: black">Source:</b> {{article.source}} <br>
-			<b style="color: black">Date:</b> {{article.date}} <br>
+			<b>Title:</b> <a ng-href="{{article.link}}" target="_newtab">{{article.title}}</a> <br>
+			<b>Source:</b> {{article.source}} <br>
+			<b>Date:</b> {{article.date}} <br>
 	</div>
 </div>
 </div>

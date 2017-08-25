@@ -15,6 +15,8 @@
 
 .second-body p { font-size: 1.75em; }
 .second-body a { color: #9B1C1F; }
+.second-body h2 { text-align: center;}
+.second-body div { display: inline-block;}
 .second-body {
 	background-color: rgba(50, 50, 50, 0.9);
 	color: white;
@@ -97,8 +99,8 @@
 		</div>
 		<div>
 				<div class="second-body">
-				<h2 style="text-align: center;"> Fun Facts </h2>
-				<div ng-repeat="fact in factoids" style="display: inline-block;">
+				<h2> Various Fun Facts </h2>
+				<div ng-repeat="fact in factoids">
 					<ul>
 					<li><b style="color:rgb(244,67,54);">{{fact.fact}}</b> {{fact.answer}} &nbsp;</li>
 				</ul>
