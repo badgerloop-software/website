@@ -1,57 +1,12 @@
-<style>
-
-.dark-body p { font-size: 1.75em; }
-.dark-body a { color: #9B1C1F; }
-.dark-body {
-	background-color: rgba(50, 50, 50, 0.9);
-	color: white;
-	width: 90%;
-	font-size: 1em;
-	margin: 1em;
-	padding: 0.5em 1em;
-	word-wrap: normal;
-	text-align: left;
-}
-
-.second-body p { font-size: 1.75em; }
-.second-body a { color: #9B1C1F; }
-.second-body h2 { text-align: center;}
-.second-body div { display: inline-block;}
-.second-body {
-	background-color: rgba(50, 50, 50, 0.9);
-	color: white;
-	max-width: 90%;
-	font-size: 1em;
-	margin: 1em;
-	padding: 0.5em 1em;
-	word-wrap: normal;
-	text-align: left;
-}
-
-.team_photo{
-	margin-top: 1em;
-	max-width: 100%;
-	border-radius: 1em;
-}
-
-
-</style>
-
 <div class="page-content inner2" md-whiteframe="9">
 	<h1>About Us</h1>
-	<div>
-		<figure>
-			<img src="../im/team/Team-Photo.jpg" class="team_photo">
-			<figcaption><b>Competition II team photo in Engineering Hall</b></figcaption>
-		</figure>
 
-		<!--<figure>
-            <img src="../im/team/Team-Photo.jpg" class="team_photo">
-            <figcaption><b>Competition II team photo in Engineering Hall</b></figcaption>
-        </figure>-->
-	</div>
+	<figure>
+		<img src="../im/team/Team-Photo.jpg" style="margin-top:1em;max-width:100%;border-radius:1em">
+		<figcaption><b>Competition II team photo in Engineering Hall</b></figcaption>
+	</figure>
 
-	<div class="dark-body" md-whiteframe="3">
+	<div class="dark-body" style="font-size: 1.75em" md-whiteframe="3">
 		<p>Founded in the Summer of 2015, Badgerloop is a student organization at the
 		<a href="http://www.wisc.edu/" target="_newtab">University of Wisconsin-Madison</a>
 		helping determine if <a href="https://en.wikipedia.org/wiki/Hyperloop" target="_newtab">
@@ -75,15 +30,13 @@
 
 </div>
 
-
-
 <div class="page-content inner2" md-whiteframe="9">
 	<h1> What is the Hyperloop Pod Competition?</h1>
 		<div>
-            <a href="http://www.spacex.com/hyperloop" target="_newtab">
-                <md-button class="md-raised"><b>Competition Page</b></md-button>
-                <md-tooltip md-direction="bottom">Hyperloop Pod Competition page on SpaceX's website</md-tooltip>
-            </a>
+			<a href="http://www.spacex.com/hyperloop" target="_newtab">
+				<md-button class="md-raised"><b>Competition Page</b></md-button>
+				<md-tooltip md-direction="bottom">Hyperloop Pod Competition page on SpaceX's website</md-tooltip>
+			</a>
 			<a href="https://en.wikipedia.org/wiki/Hyperloop_pod_competition" target="_newtab">
 				<md-button class="md-raised"><b>Wikipedia Page</b></md-button>
 				<md-tooltip md-direction="bottom">General Info on the Competition</md-tooltip>
@@ -97,20 +50,13 @@
 				<md-tooltip md-direction="bottom">Competition II Technical Rules</md-tooltip>
 			</a>
 		</div>
-		<div>
-				<div class="second-body">
-				<h2> Various Fun Facts </h2>
-				<div ng-repeat="fact in factoids">
-					<ul>
-					<li><b style="color:rgb(244,67,54);">{{fact.fact}}</b> {{fact.answer}} &nbsp;</li>
-				</ul>
-				</div>
-			</div>
-</div>
-
+		<div class="dark-body">
+			<h2>Various Fun Facts</h2>
+			<ul style="text-align: left; font-size: 1.25em">
+				<li ng-repeat="fact in factoids" style="padding: 0.5em">
+					<b style="color:rgb(244,67,54);">{{fact.fact}}</b> {{fact.answer}}
+				</li>
+			</ul>
 		</div>
-
 </div>
-
-
 

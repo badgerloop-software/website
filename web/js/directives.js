@@ -1,21 +1,21 @@
 angular.module('directives')
 
 .directive('badgerloopNavbar', function() {
-    return {
-	    templateUrl: 'directives/navbar.html',
-	    controller: 'navbarController'
-    };
+	return {
+		templateUrl: 'directives/navbar.html',
+		controller: 'navbarController'
+	};
 })
 
 .directive('badgerloopFooter', function() {
-    return { templateUrl: 'directives/footer.html' };
+	return { templateUrl: 'directives/footer.html' };
 })
 
 .directive('teamLeads', function() {
-    return {
-	    templateUrl: 'directives/team-leads.html',
-	    controller: 'welcomeController'
-    };
+	return {
+		templateUrl: 'directives/team-leads.html',
+		controller: 'welcomeController'
+	};
 })
 
 .directive('imageSlideshow', function() {

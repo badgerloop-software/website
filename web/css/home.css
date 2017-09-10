@@ -1,0 +1,52 @@
+#youtube-videos { width: 100%; }
+#youtube-videos div {
+	padding: 1em;
+	margin: 2em;
+	border-radius: 1em;
+	vertical-align: middle;
+}
+
+.dark-body {
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	display: inline-block;
+	border-radius: 1em;
+	padding: 0em 1em;
+	margin: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+	#home-body { max-width: 95%; }
+	#home-body p { font-size: 1em; }
+}
+
+.text-body p { text-align: left; }
+.text-body {
+	font-size: 1.5em;
+	background-color: rgba(50, 50, 50, 0.9);
+	color: white;
+	margin: 1em;
+	padding: 0.5em 1.5em;
+	word-wrap: normal;
+	float: left;
+	max-width: 42%;
+	display: inline-block;
+}
+
+.reveal-photo{
+	max-width: 45%;
+	height: 65em;
+	margin-top: 3em;
+}
+
+.photobox {
+	display: inline-block;
+	margin: 0em;
+	margin-top: 2em;
+}
+.photobox img {
+	max-height: 20em;
+	max-width: 90%;
+	border-radius: 0.5em;
+}
+

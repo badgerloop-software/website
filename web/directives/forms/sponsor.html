@@ -1,9 +1,12 @@
 <div ng-controller="sponsorFormController">
+
 	<div style="margin-bottom: 1em">Check out our
-	<a href="pdf/BadgerloopSponsorPacket.pdf" target="_newtab">
-		<b>Sponsorship Packet</b>
-	</a>
-	if you haven't yet!</div>
+		<a href="pdf/BadgerloopSponsorPacket.pdf" target="_newtab">
+			<b>Sponsorship Packet</b>
+		</a>
+		if you haven't yet!
+	</div>
+
 	<form-error></form-error>
 	<form-success></form-success>
 	<form name="sponsorForm" class="center-la form-style" md-whiteframe="3" md-theme="dark">
@@ -47,13 +50,13 @@
 
 		<!-- Call Set Up -->
 		<md-input-container ng-if="data.should_call" class="md-block short-input">
-            <label>Date</label>
-            <md-datepicker name="date" ng-model="data.best_time"></md-datepicker>
+			<label>Date</label>
+			<md-datepicker name="date" ng-model="data.best_time"></md-datepicker>
 			Set up a call (Optional)<br>
-        </md-input-container>
+		</md-input-container>
 
 		<!-- Best Time To Reach -->
-        <div>Best time to reach you?</div>
+		<div>Best time to reach you?</div>
 		<br>
 		<div>
 			<md-input-container class="short-input">

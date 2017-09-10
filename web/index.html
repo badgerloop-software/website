@@ -21,6 +21,9 @@
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/home.css" />
+		<link rel="stylesheet" href="css/slideshow.css" />
+		<!-- <link rel="stylesheet" href="css/about.css" /> -->
 	</head>
 
 	<body ng-app="badgerloop-site">
@@ -34,9 +37,7 @@
 			<badgerloop-navbar></badgerloop-navbar>
 			<div flex="grow" layout="column" id="ng-view-parent">
 				<hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
-				<div flex="grow" id="ng-view-container" ng-view>
-					<!-- Current View Renders Here -->
-				</div>
+				<div flex="grow" id="ng-view-container" ng-view></div>
 				<hr md-colors="{borderColor: 'primary-900', backgroundColor: 'primary-900'}">
 			</div>
 			<badgerloop-footer></badgerloop-footer>
@@ -53,6 +54,7 @@
 
 	<!-- Application Setup -->
 	<script src="js/main.js"></script>
+	<script src="js/utility.js"></script>
 	<script src="js/directives.js"></script>
 
 	<!-- View Controllers -->

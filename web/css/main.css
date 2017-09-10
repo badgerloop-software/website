@@ -2,22 +2,22 @@
 /*                                Globals                                    */
 /*****************************************************************************/
 hr {
-  margin: 0em;
+	margin: 0em;
 	border-style: solid;
-  border-width: 0.5em;
+	border-width: 0.5em;
 }
 
 html {
-    font-family: 'Montserrat';
+	font-family: 'Montserrat';
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 1em;
+	font-size: 2.5em;
+	margin-bottom: 1em;
 }
 
 #main_container {
-    height: 100vh;
+	height: 100vh;
 }
 
 iframe {
@@ -30,6 +30,11 @@ iframe {
 	background: url('../im/background/award1-fullres.jpg') center center no-repeat, linear-gradient(black, white);
 }
 
+#ng-view-parent {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
 #navbar-img {
 	width: 5em;
 	margin-top: 1em;
@@ -38,17 +43,17 @@ iframe {
 }
 
 .social img {
-    height: 2em;
-    margin: 1em;
-    vertical-align: middle;
+	height: 2em;
+	margin: 1em;
+	vertical-align: middle;
 }
 
 .social .md-button {
-    min-width: 2em;
+	min-width: 2em;
 }
 
 a { text-decoration: none; }
-/*a:link { color: #F44336; } Fixes differing color on about page hyperlinks */
+/* a:link { color: #F44336; } Fixes differing color on about page hyperlinks */
 a { color: #9B1C1F; }
 /*****************************************************************************/
 /*****************************************************************************/
@@ -85,11 +90,6 @@ a { color: #9B1C1F; }
 	width: 100%;
 }
 
-#ng-view-parent {
-	overflow-x: hidden;
-	overflow-y: auto;
-}
-
 #splash_screen {
 	position: absolute;
 	left: 0; top: 0;
@@ -121,9 +121,9 @@ a { color: #9B1C1F; }
 
 #centered {
 	position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 /*****************************************************************************/
 /*****************************************************************************/
@@ -189,10 +189,10 @@ a { color: #9B1C1F; }
 }
 
 .linkedin_icon{
-  width: 1.2em;
-  height: 1.2em;
-  margin-left: 1em;
-  margin-top: .2em;
+	width: 1.2em;
+	height: 1.2em;
+	margin-left: 1em;
+	margin-top: .2em;
 }*/
 /*****************************************************************************/
 /*****************************************************************************/

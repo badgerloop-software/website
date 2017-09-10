@@ -1,44 +1,20 @@
-<style>
-
-/* Gotta figure out the equation for the offset */
-@keyframes slideshow {
-	0%		{ left: 0; }
-	100%	{ left: calc(-15100px); }
-}
-
-#sponsor-slideshow {
-	position: relative;
-	margin-top: 0.5em;
-	animation: slideshow 35s linear infinite;
-	transform: translate3d(0, 0, 0);
-	display: inline-block;
-	white-space: nowrap;
-}
-
-#sponsor-slideshow img {
-	height: 200px;
-}
-
-#sponsor-slideshow span {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-	vertical-align: middle;
-}
-
-</style>
 <div class="page-content inner2" md-whiteframe="9">
 	<h1 style="margin-top: -.1em;"> Thank you sponsors! </h1>
 	<div id="sponsor-slideshow">
 		<span ng-repeat="tier in logos">
 			<span ng-repeat="sponsor in tier.array">
-				<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+				<a ng-href="{{sponsor.site}}" target="_newtab">
+					<img ng-src="../im/sponsor/{{sponsor.img}}.png">
+				</a>
 			</span>
 		</span>
 
 		<!-- To make sure infinite scroll doesn't have a gap -->
 		<span ng-repeat="tier in logos">
 			<span ng-repeat="sponsor in tier.array">
-				<a ng-href="{{sponsor.site}}" target="_newtab"><img ng-src="../im/sponsor/{{sponsor.img}}.png"></a>
+				<a ng-href="{{sponsor.site}}" target="_newtab">
+					<img ng-src="../im/sponsor/{{sponsor.img}}.png">
+				</a>
 			</span>
 		</span>
 	</div>
