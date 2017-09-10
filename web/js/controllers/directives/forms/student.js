@@ -12,13 +12,51 @@ angular.module('controllers')
 		"Non-student"
 	];
 
+	var electrical_teams = [
+		{ name: "Controls", description: "asdf", recommended_majors:
+			["CE, CS"] },
+		{ name: "Low Voltage", description: "asdf", recommended_majors:
+			["CE, CS, EE"] },
+		{ name: "Battery", description: "asdf", recommended_majors:
+			["EE"] },
+		{ name: "Power Train", description: "asdf", recommended_majors:
+			["EE, ME"] }
+	];
+
+	var mechanical_teams = [
+		{ name: "Braking", description: "asdf", recommended_majors:
+			["ME, EMA"] },
+		{ name: "Composites", description: "asdf", recommended_majors:
+			["ME, EMA"] },
+		{ name: "Fabrication", description: "asdf", recommended_majors:
+			["ME, EMA"] },
+		{ name: "Propulsion", description: "asdf", recommended_majors:
+			["ME, EMA"] },
+		{ name: "Structural Analysis", description: "asdf", recommended_majors:
+			["ME, EMA, M&S"] },
+		{ name: "Structural Design", description: "asdf", recommended_majors:
+			["ME, EMA, M&S"] }
+	];
+
+	var operations_teams = [
+		{ name: "Software", description: "asdf", recommended_majors:
+			["CS, CE, Any w/ prior exp."] },
+		{ name: "Feasibility", description: "asdf", recommended_majors:
+			["Civil Eng., Physics"] },
+		{ name: "Finance & Supply Chain", description: "asdf", recommended_majors:
+			["Finance, Industrial Eng., Business"] },
+		{ name: "Industry Relations", description: "asdf", recommended_majors:
+			["Communications, Business"] },
+		{ name: "Media & Marketing", description: "asdf", recommended_majors:
+			["Communications, Business"] },
+		{ name: "Virtual Reality", description: "asdf", recommended_majors:
+			["CS, CE, Any w/ prior exp."] }
+	];
+
 	var TEAMS = [
-		"Battery", "Braking", "Composites", "Controls",
-		"Electrical", "Fabrication", "Software",
-		"Feasibility", "Finance & Supply Chain",
-		"Industry Relations", "Media & Marketing",
-		"Propulsion", "Structural Analysis",
-		"Structural Design", "Virtual Reality"
+		{ name: "Electrical", data: electrical_teams },
+		{ name: "Mechanical", data: mechanical_teams },
+		{ name: "Operations", data: operations_teams }
 	];
 
 	// Utility Functions
