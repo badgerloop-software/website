@@ -1,8 +1,6 @@
 // Student Form
 angular.module('controllers')
-.controller('studentFormController', function($scope, $http, $sce) {
-
-	$sce.trustAsResourceUrl("api.badgerloop.com");
+.controller('studentFormController', function($scope, $http) {
 
 	$scope.form_id = "student-form";
 	$scope.success_message = "Thanks for applying! We'll reach out to you soon.";
@@ -19,7 +17,7 @@ angular.module('controllers')
 	/* Aggregate team check boxes */
 	$http({
 		method: 'GET',
-		url: 'http://api.badgerloop.com/php/area.php'
+		url: 'http://www.badgerloop.com/api/php/area.php'
 	}).then(function success(response) {
 
 		for (var i = 0; i < response.data.length; i++) {
