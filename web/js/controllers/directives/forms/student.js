@@ -1,6 +1,8 @@
 // Student Form
 angular.module('controllers')
-.controller('studentFormController', function($scope, $http) {
+.controller('studentFormController', function($scope, $http, $sce) {
+
+	$sce.trustAsResourceUrl("api.badgerloop.com");
 
 	$scope.form_id = "student-form";
 	$scope.success_message = "Thanks for applying! We'll reach out to you soon.";
