@@ -12,54 +12,13 @@ angular.module('controllers')
 		"Non-student"
 	];
 
-	var electrical_teams = [
-		{ name: "Controls", description: "Build the pod’s embedded system by writing microcontroller code and developing the pod’s dashboard.", recommended_majors:
-			["CE, CS"] },
-		{ name: "Low Voltage", description: "Work with sensors and data acquisition, pod actuation,  harnessing and system architecture.", recommended_majors:
-			["CE, CS, EE"] },
-		{ name: "Battery", description: "Create a high voltage battery  system to power the pod’s electric motor and drive system.", recommended_majors:
-			["EE"] },
-		{ name: "Power Train", description: "Design and fabricate an electric motor drive system.", recommended_majors:
-			["EE, ME"] }
-	];
-
-	var mechanical_teams = [
-		{ name: "Braking", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Composites", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Fabrication", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Propulsion", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Structural Analysis", description: "asdf", recommended_majors:
-			["ME, EMA, M&S"] },
-		{ name: "Structural Design", description: "asdf", recommended_majors:
-			["ME, EMA, M&S"] }
-	];
-
-	var operations_teams = [
-		{ name: "Software", description: "asdf", recommended_majors:
-			["CS, CE, Any w/ prior exp."] },
-		{ name: "Feasibility", description: "asdf", recommended_majors:
-			["Civil Eng., Physics"] },
-		{ name: "Finance & Supply Chain", description: "asdf", recommended_majors:
-			["Finance, Industrial Eng., Business"] },
-		{ name: "Industry Relations", description: "asdf", recommended_majors:
-			["Communications, Business"] },
-		{ name: "Media & Marketing", description: "asdf", recommended_majors:
-			["Communications, Business"] },
-		{ name: "Virtual Reality", description: "asdf", recommended_majors:
-			["CS, CE, Any w/ prior exp."] }
-	];
-
 	$http({
 		method: 'GET',
-		url: 'http://localhost:8888/php/area.php?area=Operations'
+		url: 'http://api.badgerloop.com/php/area.php'
 	}).then(function success(response){
 		$scope.operationsResponse = response.data;
 		console.log("Success!");
-		console.log(response.data);
+		// console.log(response.data);
 
 	}, function error(response) {
 		$scope.operationsData = response.data;
@@ -68,9 +27,9 @@ angular.module('controllers')
 	});
 
 	var TEAMS = [
-		{ name: "Electrical", data: electrical_teams },
-		{ name: "Mechanical", data: mechanical_teams },
-		{ name: "Operations", data: $scope.testing }
+		{ name: "Electrical" },
+		{ name: "Mechanical" },
+		{ name: "Operations" }
 	];
 
 	// Utility Functions
