@@ -1,10 +1,12 @@
 // Student Form
 angular.module('controllers')
-.controller('studentFormController', function($scope) {
+.controller('studentFormController', function($scope, $http) {
 
 	$scope.form_id = "student-form";
 	$scope.success_message = "Thanks for applying! We'll reach out to you soon.";
 	$scope.submitted = false;
+	$scope.teams = {};
+	$scope.team_keys = [];
 
 	var YEARS = [
 		"Newly Admitted", "Freshman", "Sophomore",
@@ -12,52 +14,33 @@ angular.module('controllers')
 		"Non-student"
 	];
 
-	var electrical_teams = [
-		{ name: "Controls", description: "asdf", recommended_majors:
-			["CE, CS"] },
-		{ name: "Low Voltage", description: "asdf", recommended_majors:
-			["CE, CS, EE"] },
-		{ name: "Battery", description: "asdf", recommended_majors:
-			["EE"] },
-		{ name: "Power Train", description: "asdf", recommended_majors:
-			["EE, ME"] }
-	];
+	/* Aggregate team check boxes */
+	$http({
+		method: 'GET',
+		url: 'http://api.badgerloop.com/php/area.php'
+	}).then(function success(response) {
 
-	var mechanical_teams = [
-		{ name: "Braking", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Composites", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Fabrication", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Propulsion", description: "asdf", recommended_majors:
-			["ME, EMA"] },
-		{ name: "Structural Analysis", description: "asdf", recommended_majors:
-			["ME, EMA, M&S"] },
-		{ name: "Structural Design", description: "asdf", recommended_majors:
-			["ME, EMA, M&S"] }
-	];
+		for (var i = 0; i < response.data.length; i++) {
 
-	var operations_teams = [
-		{ name: "Software", description: "asdf", recommended_majors:
-			["CS, CE, Any w/ prior exp."] },
-		{ name: "Feasibility", description: "asdf", recommended_majors:
-			["Civil Eng., Physics"] },
-		{ name: "Finance & Supply Chain", description: "asdf", recommended_majors:
-			["Finance, Industrial Eng., Business"] },
-		{ name: "Industry Relations", description: "asdf", recommended_majors:
-			["Communications, Business"] },
-		{ name: "Media & Marketing", description: "asdf", recommended_majors:
-			["Communications, Business"] },
-		{ name: "Virtual Reality", description: "asdf", recommended_majors:
-			["CS, CE, Any w/ prior exp."] }
-	];
+			/* create teams[area_name] array if not present */
+			if (!$scope.teams[response.data[i].area_name]) {
+				$scope.teams[response.data[i].area_name] = [];
+				$scope.team_keys.push(response.data[i].area_name);
+			}
 
-	var TEAMS = [
-		{ name: "Electrical", data: electrical_teams },
-		{ name: "Mechanical", data: mechanical_teams },
-		{ name: "Operations", data: operations_teams }
-	];
+			/* add team to appropriate area */
+			$scope.teams[response.data[i].area_name].push(
+				{
+					name: response.data[i].name,
+					description: response.data[i].description
+				}
+			);
+		}
+
+	}, function error(response) {
+		console.log("Failure");
+		console.log(response);
+	});
 
 	// Utility Functions
 	$scope.toggle_selected = function(item, list) {
@@ -69,7 +52,6 @@ angular.module('controllers')
 	};
 
 	$scope.years = YEARS;
-	$scope.teams = TEAMS;
 
 	// Inputs
 	$scope.data = {
