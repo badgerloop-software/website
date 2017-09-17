@@ -1,6 +1,6 @@
 // Student Form
 angular.module('controllers')
-.controller('studentFormController', function($scope) {
+.controller('studentFormController', function($scope, $http, $sce) {
 
 	$scope.form_id = "student-form";
 	$scope.success_message = "Thanks for applying! We'll reach out to you soon.";
@@ -13,13 +13,13 @@ angular.module('controllers')
 	];
 
 	var electrical_teams = [
-		{ name: "Controls", description: "asdf", recommended_majors:
+		{ name: "Controls", description: "Build the pod’s embedded system by writing microcontroller code and developing the pod’s dashboard.", recommended_majors:
 			["CE, CS"] },
-		{ name: "Low Voltage", description: "asdf", recommended_majors:
+		{ name: "Low Voltage", description: "Work with sensors and data acquisition, pod actuation,  harnessing and system architecture.", recommended_majors:
 			["CE, CS, EE"] },
-		{ name: "Battery", description: "asdf", recommended_majors:
+		{ name: "Battery", description: "Create a high voltage battery  system to power the pod’s electric motor and drive system.", recommended_majors:
 			["EE"] },
-		{ name: "Power Train", description: "asdf", recommended_majors:
+		{ name: "Power Train", description: "Design and fabricate an electric motor drive system.", recommended_majors:
 			["EE, ME"] }
 	];
 
@@ -53,10 +53,24 @@ angular.module('controllers')
 			["CS, CE, Any w/ prior exp."] }
 	];
 
+	$http({
+		method: 'GET',
+		url: 'http://localhost:8888/php/area.php?area=Operations'
+	}).then(function success(response){
+		$scope.operationsResponse = response.data;
+		console.log("Success!");
+		console.log(response.data);
+
+	}, function error(response) {
+		$scope.operationsData = response.data;
+		console.log("Failure");
+		console.log(response);
+	});
+
 	var TEAMS = [
 		{ name: "Electrical", data: electrical_teams },
 		{ name: "Mechanical", data: mechanical_teams },
-		{ name: "Operations", data: operations_teams }
+		{ name: "Operations", data: $scope.testing }
 	];
 
 	// Utility Functions
