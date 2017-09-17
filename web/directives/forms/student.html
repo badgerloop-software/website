@@ -44,22 +44,15 @@
 			<br><br>
 			<div ng-repeat="team_group in teams">
 				<h3>{{team_group.name}}</h3>
-				<div ng-repeat="team in operationsResponse">
-					<div ng-if="team_group.name == team.area_name">
-						<md-checkbox
-							ng-checked="check_selected(team.name, data.teams_selected)"
-							ng-click="toggle_selected(team.name, data.teams_selected)">
-
-
-							{{team.name}} - <i style="font-size:12px;">{{team.description}}</i>
-
-
-						</md-checkbox>
-					</div>
+				<div ng-repeat="team in team_group.data">
+					<md-checkbox
+						ng-checked="check_selected(team.name, data.teams_selected)"
+						ng-click="toggle_selected(team.name, data.teams_selected)">
+						{{team.name}} - <i>{{team.description}}</i>
+					</md-checkbox>
 				</div>
 			</div>
 		</div>
-
 
 		<!-- Bio -->
 		<br>Tell us about yourself.<br><br>
