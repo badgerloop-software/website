@@ -17,7 +17,7 @@ angular.module('controllers')
 	/* Aggregate team check boxes */
 	$http({
 		method: 'GET',
-		url: 'http://www.badgerloop.com/api/php/area.php'
+		url: 'https://www.badgerloop.com/api/php/area.php'
 	}).then(function success(response) {
 
 		for (var i = 0; i < response.data.length; i++) {
