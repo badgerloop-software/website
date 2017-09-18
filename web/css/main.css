@@ -15,10 +15,6 @@ h1 {
 	font-size: 2.5em;
 	margin-bottom: 1em;
 }
-h2 {
-	font-size: 2em;
-	margin-bottom: 1em;
-}
 
 #main_container {
 	height: 100vh;
@@ -58,7 +54,7 @@ iframe {
 
 a { text-decoration: none; }
 /* a:link { color: #F44336; } Fixes differing color on about page hyperlinks */
-a { color: #990000; }
+a { color: #9B1C1F; }
 /*****************************************************************************/
 /*****************************************************************************/
 
@@ -149,7 +145,7 @@ a { color: #990000; }
 #contact-page .form-style {
 	background-color: rgba(50, 50, 50, 0.9);
 	color: white;
-	border-radius: .2em;
+	border-radius: 1em;
 	padding: 1em;
 	max-width: 90%;
 	margin: 1em;
@@ -162,7 +158,7 @@ a { color: #990000; }
 
 .form-event {
 	padding: 1em;
-	border-radius: .2em;
+	border-radius: 1em;
 	visibility: hidden;
 	margin: auto;
 	display: none;
