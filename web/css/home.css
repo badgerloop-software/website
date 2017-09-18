@@ -1,16 +1,16 @@
 #youtube-videos { width: 100%; }
 #youtube-videos div {
-	padding: 1em;
-	margin: 2em;
-	border-radius: 1em;
+	padding: .5em;
+	margin: 1em;
+	border-radius: 2em;
 	vertical-align: middle;
 }
 
 .dark-body {
-	background-color: rgba(50, 50, 50, 0.9);
+	background-color: rgba(49, 49, 49, 0.9);
 	color: white;
 	display: inline-block;
-	border-radius: 1em;
+	border-radius: 2em;
 	padding: 0em 1em;
 	margin: 2em;
 }
@@ -23,7 +23,7 @@
 .text-body p { text-align: left; }
 .text-body {
 	font-size: 1.5em;
-	background-color: rgba(50, 50, 50, 0.9);
+	background-color: rgba(49, 49, 49, 0.9);
 	color: white;
 	margin: 1em;
 	padding: 0.5em 1.5em;
@@ -47,6 +47,6 @@
 .photobox img {
 	max-height: 20em;
 	max-width: 90%;
-	border-radius: 0.5em;
+	border-radius: .2em;
 }
 
