@@ -7,7 +7,7 @@
 #sponsor-slideshow {
 	position: relative;
 	margin-top: 0.5em;
-	animation: slideshow 35s linear infinite;
+	animation: slideshow 120s linear infinite;
 	transform: translate3d(0, 0, 0);
 	display: inline-block;
 	white-space: nowrap;
