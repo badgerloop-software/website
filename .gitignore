@@ -6,4 +6,6 @@ web/pod1
 **.DS_Store**
 *.swp
 .idea
+*.zip
+
 
