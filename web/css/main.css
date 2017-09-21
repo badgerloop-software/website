@@ -8,7 +8,7 @@ hr {
 }
 
 html {
-	font-family: 'Verdana';
+	font-family: 'Montserrat';
 }
 
 h1 {
@@ -86,7 +86,7 @@ a { color: #990000; }
 }
 
 .inner1 {
-	border-radius: .2em;
+	border-radius: 1em;
 	width: 95%;
 }
 
@@ -149,7 +149,7 @@ a { color: #990000; }
 #contact-page .form-style {
 	background-color: rgba(50, 50, 50, 0.9);
 	color: white;
-	border-radius: .2em;
+	border-radius: 1em;
 	padding: 1em;
 	max-width: 90%;
 	margin: 1em;
@@ -162,7 +162,7 @@ a { color: #990000; }
 
 .form-event {
 	padding: 1em;
-	border-radius: .2em;
+	border-radius: 1em;
 	visibility: hidden;
 	margin: auto;
 	display: none;
