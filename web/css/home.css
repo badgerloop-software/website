@@ -2,7 +2,7 @@
 #youtube-videos div {
 	padding: .5em;
 	margin: 1em;
-	border-radius: .2em;
+	border-radius: 1em;
 	vertical-align: middle;
 }
 
@@ -10,7 +10,7 @@
 	background-color: rgba(49, 49, 49, 0.9);
 	color: white;
 	display: inline-block;
-	border-radius: .2em;
+	border-radius: 1em;
 	padding: 0em 1em;
 	margin: 2em;
 }
@@ -44,9 +44,10 @@
 	margin: 0em;
 	margin-top: 2em;
 }
+
 .photobox img {
-	max-height: 20em;
-	max-width: 90%;
-	border-radius: 0em;
+	max-height: 40em;
+	max-width: 80%;
+	border-radius: 1em;
 }
 
