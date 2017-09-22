@@ -35,9 +35,9 @@
 	<h1>Meet the Team Leads</h1>
 	<div class="card" md-whiteframe="3" ng-repeat="lead in team_leads">
 		<img class="card img" md-whiteframe="3" ng-src="../im/team_leads/{{lead.headshot}}" alt>
-		<h2><b>{{lead.name}}</b></h2>
+		<h2><b>{{lead.full_name}}</b></h2>
 		<div class="info">
-			<b>Role:</b> {{lead.role}}<br>
+			<b>Role:</b> {{lead.position_name}}<br>
 			<b>Major:</b> {{lead.major}}<br>
 			<b>Year:</b> {{lead.year}}<br>
 			<a ng-href="{{lead.linkedin}}" target="_newtab"><img class="linkedin_icon" ng-src="../im/logos/linkedin_logo.png"></a>
@@ -51,13 +51,13 @@
 
 
 <div class="page-content inner2" md-whiteframe="9">
-        <div>
-        <h1>Interested in joining the team?</h1>
-        <center><p style="max-width: 95%;padding: .5em .5em;background-color: rgba(50, 50, 50, 0.9);color: white;font-size: 1.2em;word-wrap: normal;">
-Welcome! We have <b>plenty</b> of work to get done and would love to have your help. Let us know which subteams interest you by filling out our <a style="color: red;" href="#/contact" target=_blank> contact form </a> so that we can get you started as soon as possible!
-</p>
+	<div>
+		<h1>Interested in joining the team?</h1>
+		<center><p style="max-width: 95%;padding: .5em .5em;background-color: rgba(50, 50, 50, 0.9);color: white;font-size: 1.2em;word-wrap: normal;">
+		Welcome! We have <b>plenty</b> of work to get done and would love to have your help. Let us know which subteams interest you by filling out our <a style="color: red;" href="#/contact" target=_blank> contact form </a> so that we can get you started as soon as possible!
+		</p>
 
-</div>
+	</div>
 </div>
 
 

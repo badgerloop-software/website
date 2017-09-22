@@ -1,5 +1,19 @@
 angular.module('controllers')
-.controller('teamController', function($scope, $mdPanel) {
+.controller('teamController', function($scope, $mdPanel, $http) {
+
+	$scope.team_leads = {};
+
+	/* Aggregate team check boxes */
+	$http({
+		method: 'GET',
+		url: 'https://www.badgerloop.com/api/php/team.php'
+	}).then(function success(response) {
+			$scope.team_leads = response.data;
+
+	}, function error(response) {
+		console.log("Failure");
+		console.log(response);
+	});
 
 	var president = {
 		name: "Zuf Wang",
@@ -323,16 +337,16 @@ angular.module('controllers')
 		members: []
 	};
 
-	$scope.team_leads = [
-		president, technical_director,
-		electrical_systems_director,
-		operations_director,
-		braking, composites,
-		electrical, propulsion, stability,
-		structural_design, structural_analysis,
-		software, fsc, industry, marketing, media, virtual_reality, outreach_recruiting,
-		feasibility, faculty_advisor
-	];
+	// $scope.team_leads = [
+	// 	president, technical_director,
+	// 	electrical_systems_director,
+	// 	operations_director,
+	// 	braking, composites,
+	// 	electrical, propulsion, stability,
+	// 	structural_design, structural_analysis,
+	// 	software, fsc, industry, marketing, media, virtual_reality, outreach_recruiting,
+	// 	feasibility, faculty_advisor
+	// ];
 
 	var panelPosition = $mdPanel.newPanelPosition()
 						.absolute()
