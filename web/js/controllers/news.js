@@ -1,5 +1,5 @@
 angular.module('controllers')
-.controller('mediaController', function ($scope) {
+.controller('newsController', function ($scope) {
 
 	var bloop_articles = [
 		{
