@@ -40,6 +40,10 @@ var routes = {
 		templateUrl: 'views/about.html',
 		controller: 'aboutController'
 	},
+	newsRoute: {
+		templateUrl: 'views/news.html',
+		controller: 'newsController'
+	},
 	teamRoute: {
 		templateUrl: 'views/team.html',
 		controller: 'teamController'
@@ -72,6 +76,7 @@ angular.module('badgerloop-site', dependencyList)
 	.when('/contact', routes.contactRoute)
 	.when('/docs', routes.docsRoute)
 	.when('/team', routes.teamRoute)
+        .when('/news', routes.newsRoute)
 	.when('/media', routes.mediaRoute)
 	.when('/about', routes.aboutRoute)
 	.when('/sponsorship', routes.sponsorshipRoute)
