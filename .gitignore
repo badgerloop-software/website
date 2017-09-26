@@ -3,7 +3,10 @@ api
 web/*.txt
 web/php_log
 web/pod1
+web/secure
 **.DS_Store**
 *.swp
 .idea
+*.zip
+
 

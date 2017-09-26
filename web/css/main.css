@@ -16,7 +16,7 @@ h1 {
 	margin-bottom: 1em;
 }
 h2 {
-	font-size: 2em;
+	font-size: 2.5em;
 	margin-bottom: 1em;
 }
 
@@ -86,7 +86,7 @@ a { color: #990000; }
 }
 
 .inner1 {
-	border-radius: 2em;
+	border-radius: 1em;
 	width: 95%;
 }
 
@@ -149,7 +149,7 @@ a { color: #990000; }
 #contact-page .form-style {
 	background-color: rgba(50, 50, 50, 0.9);
 	color: white;
-	border-radius: .2em;
+	border-radius: 1em;
 	padding: 1em;
 	max-width: 90%;
 	margin: 1em;
@@ -162,7 +162,7 @@ a { color: #990000; }
 
 .form-event {
 	padding: 1em;
-	border-radius: .2em;
+	border-radius: 1em;
 	visibility: hidden;
 	margin: auto;
 	display: none;
