@@ -8,6 +8,7 @@ angular.module('controllers')
 		{ text: "about",                 enabled: false },
 		{ text: "contact",	  enabled: false },
 		{ text: "media",		enabled: false },
+	        { text: "news",		enabled: false },
 		{ text: "sponsorship",  enabled: false },
 		{ text: "team",		 enabled: false }
 		//{ text: "reveal", 	enabled: false }
