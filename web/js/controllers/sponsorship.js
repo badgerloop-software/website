@@ -8,7 +8,6 @@ angular.module('controllers')
 	$http({
 		method: 'GET',
 		url: 'https://badgerloop.com/api/php/sponsors.php'
-		// url: 'http://localhost:8090/php/sponsors.php'
 	}).then(function success(response) {
 
 		for (var i = 0; i < response.data.length; i++) {
