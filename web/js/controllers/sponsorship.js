@@ -21,7 +21,7 @@ angular.module('controllers')
 			$scope.sponsors[response.data[i].tier_name].push(
 				{
 					name: response.data[i].name,
-					website: response.data[i].website,
+					site: response.data[i].website,
 					img: response.data[i].image
 				}
 			);
