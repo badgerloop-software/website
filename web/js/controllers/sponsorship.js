@@ -11,13 +11,13 @@ angular.module('controllers')
 	}).then(function success(response) {
 
 		for (var i = 0; i < response.data.length; i++) {
-			/* create teams[area_name] array if not present */
+			/* create sponsors[tier_name] array if not present */
 			if (!$scope.sponsors[response.data[i].tier_name]) {
 				$scope.sponsors[response.data[i].tier_name] = [];
 				$scope.sponsor_keys.push(response.data[i].tier_name);
 			}
 
-			/* add team to appropriate area */
+			/* add Sponsor to tier area */
 			$scope.sponsors[response.data[i].tier_name].push(
 				{
 					name: response.data[i].name,
