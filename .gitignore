@@ -1,5 +1,4 @@
 **/node_modules/**
-api
 web/*.txt
 web/php_log
 web/pod1
@@ -8,5 +7,9 @@ web/secure
 *.swp
 .idea
 *.zip
+
+api
 wiki
+webhook.php
+staging
 
