@@ -1,6 +1,6 @@
 # Badgerloop Software: Website
 
-*Contributors: Vaughn Kottler, Devin Johnson, Kody Fisher*
+*Contributors: Vaughn Kottler, Devin Johnson, Kody Fisher, Jordan Jones*
 
 ## Local Development
 
@@ -15,6 +15,11 @@ Run `npm install` from the root folder of the repository.
 From the root folder, you can run `node server` to serve traffic through port 8080 locally. This means you would visit `http://localhost:8080` to view your work.
 
 This is necessary because Angular routing requests template pages dynamically and most browsers doesn't allow you to make these type of requests to your own system (for your own protection).
+
+## Contributing
+
+When contributing to this repository, please first discuss the proposed changes with your team lead. After the changes have been discussed, create a branch specifically for your feature using `git checkout -b [branch name]`.
+Develop on the branch you created until your feature is complete.
 
 ## Website Technologies
 
