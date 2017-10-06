@@ -1,60 +1,6 @@
-<style>
-.media-logos {
-	position: relative;
-	margin-top: 0.5em;
-	display: inline-block;
-}
-
-.media-logos img {
-	height: 10.417em;
-	margin: 1em;
-}
-
-.dark-body {
-        background-color: rgba(50, 50, 50, 0.9);
-        color: white;
-        display: inline-block;
-        border-radius: 1em;
-        padding: 0em 1em;
-        margin: 2em;
-}
-
-.competition_article_card b { color: black } 
-.competition_article_card {
-	width: 20em;
-	color: black;
-	margin: 2em;
-	padding: 2em 2em;
-	text-align: left;
-	display: inline-block;
-	background-color: white;;
-}
-
-
-</style>
-
-
-<div class="page-content inner2" md-whiteframe="9">
-	<h1>Featured In</h1>
-	<div class="media-logos" ng-repeat="source in bloop_articles">
-		<a ng-href="{{source.site}}" target="_newtab"><img ng-src="../im/FI-Logos/{{source.name}}.png"></a>
-		<md-tooltip md-direction="bottom">
-			{{source.title}}
-		</md-tooltip>
-	</div>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="page-content inner1" md-whiteframe="9" style="width:100%">
+	</figure>
+		<figure class="photobox">
+		<img src="../im/elon/freeze_frame.jpg" md-whiteframe="6">
 </div>
-
-<div class="page-content inner2" md-whiteframe="9">
-	<div class="dark-body">
-	<h1 style="text-align: center">Articles about Competition I</h1>
-	<div class="competition_article_card" ng-repeat="article in competition_I_articles">
-			<b>Title:</b> <a ng-href="{{article.link}}" target="_newtab">{{article.title}}</a> <br>
-			<b>Source:</b> {{article.source}} <br>
-			<b>Date:</b> {{article.date}} <br>
-	</div>
-</div>
-</div>
-</div>
-
-
-
