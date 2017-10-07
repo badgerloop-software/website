@@ -1,8 +1,8 @@
 <div class="page-content inner2" md-whiteframe="9">
 	<h1 style="margin-top: -.1em;"> Thank you sponsors! </h1>
 	<div id="sponsor-slideshow">
-		<span ng-repeat="tier in logos">
-			<span ng-repeat="sponsor in tier.array">
+		<span ng-repeat="tier in sponsor_keys">
+			<span ng-repeat="sponsor in sponsors[tier]">
 				<a ng-href="{{sponsor.site}}" target="_newtab">
 					<img ng-src="../im/sponsor/{{sponsor.img}}.png">
 				</a>
@@ -10,8 +10,8 @@
 		</span>
 
 		<!-- To make sure infinite scroll doesn't have a gap -->
-		<span ng-repeat="tier in logos">
-			<span ng-repeat="sponsor in tier.array">
+		<span ng-repeat="tier in sponsor_keys">
+			<span ng-repeat="sponsor in sponsors[tier]">
 				<a ng-href="{{sponsor.site}}" target="_newtab">
 					<img ng-src="../im/sponsor/{{sponsor.img}}.png">
 				</a>
