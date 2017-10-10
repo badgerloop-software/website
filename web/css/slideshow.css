@@ -1,13 +1,7 @@
-/* Gotta figure out the equation for the offset */
-@keyframes slideshow {
-	0%		{ left: 0; }
-	100%	{ left: calc(-1089px); }
-}
-
 #sponsor-slideshow {
 	position: relative;
 	margin-top: 0.5em;
-	animation: slideshow 10s linear infinite;
+	animation: slideshow 15s linear infinite;
 	transform: translate3d(0, 0, 0);
 	display: inline-block;
 	white-space: nowrap;
@@ -18,8 +12,7 @@
 }
 
 #sponsor-slideshow span {
-	margin-left: 0.5em;
-	margin-right: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 	vertical-align: middle;
 }
-

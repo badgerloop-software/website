@@ -31,3 +31,23 @@ function toggle_display(id, state) {
 function default_handler() { console.log("bad function handler!"); }
 /*****************************************************************************/
 
+/*                               Slideshow Setup                             */
+function configureSlideshow() {
+	var sponsorSlides = document.getElementById("sponsor-slideshow");
+	var slideshowWidth = 0;
+	for (var i = 0; i < sponsorSlides.childNodes.length; i++) {
+		if (sponsorSlides.childNodes[i].offsetWidth != null) {
+			console.log(sponsorSlides.childNodes[i].offsetWidth);
+			slideshowWidth += sponsorSlides.childNodes[i].offsetWidth;
+		}
+	}
+	console.log("Slideshow width: " + slideshowWidth);
+	sponsorSlides.setAttribute("style", "animation: slideshow " + (0.006 * (slideshowWidth / 2)) + "s linear infinite !important;");
+	var frames = document.createElement("style");
+	frames.innerHTML = '@keyframes slideshow { '
+							     +  '	0% { left: 0px; }'
+							     +  '	100% { left: -' + (slideshowWidth / 2) + 'px; }'
+									 +  '}';
+	document.head.appendChild(frames);
+}
+/*****************************************************************************/
