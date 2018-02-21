@@ -3,6 +3,7 @@ web/*.txt
 web/php_log
 web/pod1
 web/secure
+web/pdf/**
 **.DS_Store**
 *.swp
 .idea
