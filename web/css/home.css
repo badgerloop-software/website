@@ -81,3 +81,9 @@
 		padding-right: 4em;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	.reveal-details {
+		-webkit-padding-start: 20px;
+	}
+}
