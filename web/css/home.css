@@ -59,35 +59,3 @@
 	display: inherit;
 	border-style: solid;
 }
-
-.reveal-details {
-	text-align: left;
-	margin-bottom: 2.5em;
-}
-
-.reveal-details li {
-	margin: .4em;
-}
-
-.subheading {
-	font-size: 1.5em;
-	margin-bottom: .1em;
-	margin-top: .5em;
-}
-
-.reveal {
-	padding-bottom: 1em;
-}
-
-@media only screen and (min-width: 992px) {
-	.reveal {
-		padding-left: 4em;
-		padding-right: 4em;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-	.reveal-details {
-		-webkit-padding-start: 20px;
-	}
-}
