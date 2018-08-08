@@ -32,7 +32,7 @@ var otherHandler = default_handler;
 
 // Initializations (later becomes a factory)
 var student_form = {
-	label: "student", title: "Team Application",
+	label: "student", title: "Join Our Team",
 	description: "Are you a current or future UW-Madison student interested in joining the team?", 
 	handler: studentHandler,
 	template: "directives/forms/student.html"
