@@ -40,7 +40,7 @@ iframe {
 }
 
 #navbar-img {
-	width: 5em;
+	width: 12em;
 	margin-top: 1em;
 	margin-left: 1em;
 	margin-right: 1em
@@ -56,9 +56,21 @@ iframe {
 	min-width: 2em;
 }
 
+.md-toolbar {
+	background-color: #DA004C; /*official badger red*/
+}
+
 a { text-decoration: none; }
 /* a:link { color: #F44336; } Fixes differing color on about page hyperlinks */
 a { color: #990000; }
+
+@media only screen and (max-device-width: 500px) {
+	#navbar-img {
+		margin-left: 0px;
+		margin-right: 0px;
+		width: 10em;
+	}
+}
 /*****************************************************************************/
 /*****************************************************************************/
 
